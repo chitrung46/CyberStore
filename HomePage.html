@@ -9,10 +9,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="HomePage.css">
 </head>
 
 <body>
+
+    <style>
+
+        #wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        
+
+        /*Smart phone nhỏ*/
+        @media screen and (min-width: 240px){
+
+        }
+        /*Iphone(480 x 640)*/
+        @media screen and (min-width: 320px){
+
+        }
+        /*Tablet nhỏ(480 x 640)*/
+        @media screen and (min-width: 480px){
+
+        }
+        /*Ipad dọc(768 x 1024)*/
+        @media screen and (min-width: 768px){
+
+        }
+        /*Ipad ngang(1024 x 768)*/
+        @media screen and (min-width: 1024px){
+
+        }
+    </style>
     <div class="wrapper">
 
         <div class="top-banner position-raletive" style="background-color: #61317F;">Sologan nhóm
@@ -22,9 +54,18 @@
         <header class="header">
             <div class="container">
                 <nav class="header__navbar">
-
+                    
+                    <ul class="sidebar">
+                        <li><a href="HomePage.html">Trang chủ</a></li>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Sản phẩm</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                        <li><a href="">Đăng ký</a></li>
+                        <li><a href="">Đăng nhập</a></li>
+                    </ul>
+                    
                     <div class="header__navbar-left">
-                        <a href="" id="logo"> <img src=".\\img\logo.jpg" alt="CyberStore.vn"></a>
+                        <a href="" id="logo"> <img src=".\\img\LogoCyBer1.png" alt="CyberStore.vn"></a>
                     </div>
                     
                     <div class="header__navbar-center">
@@ -32,14 +73,25 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Trang chủ</a>
                             </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#">Group Buy</a>
+                                <ul class="sub-menu gropuBuy">
+                                    <li><a href="">Live GB</a></li>
+                                    <li><a href="">Ended GB</a></li>          
+                                </ul>
+                            </li>
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link" href="#">Instock</a>
-                                <ul class="sub-menu">
+                                <ul class="sub-menu instock">
                                     <li><a href="">Bàn phím cơ</a></li>
                                     <li><a href="">Keycap</a></li>
                                     <li><a href="">Công tắc bàn phím cơ</a></li>
                                     <li><a href="">Thanh cân bằng - Stabilizers</a></li>
-                                    <li><a href="">Phụ kiện bàn phím cơ</a></li>
+                                    <li>
+                                        <a href="">Phụ kiện bàn phím cơ</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -55,21 +107,26 @@
                     <div class="header__navbar-right">
                         <ul class="nav justify-content-end">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">search</a>
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Account</a>
+                                <a class="nav-link" href="#">
+                                    <i class="fa-regular fa-user"></i>
+                                </a>
                             </li>
     
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Giỏ hàng</a>
+                                
+                                <a class="nav-link" href="#">
+                                    <img src=".\\img\shopping.svg" alt="Giỏ hàng">
+                                </a>
                             </li>
                         </ul>
                        
                     </div>
-                    
-                  
-                   
+
                 </nav>
             </div>
             
@@ -178,16 +235,89 @@
             
         </section>
 
+        <!-- KThen viết nè -->
         <footer class="footer">
-            <div class="mid-footer">
-                <div class="container">
+            <div class="grid">
+                <div class="grid__row grid__row-item">
+                    <div class="grid__column-2-4">
+                        <a href="" id="logo" class="footer__logo"> <img src=".\\img\logo.jpg" alt="CyberStore.vn"></a>
+                        <h3 class="footer__heading">CYBER STORE</h3>
+                        <ul class="footer__list">
+                            <li class = "footer__list-item footer__list-item1">
+                                <i class="fa-solid fa-location-dot "></i>
+                                Địa chỉ:
+                                <a href="https://goo.gl/maps/QtUxzmiuw46MuMVL7" class="footer__list-item-link ">Quận 7, TPHCM.</a>
+                            </li>
+                            <li class = "footer__list-item footer__list-item1">
+                                <i class="fa-solid fa-phone"></i>Số điện thoại:
+                                <a href="" class="footer__list-item-link">12345678910</a>
+                            </li>
+                            <li class = "footer__list-item footer__list-item1">
+                                <i class="fa-solid fa-paper-plane"></i>Email:
+                                <a href="" class="footer__list-item-link">CyberStore@gmail.com</a>
+                            </li>
 
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Hướng dẫn</h3>
+                            <ul class="footer__list">
+                                <li class = "footer__list-item">
+                                    <a href="" class="footer__list-item-link">Hướng dẫn mua hàng và thanh toán</a>
+                                </li>
+                                <li class = "footer__list-item">
+                                    <a href="" class="footer__list-item-link">Hướng dẫn sử dụng</a>
+                                </li>
+                                <li class = "footer__list-item">
+                                    <a href="" class="footer__list-item-link">Kiểm tra đơn hàng</a>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Chính sách</h3>
+                        <ul class="footer__list">
+                            <ul class="footer__list">
+                                <li class = "footer__list-item">
+                                    <a href="" class="footer__list-item-link">Chính sách Group by</a>
+                                </li>
+                                <li class = "footer__list-item">
+                                    <a href="" class="footer__list-item-link">Chính sách bảo hành</a>
+                                </li>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Đăng ký nhận tin</h3>
+                        <ul class="footer__list">
+                            <li class = "footer__list-item">
+                                <p href="" class="footer__text">Bạn muốn nhận khuyến mãi đặc biệt? Nhấn đăng ký ngay</>
+                            </li>
+                            <li class = "footer__list-item">
+                                <a href="" class="footer__list-item-link">
+                                    <i class="footer__icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class = "footer__list-item">
+                                <a href="" class="footer__list-item-link">
+                                    <i class="footer__icon fa-brands fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class = "footer__list-item">
+                                <a href="" class="footer__list-item-link">
+                                    <i class="footer__icon fa-brands fa-tiktok"></i>
+                                    Tiktok
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                </div>
+                    <div class="grid__row-b">
+                        <p class="footer__text footer__text-center">©2024 Bản quyền thuộc về Cyber Store</p>
+                    </div>
             </div>
-            
-
-     
         </footer>
+        <!-- hehehe -->
     </div>
 
 </body>
