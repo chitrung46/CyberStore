@@ -15,14 +15,33 @@
 
 <body>
 
-    <style>
+    <!--
 
-        #wrapper {
-            max-width: 960px;
-            margin: 0 auto;
-        }
+   TÍNH NĂNG RESPONSIVE, KÉO RESIZE TRÌNH DUYỆT WEB ĐỂ XEM KẾT QUẢ
+    
+    GIẢI THÍCH:
+    
+    - MÀN HÌNH DESKTOP LỚN: 12 CỘT
+    - MÀN HÌNH DESKTOP: 6 CỘT
+    - MÀN HÌNH MÁY TÍNH BẢNG: 3 CỘT
+    - MÀN HÌNH ĐIỆN THOẠI: 2 CỘT
 
-        
+    xs = extra small = màn hình điện thoại nhỏ
+    sm = small = màn hình máy tính bảng hoặc điện thoại lớn
+    md = medium = màn hình desktop nhỏ hoặc tablet lớn
+    lg = large = màn hình máy tính độ phân giải cao
+    xl = extra large = màn hình máy tính độ phân giải cao nhất
+    
+
+    col-xs-6 có nghĩa là nếu chạy trên màn hình điện thoại (xs) thì cột này có độ rộng là 6/12 (nữa màn hình ==> 2 cột / dòng)
+    col-sm-4 có nghĩa là nếu chạy trên màn hình máy tính bảng (sm) thì cột này có độ rộng là 4/12 (1/3 màn hình ==> có 3 cột/dòng)
+    col-md-2 có nghĩa là nếu chạy trên màn hình máy tính nhỏ (md) thì cột này có độ rộng là 2/12 (1/6 màn hình ==> có 6 cột/dòng)
+    col-lg-1 có nghĩa là nếu chạy trên màn hình máy tính phân giải cao (lg) thì cột này có độ rộng là 1/12 (1/12 màn hình ==> có 12 cột/dòng)
+
+
+ -->
+
+    <style>        
 
         /*Smart phone nhỏ*/
         @media screen and (min-width: 240px){
@@ -44,28 +63,54 @@
         @media screen and (min-width: 1024px){
 
         }
+
     </style>
+
     <div class="wrapper">
 
-        <div class="top-banner position-raletive" style="background-color: #61317F;">Sologan nhóm
-            <!-- phan nay la banner nam phia tren header -->
+        <div class="top-banner position-raletive" style="background-color: #61317F;">
+            Key of Word - The World of Keyboard
+
         </div>
 
         <header class="header">
+
             <div class="container">
+                <div class="sidebar" id="sidebar">
+                    <div class="user">
+                        
+                    </div>
+
+                    <div class="wrap-sidebar">
+                        <nav class="sidebar-nav">
+                            <ul class="sidebar-item">
+                                <li><a class="sidebar-link" href="HomePage.html">Trang chủ</a></li>
+                                <li><a class="sidebar-link" href="">Giới thiệu</a></li>
+                                <li><a class="sidebar-link" href="">Sản phẩm</a></li>
+                                <li><a class="sidebar-link" href="">Liên hệ</a></li>
+                                <li><a class="sidebar-link" href="">Đăng ký</a></li>
+                                <li><a class="sidebar-link" href="">Đăng nhập</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                </div>
+                <div class="sidebar-overlay" id="sidebar-overlay" onclick="hideSidebar()"></div>
+
+                
                 <nav class="header__navbar">
                     
-                    <ul class="sidebar">
-                        <li><a href="HomePage.html">Trang chủ</a></li>
-                        <li><a href="">Giới thiệu</a></li>
-                        <li><a href="">Sản phẩm</a></li>
-                        <li><a href="">Liên hệ</a></li>
-                        <li><a href="">Đăng ký</a></li>
-                        <li><a href="">Đăng nhập</a></li>
-                    </ul>
-                    
-                    <div class="header__navbar-left">
+                    <div class="menu-bar">
+                        <a href="#" onclick="event.preventDefault(); ">
+                            <i class="fa-solid fa-bars large-icon" id="sidebar-toggle" onclick="opensidebar()"></i>
+                        </a>
+                        
+                    </div>
+
+                    <div class="header__navbar-left ">
                         <a href="" id="logo"> <img src=".\\img\LogoCyBer1.png" alt="CyberStore.vn"></a>
+                        <h3  class="header__logo">CyBer<br>StoRe</h3>  
+                        <!-- /* Đổi kiểu cho LOGO*/ -->
                     </div>
                     
                     <div class="header__navbar-center">
@@ -105,23 +150,101 @@
                     </div>
     
                     <div class="header__navbar-right">
-                        <ul class="nav justify-content-end">
+                        <ul class="nav ">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <i class="fa-solid fa-magnifying-glass" ></i>
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item user-cart">
                                 <a class="nav-link" href="#">
-                                    <i class="fa-regular fa-user"></i>
+                                    <i class="fa-regular fa-user " style=" padding-top: 1px"></i>
                                 </a>
                             </li>
     
-                            <li class="nav-item">
-                                
+                            <li class="nav-item shopping__cart">  
                                 <a class="nav-link" href="#">
-                                    <img src=".\\img\shopping.svg" alt="Giỏ hàng">
+                                    <img src=".\\img\shopping.svg " alt="Giỏ hàng">
+
+                                    <span class="shopping__cart-notice" id="num-products">3</span> 
+
+                                    
                                 </a>
+                                <!--Không có SP: shopping__cart-list--no-cart  -->
+                                <div class="shopping__cart-list ">
+                                    <img src=".\\img\empty-cart.svg" alt="" class="shopping__cart-list--no-cart-img">
+                                    <p class="shopping__cart-list--no-cart-msg">
+                                        Hổng cóa sản phẩm :<<<
+                                    </p>
+
+                                    <h4 class="shopping__cart-heading">Sản phẩm đã thêm</h4>
+                                    <ul class="shopping__cart-list-item">
+                                        
+                                        <li class="shopping__cart-item"> 
+                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893" alt="" class="shopping__cart-img">
+                                            <div class="shopping__cart-item-info">
+                                                <div class="shopping__cart-item-head">
+                                                    <h5 class="shopping__cart-item-name">Mousepad siu cuti</h5>
+                                                    <div class="shopping__cart-item-price-wrap">
+                                                        <span class="shopping__cart-item-price">500.000đ</span>
+                                                        <span class="shopping__cart-item-multiply">x</span>
+                                                        <span class="shopping__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="shopping__cart-item-body">
+                                                    <span class="shopping__cart-item-description">
+                                                        Phân loại: Mousepad
+                                                    </span>
+                                                    <span class="shopping__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="shopping__cart-item"> 
+                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893" alt="" class="shopping__cart-img">
+                                            <div class="shopping__cart-item-info">
+                                                <div class="shopping__cart-item-head">
+                                                    <h5 class="shopping__cart-item-name">Mousepad siu cuti</h5>
+                                                    <div class="shopping__cart-item-price-wrap">
+                                                        <span class="shopping__cart-item-price">500.000đ</span>
+                                                        <span class="shopping__cart-item-multiply">x</span>
+                                                        <span class="shopping__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="shopping__cart-item-body">
+                                                    <span class="shopping__cart-item-description">
+                                                        Phân loại: Mousepad
+                                                    </span>
+                                                    <span class="shopping__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="shopping__cart-item"> 
+                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893" alt="" class="shopping__cart-img">
+                                            <div class="shopping__cart-item-info">
+                                                <div class="shopping__cart-item-head">
+                                                    <h5 class="shopping__cart-item-name">Mousepad siu cuti</h5>
+                                                    <div class="shopping__cart-item-price-wrap">
+                                                        <span class="shopping__cart-item-price">500.000đ</span>
+                                                        <span class="shopping__cart-item-multiply">x</span>
+                                                        <span class="shopping__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="shopping__cart-item-body">
+                                                    <span class="shopping__cart-item-description">
+                                                        Phân loại: Mousepad
+                                                    </span>
+                                                    <span class="shopping__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
                        
@@ -133,9 +256,8 @@
         </header>
 
         <section class="section section_1">
-            <div class=" section section_1-quickView">
+            <!-- <div class=" section section_1-quickView">
                 <div class=" container borde-0">
-
                     <div class="heading-bar">
     
                     </div>
@@ -148,6 +270,43 @@
     
                     </div>
                 </div>
+            </div> -->
+
+            <!-- SẢN PHẨM -->
+            <div class="grid">
+                <div class="grid__row ">
+                    <div class="grid__column-12">
+                        <div class="home__product">
+                            <div class="grid__row">
+                                <div class="grid__columm-2-4">
+                                    <!-- Product item 1 -->
+                                    <div class="home__product-item">
+                                        <div class="home__product-item-img" style="background-image: url(https://bizweb.dktcdn.net/thumb/1024x1024/100/484/752/products/31711287543051.jpg?v=1711545667107);"></div>
+                                        <span class="home__product-item-vendor">WIRED IN</span><br>
+                                        <span class="home__product-item-name">
+                                            <a class="product__link-item" href="https://mokbstore.com/gb-protagonist-case" title="[GB] Protagonist Case">[GB] Protagonist Case</a>"
+                                        </span>
+                                        <div class="home__product-item-price">
+                                            <span class="home__product-item-price__old">2.500.000</span><br>
+                                            <span class="home__product-item-price__curr">2.100.000</span>
+                                        </div>
+                                        <div class="home__product-item-box">
+                                            <div data-variant-id="113007537" class="color-dot selected custom-cursor-on-hover" style="background: url(//bizweb.dktcdn.net/thumb/thumb/100/484/752/products/caseblack1711377794255.jpg?v=1711545667107) no-repeat center center; background-size: cover">
+                                                <span class="color-name custom-cursor-on-hover">Black</span>
+                                                <a href="/gb-protagonist-case" data-handle="gb-protagonist-case" class="color-more quick-view">
+                                                    +8
+                                                    <span class="action-name">Xem thêm 8 màu khác</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------->
+                
             </div>
         </section>
 
@@ -193,6 +352,27 @@
             
         </section>
 
+        <section class="section section_4">
+            <section class="section_product_top section_video">
+                <div class=" container borde-0">
+
+                    <div class="heading-bar">
+    
+                    </div>
+    
+                    <div class="">
+    
+                    </div>
+    
+                    <div>
+    
+                    </div>
+                </div>
+
+            </section>
+            
+        </section>
+
         <section class="section section_5">
             <section class="section_product_top section_typeProduct">
                 <div class=" container borde-0">
@@ -214,34 +394,16 @@
             
         </section>
 
-        <section class="section section_5">
-            <section class="section_product_top section_video">
-                <div class=" container borde-0">
-
-                    <div class="heading-bar">
-    
-                    </div>
-    
-                    <div class="">
-    
-                    </div>
-    
-                    <div>
-    
-                    </div>
-                </div>
-
-            </section>
-            
-        </section>
+        
 
         <!-- KThen viết nè -->
         <footer class="footer">
             <div class="grid">
                 <div class="grid__row grid__row-item">
                     <div class="grid__column-2-4">
-                        <a href="" id="logo" class="footer__logo"> <img src=".\\img\logo.jpg" alt="CyberStore.vn"></a>
-                        <h3 class="footer__heading">CYBER STORE</h3>
+                        <a href="" id="logo" class="footer__logo"> <img src=".\\img\LogoCyBer1.png" alt="CyberStore.vn"></a>
+                        <h3 class="footer__heading footer__heading-logo">CYBER<br>STORE</h3> 
+                        <!-- /* Đổi kiểu cho LOGO*/ -->
                         <ul class="footer__list">
                             <li class = "footer__list-item footer__list-item1">
                                 <i class="fa-solid fa-location-dot "></i>
@@ -319,6 +481,9 @@
         </footer>
         <!-- hehehe -->
     </div>
+
+
+    <script src=".\\asset\scrip.js"></script>
 
 </body>
 

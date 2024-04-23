@@ -3,31 +3,52 @@
     padding:0;
     
 }
+
 .top-banner {
     height:40px;
     line-height:40px;
-    font-size:12px;
+    font-size:14px;/*Sửa font lại nữa nè*/
     color:white;
     text-align: center;
     white-space: nowrap;
     text-transform:uppercase;
+    background: linear-gradient(#136a8a,#267871); /*Sửa màu lại nữa nè*/
+}
+/*KThen viết nữa nè*/
+body{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    min-width: 100% ;
 }
 
-body{
-    min-height: 100vh;
+.wrapper {
+    width: 100%; /* Chiều rộng của wrapper là 100% của viewport */
+    box-sizing: border-box; /* Tính cả padding và border vào trong chiều rộng */
 }
+
+/* =================================================================*/
 
 .container {
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 8px;
+    padding: 5px;
+    margin-right: 15px;
+    margin-left: 10px ;
+    min-width: 100%;
+}
+
+.header {
+    display: flex;
+    background-color: #ffffff; /* Màu đen đậm cho header */
+    color: white; /* Màu chữ trắng */
+    padding: 0 10px 0 10px; /* Khoảng cách giữa nội dung và viền     thứ tự top-right-bottom-left*/  
+    align-items: center;
+    width: 100%;
+    height: 65px;
 }
 
 .header__navbar{
     display: flex;
     max-width: 100%;
-    margin: 0;
-    padding: 0;
     align-items: center;
     justify-content: space-between;
     justify-items: center;
@@ -38,25 +59,34 @@ header nav ul{
     width: 100%;
     display: flex;
     list-style: none;
+    justify-items: center;
     align-items: center;
 }
 
 .nav-item {
     display: inline-block;
-    margin-right: 10px; /* Khoảng cách giữa các mục */
+    margin-right: 5px; /* Khoảng cách giữa các mục */
+    margin-left: 5px;
+    justify-content: center;
 }
 
 .nav-link {
+    display: flex;  
     text-decoration: none;
+    min-height: 30px auto;
     color: #000; /* Màu chữ */
     position: relative; /* Định vị tương đối để dễ dàng điều khiển các phần tử con */
+    padding: 0 7px;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-link::after {
+    
     content: '';
     position: absolute;
-    left: 0;
-    bottom: -2px; /* Độ dày của gạch chân */
+    left: 7px;
+    bottom: -1.5px; /* Độ dày của gạch chân */
     width: 0; /* Độ dài ban đầu là 0 */
     height: 3px; /* Độ dày của gạch chân */
     background-color: #f00; /* Màu gạch chân */
@@ -67,12 +97,23 @@ header nav ul{
     width: 100%; /* Độ dài của gạch chân khi di chuột qua */
 }
 
-.header__navbar .header__navbar-right ul{
+
+.header__navbar .header__navbar-right{
     display: flex;
-    justify-content: flex-end; /* Căn phần tử con sang bên phải */
-    margin-left: 30px; /* Điều chỉnh margin nếu cần */
-    margin-right: 0 auto;
+    align-items: center;
+    justify-items: center;
+    margin-left: auto; /* Điều chỉnh margin nếu cần */
+    margin-right: 0;
     position: relative;
+}
+
+.header__navbar-right a {
+    display: flex;
+    align-items: center; /* Vertically center items */
+}
+
+.header__navbar-right ul i {
+    font-size: 20px;
 }
 
 .header__navbar .header__navbar-center ul{
@@ -80,7 +121,7 @@ header nav ul{
     margin-right: 20px;
     padding: 0 15px;
     position: relative;
-    justify-content: center
+    justify-content: center;
 }
 
 
@@ -90,6 +131,7 @@ header nav ul{
     margin-right: auto; /* Di chuyển sang bên trái */
     padding-left: 0;    /* Cho phép phần tử này mở rộng để lấp đầy không gian còn lại */
 }
+
 
 #logo{
     margin-left: auto;
@@ -109,26 +151,62 @@ header nav li a{
     height: 100%;
     color: rgb(0, 0, 0);
     display: flex;
-    padding: 10px 15px;
+    padding: 10px 10px;
     text-decoration: none;
     list-style: none;
 }
 
-.header {
-    background-color: #ffffff; /* Màu đen đậm cho header */
-    color: white; /* Màu chữ trắng */
-    padding: 10px 0; /* Khoảng cách giữa nội dung và viền */
-    margin: 0px 5px 0px;
-    align-items: center;
-}
+
 
 /* SIDEBAR */
-header nav li:first-child{
-    margin-right: auto;
+
+.menu-bar{
+    display: none;
+    padding-right: 10px;
+    padding-left: 0 auto;
+    
 }
 
-.header__navbar .sidebar{
+.large-icon {
+    font-size: 24px; /* Đặt kích thước font là 24px hoặc bất kỳ kích thước nào bạn muốn */
+}
+
+.sidebar { 
     position: fixed;
+    top: 0;
+    left: -250px;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    overflow-x: visible;
+    transition: 0.3s;
+}
+
+.show {
+    display: flex !important;
+}
+
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.sidebar .user{
+    display: flex;
+    position: absolute;
+    background-color: #f00;
+}
+
+.wrap-sidebar .sidebar-item {
+    display: flex;
+    position: absolute;
     left: 0;
     top: 0;
     right: 0;
@@ -138,20 +216,197 @@ header nav li:first-child{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    background-color: #b149c8;
-
+    background-color: #ffffff;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.sidebar a{
+.sidebar-item li{
+    width: 100%;
+}
+
+.sidebar-item a{
     text-decoration: none;
     display: block;
+    width: 100%;
+    color: #9a27bd;
+    font-weight:600;
+
 }
 
-.sidebar a:hover{
+.sidebar-item a:hover{
     background-color: #f2bcf2;
     
 }
 
+
+/* GIỎ HÀNG */
+
+.shopping__cart-list{
+    position: absolute;
+    top: calc(100% + 20px);
+    right: 2px;
+    background-color: white;
+    width: 400px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3.125rem 0 #e9e6e6;
+    display: none;
+    animation: fadeIn ease-in 0.2s;
+    cursor: default;
+}
+
+.shopping__cart-list::after{
+    content: "";
+    position: absolute;
+    right: 10px;
+    top:-32px;
+    border-width: 16px 20px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+
+}
+
+
+.shopping__cart-list--no-cart{
+    padding: 24px 0;
+}
+
+/* Ko có SP */
+.shopping__cart-list--no-cart .shopping__cart-list--no-cart-img,
+.shopping__cart-list--no-cart .shopping__cart-list--no-cart-msg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shopping__cart-list--no-cart-img{
+    width: 40%;
+    display: none;
+}
+
+.shopping__cart-list--no-cart-msg{
+    display: none;
+    font-size: 1.4rem;
+    margin-top: 14px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+.shopping__cart:hover .shopping__cart-list{
+    display: block;
+}
+
+/* CÓ SP */
+.shopping__cart-notice{
+    position: absolute;
+    padding: 3px 6px;
+    background-color: #3f9790;
+    color: white;
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+    border-radius: 50%;
+    border: 2px solid  white;
+    top: 5px; /* Đẩy lên trên */
+    right: -10px; /* Nằm bên phải */
+    z-index: 1; /* Đặt z-index để nó hiển thị trên các phần tử khác */
+}
+
+.shopping__cart-heading{
+    margin: 8px 0 8px 12px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #585656;
+}
+
+.shopping__cart-list-item{
+    padding-left: 0;
+    list-style: none;
+    display: block;
+}
+
+.shopping__cart-item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.shopping__cart-item:hover{
+    background-color: #f9f5f5b3;
+
+}
+
+
+.shopping__cart-img{
+    width: 42px;
+    height: 42px;
+    margin: 12px;
+    border: 1px solid #e6e1e1b3;
+}
+
+.shopping__cart-item-info{
+    width: 100%;
+    margin-right: 12px;
+}
+
+.shopping__cart-item-head{
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    justify-content: space-between;
+}
+
+.shopping__cart-item-name{
+    font-size: 1rem;
+    font-weight: 450;
+    color: black;
+    margin: 0;
+}
+
+.shopping__cart-item-price{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #267871;
+}
+
+.shopping__cart-item-multiply{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0.4px  ;
+    color: #636060;
+    
+}
+.shopping__cart-item-qnt{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.4px;
+    color: #636060;
+}
+
+.shopping__cart-item-body{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.shopping__cart-item-description{
+    color: #3f9790;
+    font-size: 1.1rem;
+    font-weight: 400;
+
+}
+
+.shopping__cart-item-remove{
+    color: #636060;
+    font-size: 1.1rem;
+}
+
+.shopping__cart-item-remove:hover{
+    color: #c43f3f;
+    cursor: pointer;
+}
 
 /* SUB MENU */
 
@@ -171,6 +426,7 @@ header nav li:first-child{
     position: relative;
     display: inline-block;
     
+    
 }
 
 .header__navbar-center ul.sub-menu {
@@ -180,6 +436,7 @@ header nav li:first-child{
     padding: 10px 4px;
     list-style: none;
     z-index: 1;
+    top: calc(100% + 3px); /* Đặt submenu ở dưới mục cha */
 }
 
 .header__navbar-center ul.sub-menu a {
@@ -200,6 +457,22 @@ header nav li:first-child{
     background-color:  #f2bcf2;
 }
 
+
+/* KThen viết */
+.header__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #267871;
+    font-family: 'Changa One', sans-serif;
+    font-style:italic;
+    font-size:24px; /* Kích thước font chữ lớn hơn */
+    font-weight:bold; /* Độ đậm của font chữ (700 tương đương với font-weight: bold;) */
+    text-decoration: none;
+    text-shadow: 1px 1px 4px #136a8a; 
+}
+/* ---------------------------------------------------------------------------- */
+
 .dropdown:hover .sub-menu {
     display:  block;
 }
@@ -209,26 +482,37 @@ header nav li:first-child{
 
 }
 
-.section {
-    padding: 20px 0; /* Khoảng cách giữa nội dung và viền */
-    text-align: center; /* Căn giữa nội dung */
-}
+
 
 .section_1 {
     background-color: burlywood; /* Màu xám nhạt cho section 1 */
+    display: block;
 }
 
 .section_2 {
     background-color: green; /* Màu xám cho section 2 */
+    display: block;
 }
 
 .section_3 {
     background-color: blue; /* Màu xám nhạt cho section 3 */
+    display: block;
+}
+
+.section_4 {
+    background-color:rgb(0, 255, 85);
+    display: block;
 }
 
 .section_5 {
     background-color:red; /* Màu xám cho section 5 */
+    display: block;
 }
+
+
+
+
+
 
 
 
@@ -268,6 +552,7 @@ header nav li:first-child{
     justify-content: space-between;
     text-align: left;
 }
+
 .footer {
     background-color: #2b2a2a; /* Màu đen đậm cho footer */
     color: lightgray; /* Màu chữ trắng */
@@ -280,6 +565,7 @@ header nav li:first-child{
     padding-top:75px;
     padding-bottom: 25px;
 }
+
 .footer__list{
     list-style: none;
     padding-left:0;
@@ -296,6 +582,21 @@ header nav li:first-child{
     text-transform: uppercase;
     color:#dedddd;
 }
+
+.footer__heading-logo{
+    font-family: 'Changa One', sans-serif;
+    font-style:italic;
+    display:flex;
+    align-items:center;
+    margin: -1px 20px 20px 10px;
+    justify-content: center;
+    text-shadow: 1px 1px 4px #136a8a; 
+    font-weight: bold;
+    color:#267871;
+    font-size: 30px;
+
+}
+
 .footer__list-item-link{
     font-size:14px;
     color: #bfbcbc;
@@ -327,3 +628,68 @@ header nav li:first-child{
     display:inline-block;
 }
 /* KThen */
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* Responsive Styles */
+/* Small devices (mobile) */
+@media screen and (max-width: 768px) {
+    .menu-bar {
+        display: flex;
+        font-size: 24px;
+    }
+
+    .header__navbar-center{
+        display: none;
+    }
+
+    .sidebar-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 150;
+    }
+
+    .sidebar .user {
+        margin: 20px auto;
+    }
+
+    .sidebar-nav .sidebar-item li {
+        margin: 15px 0;
+    }
+
+    .header__navbar {
+        justify-content: space-between;
+    }
+
+    .header__navbar-left img {
+        max-width: 80px;
+    }
+
+    .header__navbar-left #storeName {
+        display: none;
+    }
+}
+
+/* Medium devices (tablets) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .menu-bar {
+        display: flex;
+        font-size: 28px;
+    }
+
+    .header__navbar-left img {
+        max-width: 100px;
+    }
+
+    /* Ẩn phần header__navbar-center và header__navbar-right */
+    .header__navbar-center {
+        display: none;
+    }
+}
+
