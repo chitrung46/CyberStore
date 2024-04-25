@@ -9,8 +9,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="HomePage.css">
+    <link rel="stylesheet" href=".\asset\HomePage.css">
+    <link rel="stylesheet" href=".\asset\Product-style.css">
+    <link rel="stylesheet" href=".\asset\ProductInfo-style.css">
+    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset\_embeb.css">
 </head>
 
 <body>
@@ -41,29 +46,28 @@
 
  -->
 
-    <style>        
-
+    <style>
         /*Smart phone nhỏ*/
-        @media screen and (min-width: 240px){
+        @media screen and (min-width: 240px) {}
 
-        }
         /*Iphone(480 x 640)*/
-        @media screen and (min-width: 320px){
+        @media screen and (min-width: 320px) {}
 
-        }
         /*Tablet nhỏ(480 x 640)*/
-        @media screen and (min-width: 480px){
+        @media screen and (min-width: 480px) {}
 
-        }
         /*Ipad dọc(768 x 1024)*/
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: 768px) {}
 
+        @media (max-width:991px) {
+            section {
+                margin-bottom: 25px
+            }
         }
+
         /*Ipad ngang(1024 x 768)*/
-        @media screen and (min-width: 1024px){
-
-        }
-
+        @media screen and (min-width: 1024px) {}
+        
     </style>
 
     <div class="wrapper">
@@ -78,7 +82,7 @@
             <div class="container">
                 <div class="sidebar" id="sidebar">
                     <div class="user">
-                        
+
                     </div>
 
                     <div class="wrap-sidebar">
@@ -93,27 +97,27 @@
                             </ul>
                         </nav>
                     </div>
-                    
+
                 </div>
                 <div class="sidebar-overlay" id="sidebar-overlay" onclick="hideSidebar()"></div>
 
-                
+
                 <nav class="header__navbar">
-                    
+
                     <div class="menu-bar">
                         <a href="#" onclick="event.preventDefault(); ">
                             <i class="fa-solid fa-bars large-icon" id="sidebar-toggle" onclick="opensidebar()"></i>
                         </a>
-                        
+
                     </div>
 
                     <div class="header__navbar-left ">
                         <a href="" id="logo"> <img src=".\\img\LogoCyBer1.png" alt="CyberStore.vn"></a>
-                        <h3  class="header__logo">CyBer<br>StoRe</h3>  
+                        <h3 class="header__logo">CyBer<br>StoRe</h3>
                         <!-- /* Đổi kiểu cho LOGO*/ -->
                     </div>
-                    
-                    <div class="header__navbar-center">
+
+                    <div class="header__navbar-center ">
                         <ul class="nav justify-content-center">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Trang chủ</a>
@@ -123,7 +127,7 @@
                                 <a class="nav-link" href="#">Group Buy</a>
                                 <ul class="sub-menu gropuBuy">
                                     <li><a href="">Live GB</a></li>
-                                    <li><a href="">Ended GB</a></li>          
+                                    <li><a href="">Ended GB</a></li>
                                 </ul>
                             </li>
 
@@ -146,14 +150,14 @@
                                 <a class="nav-link" href="#">Liên hệ</a>
                             </li>
                         </ul>
-                  
+
                     </div>
-    
-                    <div class="header__navbar-right">
+
+                    <div class="header__navbar-right ">
                         <ul class="nav ">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">
-                                    <i class="fa-solid fa-magnifying-glass" ></i>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
                                 </a>
                             </li>
                             <li class="nav-item user-cart">
@@ -161,27 +165,24 @@
                                     <i class="fa-regular fa-user " style=" padding-top: 1px"></i>
                                 </a>
                             </li>
-    
-                            <li class="nav-item shopping__cart">  
+
+                            <li class="nav-item shopping__cart">
                                 <a class="nav-link" href="#">
                                     <img src=".\\img\shopping.svg " alt="Giỏ hàng">
 
-                                    <span class="shopping__cart-notice" id="num-products">3</span> 
+                                    <span class="shopping__cart-notice" id="num-products">3</span>
 
-                                    
                                 </a>
                                 <!--Không có SP: shopping__cart-list--no-cart  -->
                                 <div class="shopping__cart-list ">
                                     <img src=".\\img\empty-cart.svg" alt="" class="shopping__cart-list--no-cart-img">
                                     <p class="shopping__cart-list--no-cart-msg">
-                                        Hổng cóa sản phẩm :<<<
-                                    </p>
+                                        Hổng cóa sản phẩm :<<< </p>
 
                                     <h4 class="shopping__cart-heading">Sản phẩm đã thêm</h4>
                                     <ul class="shopping__cart-list-item">
-                                        
-                                        <li class="shopping__cart-item"> 
-                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893" alt="" class="shopping__cart-img">
+                                        <li class="shopping__cart-item">
+                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"alt="" class="shopping__cart-img">
                                             <div class="shopping__cart-item-info">
                                                 <div class="shopping__cart-item-head">
                                                     <h5 class="shopping__cart-item-name">Mousepad siu cuti</h5>
@@ -191,7 +192,7 @@
                                                         <span class="shopping__cart-item-qnt">2</span>
                                                     </div>
                                                 </div>
-    
+                                    
                                                 <div class="shopping__cart-item-body">
                                                     <span class="shopping__cart-item-description">
                                                         Phân loại: Mousepad
@@ -200,9 +201,10 @@
                                                 </div>
                                             </div>
                                         </li>
-
-                                        <li class="shopping__cart-item"> 
-                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893" alt="" class="shopping__cart-img">
+                                    
+                                        <li class="shopping__cart-item">
+                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
+                                                alt="" class="shopping__cart-img">
                                             <div class="shopping__cart-item-info">
                                                 <div class="shopping__cart-item-head">
                                                     <h5 class="shopping__cart-item-name">Mousepad siu cuti</h5>
@@ -212,7 +214,7 @@
                                                         <span class="shopping__cart-item-qnt">2</span>
                                                     </div>
                                                 </div>
-    
+                                    
                                                 <div class="shopping__cart-item-body">
                                                     <span class="shopping__cart-item-description">
                                                         Phân loại: Mousepad
@@ -221,9 +223,10 @@
                                                 </div>
                                             </div>
                                         </li>
-
-                                        <li class="shopping__cart-item"> 
-                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893" alt="" class="shopping__cart-img">
+                                    
+                                        <li class="shopping__cart-item">
+                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
+                                                alt="" class="shopping__cart-img">
                                             <div class="shopping__cart-item-info">
                                                 <div class="shopping__cart-item-head">
                                                     <h5 class="shopping__cart-item-name">Mousepad siu cuti</h5>
@@ -233,7 +236,7 @@
                                                         <span class="shopping__cart-item-qnt">2</span>
                                                     </div>
                                                 </div>
-    
+                                    
                                                 <div class="shopping__cart-item-body">
                                                     <span class="shopping__cart-item-description">
                                                         Phân loại: Mousepad
@@ -241,72 +244,44 @@
                                                     <span class="shopping__cart-item-remove">Xóa</span>
                                                 </div>
                                             </div>
-                                        </li>
-                                        
+                                        </li> 
                                     </ul>
                                 </div>
                             </li>
                         </ul>
-                       
+
                     </div>
 
                 </nav>
             </div>
-            
+
         </header>
 
-        <section class="section section_1">
-            <!-- <div class=" section section_1-quickView">
-                <div class=" container borde-0">
-                    <div class="heading-bar">
-    
-                    </div>
-    
-                    <div class="">
-    
-                    </div>
-    
-                    <div>
-    
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- SẢN PHẨM -->
-            <div class="grid">
-                <div class="grid__row ">
-                    <div class="grid__column-12">
-                        <div class="home__product">
-                            <div class="grid__row">
-                                <div class="grid__columm-2-4">
-                                    <!-- Product item 1 -->
-                                    <div class="home__product-item">
-                                        <div class="home__product-item-img" style="background-image: url(https://bizweb.dktcdn.net/thumb/1024x1024/100/484/752/products/31711287543051.jpg?v=1711545667107);"></div>
-                                        <span class="home__product-item-vendor">WIRED IN</span><br>
-                                        <span class="home__product-item-name">
-                                            <a class="product__link-item" href="https://mokbstore.com/gb-protagonist-case" title="[GB] Protagonist Case">[GB] Protagonist Case</a>"
-                                        </span>
-                                        <div class="home__product-item-price">
-                                            <span class="home__product-item-price__old">2.500.000</span><br>
-                                            <span class="home__product-item-price__curr">2.100.000</span>
-                                        </div>
-                                        <div class="home__product-item-box">
-                                            <div data-variant-id="113007537" class="color-dot selected custom-cursor-on-hover" style="background: url(//bizweb.dktcdn.net/thumb/thumb/100/484/752/products/caseblack1711377794255.jpg?v=1711545667107) no-repeat center center; background-size: cover">
-                                                <span class="color-name custom-cursor-on-hover">Black</span>
-                                                <a href="/gb-protagonist-case" data-handle="gb-protagonist-case" class="color-more quick-view">
-                                                    +8
-                                                    <span class="action-name">Xem thêm 8 màu khác</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+        <section class="section awe-section-1">
+            <div class="section_slider clearfix">
+                <div class=" container py-2 ">
+                    <div class="home-slider slick-initialized slick-slider">
+                        <div aria-live="polite" class="slick-list draggable">
+                            <div class="slick-track" style="opacity: 1; width: 518px;" role="listbox">
+                                <div class="items text-center slick-slide slick-current slick-active" data-color=""
+                                    style="width: 518px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"
+                                    data-slick-index="0" aria-hidden="false" tabindex="-1" role="option"
+                                    aria-describedby="slick-slide00">
+                                    <a href="/protagonist" title="Protagonist keyboard kit" tabindex="0">
+                                        <picture>
+                                            <source media="(max-width: 480px)"
+                                                srcset="//bizweb.dktcdn.net/thumb/large/100/484/752/themes/920128/assets/slider_2.jpg?1713867899044">
+                                            <img class=" img-fluid mx-auto" decoding="async"
+                                                src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/slider_2.jpg?1713867899044"
+                                                width="1920" height="775" alt="Protagonist keyboard kit">
+                                        </picture>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!------------------------------------------------------------->
-                
+
             </div>
         </section>
 
@@ -315,20 +290,64 @@
                 <div class=" container borde-0">
 
                     <div class="heading-bar">
-    
+
                     </div>
-    
+
                     <div class="">
-    
+
                     </div>
-    
+
                     <div>
-    
+
                     </div>
                 </div>
 
+
+                <!-- SẢN PHẨM -->
+                <div class="grid">
+                    <div class="grid__row ">
+                        <div class="grid__column-12">
+                            <div class="home__product">
+                                <div class="grid__row">
+                                    <div class="grid__columm-2-4">
+                                        <!-- Product item 1 -->
+                                        <div class="home__product-item">
+                                            <div class="home__product-item-img"
+                                                style="background-image: url(https://bizweb.dktcdn.net/thumb/1024x1024/100/484/752/products/31711287543051.jpg?v=1711545667107);">
+                                            </div>
+                                            <span class="home__product-item-vendor">WIRED IN</span><br>
+                                            <span class="home__product-item-name">
+                                                <a class="product__link-item"
+                                                    href="https://mokbstore.com/gb-protagonist-case"
+                                                    title="[GB] Protagonist Case">[GB] Protagonist Case</a>"
+                                            </span>
+                                            <div class="home__product-item-price">
+                                                <span class="home__product-item-price__old">2.500.000</span><br>
+                                                <span class="home__product-item-price__curr">2.100.000</span>
+                                            </div>
+                                            <div class="home__product-item-box">
+                                                <div data-variant-id="113007537"
+                                                    class="color-dot selected custom-cursor-on-hover"
+                                                    style="background: url(//bizweb.dktcdn.net/thumb/thumb/100/484/752/products/caseblack1711377794255.jpg?v=1711545667107) no-repeat center center; background-size: cover">
+                                                    <span class="color-name custom-cursor-on-hover">Black</span>
+                                                    <a href="/gb-protagonist-case" data-handle="gb-protagonist-case"
+                                                        class="color-more quick-view">
+                                                        +8
+                                                        <span class="action-name">Xem thêm 8 màu khác</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------------------------------------->
+
+
             </section>
-            
+
         </section>
 
         <section class="section section_3">
@@ -336,20 +355,20 @@
                 <div class=" container borde-0">
 
                     <div class="heading-bar">
-    
+
                     </div>
-    
+
                     <div class="">
-    
+
                     </div>
-    
+
                     <div>
-    
+
                     </div>
                 </div>
 
             </section>
-            
+
         </section>
 
         <section class="section section_4">
@@ -357,20 +376,20 @@
                 <div class=" container borde-0">
 
                     <div class="heading-bar">
-    
+
                     </div>
-    
+
                     <div class="">
-    
+
                     </div>
-    
+
                     <div>
-    
+
                     </div>
                 </div>
 
             </section>
-            
+
         </section>
 
         <section class="section section_5">
@@ -378,43 +397,45 @@
                 <div class=" container borde-0">
 
                     <div class="heading-bar">
-    
+
                     </div>
-    
+
                     <div class="">
-    
+
                     </div>
-    
+
                     <div>
-    
+
                     </div>
                 </div>
 
             </section>
-            
+
         </section>
 
-        
+
 
         <!-- KThen viết nè -->
         <footer class="footer">
             <div class="grid">
                 <div class="grid__row grid__row-item">
                     <div class="grid__column-2-4">
-                        <a href="" id="logo" class="footer__logo"> <img src=".\\img\LogoCyBer1.png" alt="CyberStore.vn"></a>
-                        <h3 class="footer__heading footer__heading-logo">CYBER<br>STORE</h3> 
+                        <a href="" id="logo" class="footer__logo"> <img class="img-fluid" src=".\\img\LogoCyBer1.png"
+                                alt="CyberStore.vn"></a>
+                        <h3 class="footer__heading footer__heading-logo">CYBER<br>STORE</h3>
                         <!-- /* Đổi kiểu cho LOGO*/ -->
                         <ul class="footer__list">
-                            <li class = "footer__list-item footer__list-item1">
+                            <li class="footer__list-item footer__list-item1">
                                 <i class="fa-solid fa-location-dot "></i>
                                 Địa chỉ:
-                                <a href="https://goo.gl/maps/QtUxzmiuw46MuMVL7" class="footer__list-item-link ">Quận 7, TPHCM.</a>
+                                <a href="https://goo.gl/maps/QtUxzmiuw46MuMVL7" class="footer__list-item-link ">Quận 7,
+                                    TPHCM.</a>
                             </li>
-                            <li class = "footer__list-item footer__list-item1">
+                            <li class="footer__list-item footer__list-item1">
                                 <i class="fa-solid fa-phone"></i>Số điện thoại:
                                 <a href="" class="footer__list-item-link">12345678910</a>
                             </li>
-                            <li class = "footer__list-item footer__list-item1">
+                            <li class="footer__list-item footer__list-item1">
                                 <i class="fa-solid fa-paper-plane"></i>Email:
                                 <a href="" class="footer__list-item-link">CyberStore@gmail.com</a>
                             </li>
@@ -423,48 +444,48 @@
                     </div>
                     <div class="grid__column-2-4">
                         <h3 class="footer__heading">Hướng dẫn</h3>
-                            <ul class="footer__list">
-                                <li class = "footer__list-item">
-                                    <a href="" class="footer__list-item-link">Hướng dẫn mua hàng và thanh toán</a>
-                                </li>
-                                <li class = "footer__list-item">
-                                    <a href="" class="footer__list-item-link">Hướng dẫn sử dụng</a>
-                                </li>
-                                <li class = "footer__list-item">
-                                    <a href="" class="footer__list-item-link">Kiểm tra đơn hàng</a>
-                                </li>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Hướng dẫn mua hàng và thanh toán</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Hướng dẫn sử dụng</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Kiểm tra đơn hàng</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="grid__column-2-4">
                         <h3 class="footer__heading">Chính sách</h3>
                         <ul class="footer__list">
                             <ul class="footer__list">
-                                <li class = "footer__list-item">
+                                <li class="footer__list-item">
                                     <a href="" class="footer__list-item-link">Chính sách Group by</a>
                                 </li>
-                                <li class = "footer__list-item">
+                                <li class="footer__list-item">
                                     <a href="" class="footer__list-item-link">Chính sách bảo hành</a>
                                 </li>
                     </div>
                     <div class="grid__column-2-4">
                         <h3 class="footer__heading">Đăng ký nhận tin</h3>
                         <ul class="footer__list">
-                            <li class = "footer__list-item">
+                            <li class="footer__list-item">
                                 <p href="" class="footer__text">Bạn muốn nhận khuyến mãi đặc biệt? Nhấn đăng ký ngay</>
                             </li>
-                            <li class = "footer__list-item">
+                            <li class="footer__list-item">
                                 <a href="" class="footer__list-item-link">
                                     <i class="footer__icon fa-brands fa-facebook"></i>
                                     Facebook
                                 </a>
                             </li>
-                            <li class = "footer__list-item">
+                            <li class="footer__list-item">
                                 <a href="" class="footer__list-item-link">
                                     <i class="footer__icon fa-brands fa-instagram"></i>
                                     Instagram
                                 </a>
                             </li>
-                            <li class = "footer__list-item">
+                            <li class="footer__list-item">
                                 <a href="" class="footer__list-item-link">
                                     <i class="footer__icon fa-brands fa-tiktok"></i>
                                     Tiktok
@@ -473,13 +494,13 @@
                         </ul>
                     </div>
                 </div>
-                </div>
-                    <div class="grid__row-b">
-                        <p class="footer__text footer__text-center">©2024 Bản quyền thuộc về Cyber Store</p>
-                    </div>
             </div>
-        </footer>
-        <!-- hehehe -->
+            <div class="grid__row-b">
+                <p class="footer__text footer__text-center">©2024 Bản quyền thuộc về Cyber Store</p>
+            </div>
+    </div>
+    </footer>
+    <!-- hehehe -->
     </div>
 
 
