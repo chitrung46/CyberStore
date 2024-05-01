@@ -1,5 +1,5 @@
 body#template-product {
-	/**background-color: var(--body-background); **/
+	/* *background-color: var(--body-background); * */
 }
 .danhgiasao .sapo-product-reviews-badge {
 	cursor: pointer;
@@ -14,7 +14,7 @@ body#template-product {
 }
 .product-detail-left .col_large_default {
 	width: calc(100% - 100px);
-	/*padding-left: 5px;*/
+	padding-left: 5px;
 }
 .product-detail-left .col_large_full {
 	width: 100%;
@@ -53,10 +53,10 @@ body#template-product {
 	width: 64px !important;
 }
 #gallery_02 {
-	/**.item.slick-slide.slick-current.slick-active{
+	.item.slick-slide.slick-current.slick-active{
 	border-color: var(--primary-color);
 }
-	**/
+	
 }
 #gallery_02:not(.slick-slider) {
 	display: flex;
@@ -419,7 +419,7 @@ body#template-product {
 	display: inline-block;
 	margin-right: 10px;
 	margin-bottom: 0px !important;
-	/*max-width: 115px;*/
+	max-width: 115px;
 }
 #ega-sticky-addcart .selector-wrapper:after {
 	position: absolute;
@@ -548,7 +548,7 @@ body#template-product {
 	}
 }
 .filter-item-toggle .fas {
-	transitions: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
 }
 .filter-item-toggle.show {
 	display: inline-block;
@@ -596,8 +596,8 @@ div#stock-notify {
 @media(max-width: 320px){
 	.product-detail-left .share-group{
 		flex-wrap: wrap;
-		/*align-items: flex-start !important;*/
-		/*justify-content: left !important;*/
+		align-items: flex-start !important;
+		justify-content: left !important;
 	}
 	.product-detail-left .share-group .share-group__list{
 		display: block;

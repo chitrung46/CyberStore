@@ -81,14 +81,14 @@
 	line-height: 34px;
 }
 .button_actions .btn span {
-	/*font-weight: 400;*/
+	font-weight: 400;
 	font-size: small;
 	text-transform: uppercase;
 }
 .buynow{
 	grid-column: 1 / -1;	
-	background-color: var(--buynow-bg);
-	color: var(--buynow-text-color);
+	background-color: var(green) !important;
+	color: white
 }
 .buynow:hover{
 	color: var(--buynow-text-color);
@@ -481,7 +481,7 @@ font-weight: bold;
   position: absolute;
   right: 0;
   top: 0;
-  content: "QuÃ  táº·ng háº¿t hÃ ng";
+  content: "Quà tặng chính hãng";
   font-size: 12px;
   padding: 5px 15px;
   font-size: 12px;

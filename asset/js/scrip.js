@@ -17,3 +17,5 @@ document.addEventListener('click', (event) => {
     body.classList.remove('blur-background');
   }
 });
+
+

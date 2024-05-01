@@ -1,20 +1,8 @@
 *{
     margin:0;
     padding:0;
-    
 }
 
-
-.top-banner {
-    height:40px;
-    line-height:40px;
-    font-size:14px;/*Sửa font lại nữa nè*/
-    color:white;
-    text-align: center;
-    white-space: nowrap;
-    text-transform:uppercase;
-    background: linear-gradient(#136a8a,#267871); /*Sửa màu lại nữa nè*/
-}
 /*KThen viết nữa nè*/
 body {
 	color: var(--text-color);
@@ -30,6 +18,34 @@ body {
     position: absolute;
 }
 
+.top-banner {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px; /* Sửa font lại nữa nè */
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    text-transform: uppercase;
+    background: linear-gradient(#136a8a, #267871); /* Sửa màu lại nữa nè */
+    position: fixed;
+    width: 100%;
+    top: 0; 
+    z-index: 1000;
+}
+
+.header {
+    position: fixed; 
+    display: flex;
+    width: 100%; 
+    z-index: 999; 
+    background-color: #fff; 
+    top: 40px; 
+    padding: 5px 10px; /* Khoảng cách giữa nội dung và viền     thứ tự top-right-bottom-left*/  
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
 
 .scroll::-webkit-scrollbar {
 	width: 3px
@@ -42,25 +58,14 @@ body {
 
 /* =================================================================*/
 
-.container {
-    min-width: 100%;
-    position: relative;
-    display: block;
-}
-
 .container, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto, .col-lg-15, .col-lg-20, .col-lg-80, .col-lg-60 {
 	padding-right: 15px;
 	padding-left: 15px
 }
 
-.header {
-    display: flex;
-    background-color: #ffffff; /* Màu đen đậm cho header */
-    color: white; /* Màu chữ trắng */
-    padding: 5px 10px; /* Khoảng cách giữa nội dung và viền     thứ tự top-right-bottom-left*/  
-    align-items: center;
+.container{
     width: 100%;
-    height: 60px;
+    padding: 0 auto;
 }
 
 .header__navbar{
@@ -133,7 +138,7 @@ header nav ul{
 
 .header__navbar .header__navbar-center ul{
     display: flex;
-    padding: 0 15px;
+    padding: 0 5px;
     position: relative;
     justify-content: center;
 }
@@ -141,8 +146,11 @@ header nav ul{
 
 .header__navbar-left{
     display: flex;
-    margin-right: auto; /* Di chuyển sang bên trái */
+    margin-right: auto;
     align-items: center;
+    position: relative;
+    justify-content: center;
+    height: fit-content;
 }
 
 
@@ -155,6 +163,22 @@ header nav ul{
     height: auto;  
 }
 
+/* KThen viết */
+.header__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #267871;
+    font-family: 'Changa One', sans-serif;
+    font-style:italic;
+    font-size:20px; /* Kích thước font chữ lớn hơn */
+    font-weight:bold; /* Độ đậm của font chữ (700 tương đương với font-weight: bold;) */
+    text-decoration: none;
+    text-shadow: 1px 1px 4px #136a8a; 
+    height: inherit;
+    margin: 5px auto;
+}
+
 header nav li{
     height: 50px;
 }
@@ -163,7 +187,7 @@ header nav li a{
     height: 100%;
     color: rgb(0, 0, 0);
     display: flex;
-    padding: 10px 10px;
+    padding: 5x 5px;
     text-decoration: none;
     list-style: none;
 }
@@ -174,11 +198,12 @@ header nav li a{
 
 .menu-bar{
     display: none;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 .large-icon {
     font-size: 24px; /* Đặt kích thước font là 24px hoặc bất kỳ kích thước nào bạn muốn */
+    
 }
 
 
@@ -217,40 +242,50 @@ header nav li a{
     background-color: #f00;
 }
 
+
 .sidebar-item {
-    display: flex;
+    display: block;
     position: absolute;
     left: 0;
     height: 100%;
     width: 250px;
     z-index: 1000;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: left;
     background-color: #ffffff;
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-
+    text-decoration: none;
+    
 }
 
 .sidebar-item li{
     width: 100%;
     position: relative;
+    display: flex ;
+    align-items: center;
 }
 
 
-.sidebar-item a{
+.sidebar-link{
     text-decoration: none;
     display: block;
     width: 100%;
-    color: #9a27bd;
+    height: fit-content;
+    color: #30989b;
     font-weight:600;
     padding-left: 20px; /* Additional padding on the left for indentation */
     transition: background-color 0.3s;
+    
 }
 
-.sidebar-item a:hover{
-    background-color: #f2bcf2;
+.sidebar-link:hover {
+    text-decoration: none; 
+    color: #33b6ba;
+}
+
+.sidebar-item li:hover{
+    background-color: #a3d8e1;
 }
 
 
@@ -258,7 +293,7 @@ header nav li a{
 .shopping__cart{
     position: relative;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
     z-index: 1000;
 }
 
@@ -308,7 +343,7 @@ header nav li a{
 
 .shopping__cart-list--no-cart-img{
     width: 40%;
-    /* display: none; */
+    display: none;
 }
 
 .shopping__cart-list--no-cart-msg{
@@ -338,6 +373,7 @@ header nav li a{
     top: 5px; /* Đẩy lên trên */
     right: -10px; /* Nằm bên phải */
     z-index: 1; /* Đặt z-index để nó hiển thị trên các phần tử khác */
+    
 }
 
 .shopping__cart-heading{
@@ -345,6 +381,7 @@ header nav li a{
     font-size: 1.1rem;
     font-weight: 500;
     color: #585656;
+    text-align: left;
 }
 
 .shopping__cart-list-item{
@@ -468,10 +505,10 @@ header nav li a{
     display: none;
     position: absolute; 
     background-color: #fff4f4;
-    padding: 10px 0px;
+    padding: 5px 0px;
     list-style: none;
     z-index: 1;
-    top: calc(90% ); /* Đặt submenu ở dưới mục cha */
+    top: calc(80% ); /* Đặt submenu ở dưới mục cha */
 }
 
 .header__navbar-center ul.sub-menu a {
@@ -494,19 +531,7 @@ header nav li a{
 }
 
 
-/* KThen viết */
-.header__logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #267871;
-    font-family: 'Changa One', sans-serif;
-    font-style:italic;
-    font-size:24px; /* Kích thước font chữ lớn hơn */
-    font-weight:bold; /* Độ đậm của font chữ (700 tương đương với font-weight: bold;) */
-    text-decoration: none;
-    text-shadow: 1px 1px 4px #136a8a; 
-}
+
 /* ---------------------------------------------------------------------------- */
 
 
@@ -784,130 +809,6 @@ header nav li a{
 }
 
 
-
-
-
-
-
-
-
-/* KThen */
-.grid{
-    width:1200px;
-    max-width: 100%;
-    margin:0 auto;
-}
-.grid__full-width{
-    width:100%;
-}
-.grid__row{
-    display:flex;
-    flex-wrap: wrap;
-    margin-left: -5px;
-    margin-right:-5px;
-}
-.grid__column-2{
-    padding-left: 5px;
-    padding-right:5px;
-    width:16.6667%;
-}
-.grid__column-2-4{
-    padding-left:5px;
-    padding-right:5px;
-    width:20%;
-}
-.grid__column-10{
-    padding-left: 5px;
-    padding-right:5px;
-    width:83.3334%;
-}
-.grid__row-item{
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-}
-
-.footer {
-    background-color: #2b2a2a; /* Màu đen đậm cho footer */
-    color: lightgray; /* Màu chữ trắng */
-    padding: 10px 0; /* Khoảng cách giữa nội dung và viền */
-    text-align: center; /* Căn giữa nội dung */
-    width: 100%; /* Độ rộng 100% */
-    height:450px auto; /*KThen*/
-    position: relative; 
-    bottom: 0; /* Hiển thị footer ở cuối trang */
-    padding-top:75px;
-    padding-bottom: 25px;
-    display: block;
-    unicode-bidi: isolate;
-    overflow: hidden
-}
-
-.footer__list{
-    list-style: none;
-    padding-left:0;
-}
-.footer__list-item{
-    font-size:14px;
-    color: #c6c4c4;
-    text-decoration: none;
-}
-
-.footer__heading{
-    font-size: 18px;
-    font-weight:bolder;
-    text-transform: uppercase;
-    color:#dedddd;
-}
-
-.footer__heading-logo{
-    font-family: 'Changa One', sans-serif;
-    font-style:italic;
-    display:flex;
-    align-items:center;
-    margin: -1px 20px 20px 10px;
-    justify-content: center;
-    text-shadow: 1px 1px 4px #136a8a; 
-    font-weight: bold;
-    color:#267871;
-    font-size: 30px;
-
-}
-
-.footer__list-item-link{
-    font-size:14px;
-    color: #bfbcbc;
-    text-decoration: none;
-    padding: 5px 0;
-    display:flex;
-    align-items: center;
-}
-.footer__list-item-link:hover{
-    color: #61317F;
-    text-decoration: none;
-}
-.footer__icon{
-    font-size: 20px;
-    margin:-1px 10px 0 0;
-}
-.fa-solid{
-    margin: 5px;
-}
-.footer__text-center{
-    text-align: center;
-    justify-content: center;
-    font-size: 14px;
-    margin:5px 10px -5px 0;
-    color:#c6c4c4;
-}
-
-.footer__list-item1, .footer__list-item-link{
-    display:inline-block;
-}
-/* KThen */
-
-
-
 /*=============== BREAKPOINTS ===============*/
 /* Responsive Styles */
 /* Small devices (mobile) */
@@ -933,11 +834,7 @@ header nav li a{
     }
 
     .sidebar .user {
-        margin: 20px auto;
-    }
-
-    .sidebar-nav .sidebar-item li {
-        margin: 15px 0;
+        margin: 5px auto;
     }
 
     .header__navbar {
@@ -951,6 +848,7 @@ header nav li a{
     .header__navbar-left #storeName {
         display: none;
     }
+
 }
 
 /* Medium devices (tablets) */
@@ -969,4 +867,11 @@ header nav li a{
         display: none;
     }
 }
+
+
+
+
+
+
+
 

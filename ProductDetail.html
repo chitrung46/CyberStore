@@ -10,11 +10,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href=".\asset\HomePage.css">
-    <link rel="stylesheet" href=".\asset\Product-style.css">
-    <link rel="stylesheet" href=".\asset\ProductInfo-style.css">
-    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./asset\_embeb.css">
+    <link rel="stylesheet" href=".\asset\css\HomePage.css">
+    <link rel="stylesheet" href=".\asset\css\Product-style.css">
+    <link rel="stylesheet" href=".\asset\css\ProductInfo-style.css">
+    <link rel="stylesheet" href=".\asset\css\_embeb.css">
+    <link rel="stylesheet" href=".\asset\css\main.css">
+    <link rel="stylesheet" href=".\asset\css\index.css">
+    <link rel="stylesheet" href=".\asset\scss\reboot.scss">
+    <link rel="stylesheet" href=".\asset\scss\buttom.scss">
+
 </head>
 
 <body>
@@ -79,9 +83,9 @@
 
             <div class="container">
                 <div class="sidebar" id="sidebar">
-                    <div class="user">
+                    <!-- <div class="user">
 
-                    </div>
+                    </div> -->
 
                     <div class="wrap-sidebar">
                         <nav class="sidebar-nav">
@@ -180,8 +184,7 @@
                                     <h4 class="shopping__cart-heading">Sản phẩm đã thêm</h4>
                                     <ul class="shopping__cart-list-item">
                                         <li class="shopping__cart-item">
-                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
-                                                alt="" class="shopping__cart-img">
+                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"alt="" class="shopping__cart-img">
                                             <div class="shopping__cart-item-info">
                                                 <div class="shopping__cart-item-head">
                                                     <h5 class="shopping__cart-item-name">Mousepad siu cuti</h5>
@@ -191,7 +194,7 @@
                                                         <span class="shopping__cart-item-qnt">2</span>
                                                     </div>
                                                 </div>
-
+                                    
                                                 <div class="shopping__cart-item-body">
                                                     <span class="shopping__cart-item-description">
                                                         Phân loại: Mousepad
@@ -200,7 +203,7 @@
                                                 </div>
                                             </div>
                                         </li>
-
+                                    
                                         <li class="shopping__cart-item">
                                             <img src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
                                                 alt="" class="shopping__cart-img">
@@ -213,7 +216,7 @@
                                                         <span class="shopping__cart-item-qnt">2</span>
                                                     </div>
                                                 </div>
-
+                                    
                                                 <div class="shopping__cart-item-body">
                                                     <span class="shopping__cart-item-description">
                                                         Phân loại: Mousepad
@@ -222,7 +225,7 @@
                                                 </div>
                                             </div>
                                         </li>
-
+                                    
                                         <li class="shopping__cart-item">
                                             <img src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
                                                 alt="" class="shopping__cart-img">
@@ -235,7 +238,7 @@
                                                         <span class="shopping__cart-item-qnt">2</span>
                                                     </div>
                                                 </div>
-
+                                    
                                                 <div class="shopping__cart-item-body">
                                                     <span class="shopping__cart-item-description">
                                                         Phân loại: Mousepad
@@ -243,7 +246,7 @@
                                                     <span class="shopping__cart-item-remove">Xóa</span>
                                                 </div>
                                             </div>
-                                        </li>
+                                        </li> 
                                     </ul>
                                 </div>
                             </li>
@@ -256,8 +259,44 @@
 
         </header>
 
+        <section class="bread-crumb mb-3">
+            <span class="crumb-border"></span>
+            <div class="container ">
+                <div class="row">
+                    <div class="col-12 a-left">
+                        <ul class="breadcrumb m-0 px-0 py-2">					
+                            <li class="home">
+                                <a href="/" class="link"><span>Trang chủ</span></a>						
+                                <span class="mr_lr">&nbsp;/&nbsp;</span>
+                            </li>
+                            
+                            
+                            <li>
+                                <a class="changeurl link" href="/monokei-systems"><span>MONOKEI Systems</span></a>						
+                                <span class="mr_lr">&nbsp;/&nbsp;</span>
+                            </li>
+                            
+                            <li><strong><span>[Order] Mousepad - Spy x Family (Anya Edition)</span></strong></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ID -->
         <script>
-            var currentProduct = {"id":34508041,"name":"[Order] Mousepad - Spy x Family (Anya Edition)","alias":"order-mousepad-spy-x-family-anya-edition","vendor":"MONOKEI","type":"Order","content":"<p><strong>Thông tin về sản phẩm:</strong></p>\n<ul>\n<li>Kích thước: 260 x 208 x 4mm (Nhỏ)</li>\n<li>Chất liệu: vải cao cấp, cao su</li>\n<li>Hoàn thiện chống nước</li>\n<li>Thời gian trả hàng dự kiến: Cuối quý 2/2024</li></ul>\n<p><strong>Lưu ý về cách vệ sinh và bảo quản:</strong></p>\n<ul>\n<li>Chỉ nên giặt tay</li>\n<li>Nhiệt độ nước khi giặt tối đa 30°C.</li>\n<li>Không tẩy hoặc ngâm.</li>\n<li>Không ủi hoặc giặt khô.</li>\n<li>Không chà xát hoặc vắt.</li>\n<li>Không sấy khô.</li>\n<li>Phơi khô trong bóng râm.</li></ul>\n<h6>Lưu ý</h6>\n<ul>\n<li><b>Đây là sản phẩm order, thời gian trả hàng dự kiến: Cuối quý 2/2024</b></li></ul>","summary":null,"template_layout":"product","available":true,"tags":["Accessories","Deskmat","Live","MONOKEI"],"price":540000.0000,"price_min":540000.0000,"price_max":540000.0000,"price_varies":false,"compare_at_price":620000.0000,"compare_at_price_min":620000.0000,"compare_at_price_max":620000.0000,"compare_at_price_varies":false,"variants":[{"id":109510972,"barcode":"PO-PAD-SXFAE","sku":"PO-PAD-SXFAE","title":"Default Title","options":["Default Title"],"option1":"Default Title","option2":null,"option3":null,"available":true,"taxable":false,"price":540000.0000,"compare_at_price":620000.0000,"inventory_management":"bizweb","inventory_policy":"deny","inventory_quantity":50,"weight_unit":"g","weight":800,"requires_shipping":true,"image":{"src":"https://bizweb.dktcdn.net/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"}}],"featured_image":{"src":"https://bizweb.dktcdn.net/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"},"images":[{"src":"https://bizweb.dktcdn.net/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"},{"src":"https://bizweb.dktcdn.net/100/484/752/products/anya-mousepad-short-copyright-1707405987103.jpg?v=1707409571893"}],"options":["Title"],"created_on":"2024-02-08T20:41:08","modified_on":"2024-03-17T19:06:54","published_on":"2024-02-08T22:27:00"};
+            var currentProduct = {
+                "id": 34508041, "name": "[Order] Mousepad - Spy x Family (Anya Edition)",
+                "alias": "order-mousepad-spy-x-family-anya-edition",
+                "vendor": "MONOKEI", "type": "Order",
+                "content": "<p><strong>Thông tin về sản phẩm:</strong></p>\n<ul>\n<li>Kích thước: 260 x 208 x 4mm (Nhỏ)</li>\n<li>Chất liệu: vải cao cấp, cao su</li>\n<li>Hoàn thiện chống nước</li>\n<li>Thời gian trả hàng dự kiến: Cuối quý 2/2024</li></ul>\n<p><strong>Lưu ý về cách vệ sinh và bảo quản:</strong></p>\n<ul>\n<li>Chỉ nên giặt tay</li>\n<li>Nhiệt độ nước khi giặt tối đa 30°C.</li>\n<li>Không tẩy hoặc ngâm.</li>\n<li>Không ủi hoặc giặt khô.</li>\n<li>Không chà xát hoặc vắt.</li>\n<li>Không sấy khô.</li>\n<li>Phơi khô trong bóng râm.</li></ul>\n<h6>Lưu ý</h6>\n<ul>\n<li><b>Đây là sản phẩm order, thời gian trả hàng dự kiến: Cuối quý 2/2024</b></li></ul>",
+                "summary": null, "template_layout": "product", "available": true, "tags": ["Accessories", "Deskmat", "Live", "MONOKEI"], "price": 540000.0000, "price_min": 540000.0000, "price_max": 540000.0000, "price_varies": false, "compare_at_price": 620000.0000, "compare_at_price_min": 620000.0000, "compare_at_price_max": 620000.0000, "compare_at_price_varies": false, "variants": [{
+                    "id": 109510972, "barcode": "PO-PAD-SXFAE", "sku": "PO-PAD-SXFAE", "title": "Default Title", "options": ["Default Title"], "option1": "Default Title", "option2": null, "option3": null, "available": true, "taxable": false,
+                    "price": 540000.0000, "compare_at_price": 620000.0000, "inventory_management": "bizweb", "inventory_policy": "deny", "inventory_quantity": 50, "weight_unit": "g", "weight": 800, "requires_shipping": true, "image": { "src": "https://bizweb.dktcdn.net/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893" }
+                }], "featured_image": { "src": "https://bizweb.dktcdn.net/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893" }, "images": [{ "src": "https://bizweb.dktcdn.net/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893" },
+                { "src": "https://bizweb.dktcdn.net/100/484/752/products/anya-mousepad-short-copyright-1707405987103.jpg?v=1707409571893" }], "options": ["Title"], "created_on": "2024-02-08T20:41:08", "modified_on": "2024-03-17T19:06:54", "published_on": "2024-02-08T22:27:00"
+            };
         </script>
 
         <section class="section mt-0 mb-lg-4 mb-3 mb-sm-0">
@@ -265,9 +304,12 @@
                 <div class="section wrap-padding-15 wp_product_main m-0">
                     <div class="details-product ">
                         <div class="row m-sm-0">
-                            <div class="product-detail-left product-images bg-white py-3 col-12 col-lg-6 overflow-hidden thumbs-on-mobile--show">
+                            <div
+                                class="product-detail-left product-images bg-white py-3 col-12 col-lg-6 overflow-hidden thumbs-on-mobile--show">
+
                                 <div class="section slickthumb_relative_product_1">
-                                    <div id="gallery_02" class="slider-nav slickproduct thumb_product_details slick-initialized slick-slider slick-vertical">
+                                    <div id="gallery_02"
+                                        class="slider-nav slickproduct thumb_product_details slick-initialized slick-slider slick-vertical">
 
                                         <div aria-live="polite" class="slick-list draggable" style="height: 640px;">
                                             <div class="slick-track"
@@ -275,22 +317,21 @@
                                                 role="listbox">
                                                 <div class="item slick-slide slick-current slick-active"
                                                     data-img="https://bizweb.dktcdn.net/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
-                                                    style="width: 85px; " tabindex="-1" role="option"
-                                                    aria-describedby="slick-slide00" data-slick-index="0"
-                                                    aria-hidden="false">
+                                                    data-slick-index="0" aria-hidden="false" style="width: 85px;"
+                                                    tabindex="-1" role="option" aria-describedby="slick-slide00">
                                                     <a href="javascript:void(0)"
                                                         data-zoom-image="//bizweb.dktcdn.net/thumb/1024x1024/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
                                                         tabindex="0">
-                                                        <img class=" img-fluid" data-img="https://bizweb.dktcdn.net/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
+                                                        <img class=" img-fluid"
+                                                            data-img="https://bizweb.dktcdn.net/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
                                                             src="//bizweb.dktcdn.net/thumb/medium/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
                                                             alt="[Order] Mousepad - Spy x Family (Anya Edition)">
                                                     </a>
                                                 </div>
                                                 <div class="item slick-slide slick-active"
                                                     data-img="https://bizweb.dktcdn.net/100/484/752/products/anya-mousepad-short-copyright-1707405987103.jpg?v=1707409571893"
-                                                    style="width: 85px;" tabindex="-1" role="option"
-                                                    aria-describedby="slick-slide01" data-slick-index="1"
-                                                    aria-hidden="false">
+                                                    data-slick-index="1" aria-hidden="false" style="width: 85px;"
+                                                    tabindex="-1" role="option" aria-describedby="slick-slide01">
                                                     <a href="javascript:void(0)"
                                                         data-zoom-image="//bizweb.dktcdn.net/thumb/1024x1024/100/484/752/products/anya-mousepad-short-copyright-1707405987103.jpg?v=1707409571893"
                                                         tabindex="0">
@@ -305,19 +346,20 @@
                                     </div>
                                 </div>
 
-                                <div class="pt-0col_large_default large-image">
-
-                                    <div id="gallery_1" class="slider-for slick-initialized slick-slider" role="toolbar">
-                                        <button type="button" data-role="none" class="slick-prev slick-arrow slick-disabled" aria-label="Previous" role="button" aria-disabled="true" style="display: inline-block;">Previous</button>
+                                <div class="pt-0 col_large_default large-image">
+                                    <div id="gallery_1" class="slider-for slick-initialized slick-slider"><button
+                                            type="button" data-role="none" class="slick-prev slick-arrow slick-disabled"
+                                            aria-label="Previous" role="button" aria-disabled="true"
+                                            style="display: inline-block;">Previous</button>
 
                                         <div aria-live="polite" class="slick-list draggable">
-                                            <div class="slick-track" style="opacity: 1; width: 1504px;" role="listbox">
+                                            <div class="slick-track" style="opacity: 1; width: 940px;" role="listbox">
                                                 <div class="item slick-slide slick-current slick-active"
                                                     data-src="https://bizweb.dktcdn.net/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
                                                     data-img="https://bizweb.dktcdn.net/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
-                                                    style="width: 752px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"
-                                                    tabindex="-1" role="option" aria-describedby="slick-slide10"
-                                                    data-slick-index="0" aria-hidden="false">
+                                                    data-slick-index="0" aria-hidden="false"
+                                                    style="width: 470px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"
+                                                    tabindex="-1" role="option" aria-describedby="slick-slide10">
                                                     <a class="d-block pos-relative embed-responsive  embed-responsive-1by1"
                                                         href="https://bizweb.dktcdn.net/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
                                                         title="[Order] Mousepad - Spy x Family (Anya Edition)"
@@ -326,13 +368,14 @@
                                                         data-rel="prettyPhoto[product-gallery]" tabindex="0">
 
                                                         <picture>
-                                                            <source media="(max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/grande/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893">
+                                                            <source media="(max-width: 991px)"
+                                                                srcset="//bizweb.dktcdn.net/thumb/grande/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893">
 
                                                             <img class=" img-fluid" style="--image-scale: 1;"
                                                                 data-img="https://bizweb.dktcdn.net/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
                                                                 src="//bizweb.dktcdn.net/thumb/1024x1024/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
                                                                 alt="[Order] Mousepad - Spy x Family (Anya Edition)"
-                                                                width="361" height="361"
+                                                                width="600" height="600"
                                                                 data-src="https://bizweb.dktcdn.net/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893">
                                                         </picture>
                                                     </a>
@@ -340,9 +383,9 @@
                                                 <div class="item slick-slide"
                                                     data-src="https://bizweb.dktcdn.net/100/484/752/products/anya-mousepad-short-copyright-1707405987103.jpg?v=1707409571893"
                                                     data-img="https://bizweb.dktcdn.net/100/484/752/products/anya-mousepad-short-copyright-1707405987103.jpg?v=1707409571893"
-                                                    style="width: 752px; position: relative; left: -752px; top: 0px; z-index: 998; opacity: 0;"
-                                                    tabindex="-1" role="option" aria-describedby="slick-slide11"
-                                                    data-slick-index="1" aria-hidden="true">
+                                                    data-slick-index="1" aria-hidden="true"
+                                                    style="width: 470px; position: relative; left: -470px; top: 0px; z-index: 998; opacity: 0;"
+                                                    tabindex="-1" role="option" aria-describedby="slick-slide11">
                                                     <a class="d-block pos-relative embed-responsive  embed-responsive-1by1"
                                                         href="https://bizweb.dktcdn.net/100/484/752/products/anya-mousepad-short-copyright-1707405987103.jpg?v=1707409571893"
                                                         title="[Order] Mousepad - Spy x Family (Anya Edition)"
@@ -354,7 +397,7 @@
                                                             <source media="(max-width: 991px)"
                                                                 srcset="//bizweb.dktcdn.net/thumb/grande/100/484/752/products/anya-mousepad-short-copyright-1707405987103.jpg?v=1707409571893">
 
-                                                            <img class="img-fluid" style="--image-scale: 1; "
+                                                            <img class=" img-fluid" style="--image-scale: 1; "
                                                                 data-img="https://bizweb.dktcdn.net/100/484/752/products/anya-mousepad-short-copyright-1707405987103.jpg?v=1707409571893"
                                                                 src="//bizweb.dktcdn.net/thumb/1024x1024/100/484/752/products/anya-mousepad-short-copyright-1707405987103.jpg?v=1707409571893"
                                                                 alt="[Order] Mousepad - Spy x Family (Anya Edition)"
@@ -363,7 +406,9 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                        </div><button type="button" data-role="none" class="slick-next slick-arrow"
+                                        </div>
+
+                                        <button type="button" data-role="none" class="slick-next slick-arrow"
                                             aria-label="Next" role="button" style="display: block;"
                                             aria-disabled="false">Next</button>
                                     </div>
@@ -388,6 +433,7 @@
                                         </span>
                                     </div>
 
+
                                     <div class="price-box">
 
                                         <span class="special-price"><span class="price product-price">540.000₫</span>
@@ -406,18 +452,19 @@
 
                                     </div>
 
-
                                     <div class="product-promotion rounded-sm" id="ega-salebox">
                                         <h3
                                             class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
                                             Lưu ý
                                         </h3>
                                         <div>
+
                                             <ul>
                                                 <li><b>Đây là sản phẩm order, thời gian trả hàng dự kiến: Cuối quý
                                                         2/2024</b></li>
                                             </ul>
                                         </div>
+                                    </div>
 
                                     <div class="swatch-div">
 
@@ -435,11 +482,10 @@
                                                 <div class="soluong soluong_type_1  ">
                                                     <div class="custom input_number_product custom-btn-number ">
                                                         <button class="btn btn_num num_1 button button_qty"
-                                                            onclick="var result = document.getElementsByClassName('pd-qtym')[0];var stick_result = document.getElementsByClassName('pd-qtym')[1]; var qtypro = result.value; if(!isNaN( qtypro ) &amp;&amp; qtypro > 1){result.value--;stick_result.value--;}else{return false;}"
+                                                            onclick="var result = document.getElementsByClassName('pd-qtym')[0];var stick_result = document.getElementsByClassName('pd-qtym')[1]; var qtypro = result.value; if(!isNaN( qtypro ) &amp ; &amp; qtypro > 1){result.value--;stick_result.value--;}else{return false;}"
                                                             type="button">
-                                                            <svg class="icon">
-                                                                <use xlink:href="#icon-minus"></use>
-                                                            </svg></button>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 11.2px;"><path fill="#b0b0b0" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
+                                                        </button>
                                                         <input type="text" id="qtym" name="quantity" value="1"
                                                             maxlength="3" class="form-control prd_quantity pd-qtym"
                                                             onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;"
@@ -447,26 +493,23 @@
                                                         <button class="btn btn_num num_2 button button_qty"
                                                             onclick="var result = document.getElementsByClassName('pd-qtym')[0];var stick_result = document.getElementsByClassName('pd-qtym')[1]; var qtypro = result.value; if( !isNaN( qtypro )) result.value++;stick_result.value++;return false;"
                                                             type="button">
-                                                            <svg class="icon">
-                                                                <use xlink:href="#icon-plus"></use>
-                                                            </svg> </button>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 11.2px;"><path fill="#b0b0b0" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+                                                        </button>
                                                     </div>
                                                     <div class="button_actions mb-0">
                                                         <div style="display: flex; flex-wrap: wrap; width: 100%">
-                                                            <button type="submit"
-                                                                class="btn btn_add_cart btn-cart add_to_cart">
+                                                            <button type="submit"class="btn btn_add_cart btn-cart add_to_cart" style="color: rgb(60, 165, 171); border-color:black;" >
                                                                 THÊM VÀO GIỎ
                                                             </button>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="button_actions ">
-                                                    <button type="submit" class="btn btn_base buynow">
+                                                    <button type="submit" class="btn btn_base buynow" style="background-color: rgb(60, 165, 171); color:aliceblue">
                                                         MUA NGAY
                                                     </button>
 
                                                 </div>
-
 
                                             </div>
                                         </div>
@@ -792,98 +835,390 @@
             </div>
         </section>
 
-        <!-- KThen viết nè -->
-        <footer class="footer">
-            <div class="grid">
-                <div class="grid__row grid__row-item">
-                    <div class="grid__column-2-4">
-                        <a href="" id="logo" class="footer__logo"> <img class="img-fluid" src=".\\img\LogoCyBer1.png"
-                                alt="CyberStore.vn"></a>
-                        <h3 class="footer__heading footer__heading-logo">CYBER<br>STORE</h3>
-                        <!-- /* Đổi kiểu cho LOGO*/ -->
-                        <ul class="footer__list">
-                            <li class="footer__list-item footer__list-item1">
-                                <i class="fa-solid fa-location-dot "></i>
-                                Địa chỉ:
-                                <a href="https://goo.gl/maps/QtUxzmiuw46MuMVL7" class="footer__list-item-link ">Quận
-                                    7, TPHCM.</a>
-                            </li>
-                            <li class="footer__list-item footer__list-item1">
-                                <i class="fa-solid fa-phone"></i>Số điện thoại:
-                                <a href="" class="footer__list-item-link">12345678910</a>
-                            </li>
-                            <li class="footer__list-item footer__list-item1">
-                                <i class="fa-solid fa-paper-plane"></i>Email:
-                                <a href="" class="footer__list-item-link">CyberStore@gmail.com</a>
-                            </li>
 
-                        </ul>
+        <section class="section sec_tab product-tabs section_product_top ">
+            <div class="container">
+                <div class="e-tabs">
+
+                    <ul class="tabs tabs-title list-unstyled   mt-2 tabs-group d-flex align-items-center ">
+                        <li class="ega-small tab-link link current" data-tab="product_tabs-1">
+                            Thông tin sản phẩm
+                        </li>
+
+                        <li class="ega-small tab-link link " data-tab="product_tabs-3">
+                            Hướng dẫn thanh toán
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="e-tabs">
+
+                    <div id="product_tabs-1" class="tab-content content_extab current accordion-item">
+                        <div class="accordion-button">
+                            Thông tin sản phẩm
+
+                            <i class="float-right">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-arrow"></use>
+                                </svg>
+                            </i>
+                        </div>
+                        <div class=" mr-sm-0 ml-sm-0 align-items-start accordion-content">
+                            <div class="mb-3 mb-sm-0  product-content js-content-wrapper card border-0">
+
+                                <div id="ega-uti-editable-content" data-platform="sapo" data-id="34508041"
+                                    class="  rte js-product-getcontent product_getcontent pos-relative"
+                                    style="--content-height: 693px">
+                                    <div id="content" class="content js-content">
+                                        <p><strong>Thông tin về sản phẩm:</strong></p>
+                                        <ul>
+                                            <li>Kích thước: 260 x 208 x 4mm (Nhỏ)</li>
+                                            <li>Chất liệu: vải cao cấp, cao su</li>
+                                            <li>Hoàn thiện chống nước</li>
+                                            <li>Thời gian trả hàng dự kiến: Cuối quý 2/2024</li>
+                                        </ul>
+                                        <p><strong>Lưu ý về cách vệ sinh và bảo quản:</strong></p>
+                                        <ul>
+                                            <li>Chỉ nên giặt tay</li>
+                                            <li>Nhiệt độ nước khi giặt tối đa 30°C.</li>
+                                            <li>Không tẩy hoặc ngâm.</li>
+                                            <li>Không ủi hoặc giặt khô.</li>
+                                            <li>Không chà xát hoặc vắt.</li>
+                                            <li>Không sấy khô.</li>
+                                            <li>Phơi khô trong bóng râm.</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="js-seemore ega-pro__seemore text-center pos-relative mt-3"
+                                    style="display: none;">
+                                    <a href="javascript:void(0)" title="Xem thêm"
+                                        class="btn btn-main btn-pill mx-auto">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Hướng dẫn</h3>
-                        <ul class="footer__list">
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">Hướng dẫn mua hàng và thanh toán</a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">Hướng dẫn sử dụng</a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">Kiểm tra đơn hàng</a>
-                            </li>
-                        </ul>
+
+                    <div id="product_tabs-3" class="tab-content content_extab accordion-item">
+                        <div class="accordion-button">
+                            Hướng dẫn thanh toán
+                            <i class="float-right">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-arrow"></use>
+                                </svg>
+                            </i>
+                        </div>
+                        <div class="accordion-content">
+
+                            <div class="content">
+                                <h2><strong>Hướng dẫn mua hàng:</strong></h2>
+                                <ul>
+                                    <li>Truy cập vào link bán hàng trên web&nbsp;<a href="https://mokbstore.com/"
+                                            rel="noopener noreferrer" target="_blank">MOKB</a>&nbsp;và chọn sản phẩm cần mua
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>Điều chỉnh số lượng sản phẩm muốn mua theo ý muốn</li>
+                                </ul>
+                                <ul>
+                                    <li>Chọn "<strong>thêm vào giỏ hàng</strong>" hoặc "<strong>Mua ngay</strong>"</li>
+                                </ul>
+                                <p><img data-thumb="original" original-height="503" original-width="759"
+                                        src="//bizweb.dktcdn.net/100/484/752/files/huong-dan-thanh-toan-1.jpg?v=1687835500949"
+                                        style="width: 400px; height: 265px;"></p>
+                                <ul>
+                                    <li>Sau khi đã thêm sản phẩm vào Giỏ hàng, bạn hãy vào 
+                                        <a
+                                            href="https://mokbstore.com/cart">giỏ hàng
+                                        </a>
+                                        và&nbsp;chọn&nbsp;<strong>thanh toán</strong>
+                                    </li>
+                                </ul>
+                                <p><img data-thumb="original" original-height="350" original-width="1510"
+                                        src="//bizweb.dktcdn.net/100/484/752/files/gio-hang-thanh-toan.jpg?v=1687835726102"
+                                        style="width: 400px; height: 93px;"></p>
+                                <ul>
+                                    <li>Các bạn điền địa chỉ&nbsp;nhận hàng&nbsp;(có thể tạo tài khoản và lưu địa chỉ
+                                        trong <a href="https://mokbstore.com/account/addresses">sổ địa chỉ</a>). Sau đó
+                                        bấm "<strong>Tiếp tục chọn phương thức vận chuyển</strong>"
+                                    </li>
+                                </ul>
+                                <p><img data-thumb="original" original-height="753" original-width="603"
+                                        src="//bizweb.dktcdn.net/100/484/752/files/huong-dan-thanh-toan-2-f06d8aa3-5978-4400-a152-b3f0c465dab0.jpg?v=1687836599469"
+                                        style="width: 400px; height: 500px;"></p>
+                                <ul>
+                                    <li>Chúng tôi hỗ trợ 3 hình thức vận chuyển: Vận chuyển thường, hoả tốc và nhận hàng
+                                        tại cửa hàng (<strong>Phí&nbsp;vận chuyển&nbsp;trong nước các bạn vui lòng thanh
+                                            toán với bưu tá khi nhận hàng</strong>)
+                                    </li>
+
+                                    <li>Bạn chọn hình thức vận chuyển mong muốn sau đó ấn "Tiếp tục chọn phương thức
+                                        thanh toán"
+                                    </li>
+                                </ul>
+                                <p><img data-thumb="original" original-height="551" original-width="594"
+                                        src="//bizweb.dktcdn.net/100/484/752/files/huong-dan-thanh-toan-3-1afcf43d-b0ed-43e3-b285-ab63385b235d.jpg?v=1687836648165"
+                                        style="width: 400px; height: 371px;"></p>
+                                <p>&nbsp;</p>
+                                <ul>
+                                    <li>Tiếp theo bạn chọn hình thức thanh toán tương ứng</li>
+                                </ul>
+                                <p><img data-thumb="original" original-height="804" original-width="767"
+                                        src="//bizweb.dktcdn.net/100/484/752/files/huong-dan-thanh-toan-moi.jpg?v=1695302515631"
+                                        style="width: 400px; height: 419px;"></p>
+                                <ul>
+                                    <li><strong>Chuyển khoản ngân hàng (VietQR)</strong> - Sau khi ấn đặt hàng sẽ sẽ có
+                                        mã QR để quét và thanh toán. Hoặc bạn có thể chuyển khoản theo hướng dẫn và nhập
+                                        nội dung chuyển khoản: MOKB&nbsp;+ "dấu cách" + Mã đơn hàng. Ví dụ: MOKB MO1008
+                                    </li>
+                                </ul>
+                                <p>
+                                    <img data-thumb="original" original-height="628" original-width="777"
+                                        src="//bizweb.dktcdn.net/100/484/752/files/huong-dan-thanh-toan-moi-2.jpg?v=1695302858013"
+                                        style="width: 400px; height: 323px;">
+                                </p>
+
+                                <ul>
+                                    <li><strong>Thẻ tín dụng</strong> -&nbsp;Sau khi ấn&nbsp;<strong>Đặt Hàng</strong>,
+                                        quý khách vui lòng liên hệ&nbsp;<a href="https://m.me/mokbstore"
+                                            target="_blank"><strong>MOKB Store</strong></a>&nbsp;để hoàn thành việc
+                                        thanh toán đơn hàng</li>
+                                    <li><strong>Trả góp qua thẻ tín dụng (đơn hàng trên 3 triệu)</strong> -&nbsp;Sau khi ấn&nbsp;<strong>Đặt Hàng</strong>, quý khách vui lòng liên hệ&nbsp;
+                                        <a href="https://m.me/mokbstore" target="_blank"><strong>MOKB Store</strong></a>
+                                        &nbsp;để hoàn thành việc thanh toán đơn hàng
+                                    </li>
+                                </ul>
+                                <p>&nbsp;</p>
+                                <p><strong>Vậy là bạn đã hoàn tất việc đặt hàng, và bạn sẽ có mã đơn hàng là MO + 4 chữ
+                                        số (ví dụ trong hình là MO1942)</strong>
+                                </p>
+                                <p><img data-thumb="original" original-height="722" original-width="1134"
+                                        src="//bizweb.dktcdn.net/100/484/752/files/huong-dan-thanh-toan-4.jpg?v=1687837049319"
+                                        style="width: 600px; height: 382px;">
+                                </p>
+                                <ul>
+                                    <li>Đơn hàng được ghi nhận là thành công khi có mail&nbsp;<strong>Xác nhận đơn hàng</strong>&nbsp;và trong mục 
+                                        <a href="https://mokbstore.com/account/orders">Đơn hàng của bạn</a>
+                                        &nbsp;như sau (mã đơn hàng sẽ có là MO + 4 số ví dụ trong hình là MO1942)
+                                    </li>
+                                </ul>
+                                <p><img data-thumb="original" original-height="173" original-width="1136"
+                                        src="//bizweb.dktcdn.net/100/484/752/files/huong-dan-thanh-toan-5.jpg?v=1687837116905"
+                                        style="width: 600px; height: 91px;"></p>
+                                <ul></ul>
+                                <h2><strong>Hướng dẫn thanh toán chuyển khoản ngân hàng:&nbsp;</strong></h2>
+                                <ul>
+                                    <li><strong>Các bạn thanh toán 100% giá trị đơn hàng ngay sau khi đặt hàng</strong>
+                                    </li>
+                                    <li>Mặc dù phần&nbsp;Phương thức thanh toán&nbsp;chỉ được chọn&nbsp;<em>"Chuyển
+                                            khoản ngân hàng",</em>&nbsp;nhưng&nbsp;chúng&nbsp;tôi vẫn hỗ trợ 3 hình thức
+                                        thanh toán sau:</li>
+                                    <li><strong>Chuyển khoản qua ngân hàng, thông tin như sau</strong>:
+                                        <ul>
+                                            <li>Bạn có thể gửi ảnh hoá đơn chuyển khoản vào inbox page để giúp việc xác
+                                                nhận đơn hàng diễn ra nhanh chóng.</li>
+                                            <li>Nội dụng:&nbsp;mokb + "dấu cách" + Mã đơn hàng. Ví dụ: MOKB MO1008</li>
+                                            <li>Tài khoản: MS00T03582532510119</li>
+                                            <li>Người thụ hưởng: Ho Chi Nghia</li>
+                                            <li>Ngân hàng: Techcombank</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p style="text-align: center;"><img data-thumb="grande" original-height="490"
+                                        original-width="490"
+                                        src="//bizweb.dktcdn.net/thumb/grande/100/484/752/files/mokb-techcombank-qr.jpg?v=1704274716913"
+                                        style="width: 250px; height: 250px;"></p>
+                                <p style="text-align: center;">&nbsp;</p>
+                                <ul>
+                                    <li><strong>Quẹt thẻ tín dụng online (phí 2.5%): vui lòng inbox trực
+                                            tiếp</strong>&nbsp;<a href="https://www.facebook.com/mokbstore"
+                                            rel="noopener noreferrer" target="_blank">MOKB</a></li>
+                                    <li><strong>Trả góp qua thẻ tín dụng online:</strong>
+                                        <ul>
+                                            <li>Vui lòng inbox trực tiếp page&nbsp;<a
+                                                    href="https://www.facebook.com/mokbstore" rel="noopener noreferrer"
+                                                    target="_blank">MOKB</a>&nbsp;nếu bạn có nhu cầu</li>
+                                            <li>Người mua phải chịu phí chuyển đổi trả góp từ 5% -&gt; 8.5% tuỳ vào thời
+                                                hạn trả góp từ 3-12 tháng</li>
+                                            <li>Chỉ áp dụng cho giao dịch &gt;= 3000k</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Xác nhận đơn hàng:&nbsp;</strong>Ngay sau khi nhận được thanh toán từ
+                                        các bạn, chúng tôi sẽ cập nhật trạng thái đơn hàng thành&nbsp;<b>Đã thanh
+                                            toán</b>. Nếu sau&nbsp;2 tiếng&nbsp;mà bạn vẫn chưa thấy đơn hàng đổi trạng
+                                        thái, hãy liên hệ ngay với chúng tôi</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Chính sách</h3>
-                        <ul class="footer__list">
-                            <ul class="footer__list">
-                                <li class="footer__list-item">
-                                    <a href="" class="footer__list-item-link">Chính sách Group by</a>
-                                </li>
-                                <li class="footer__list-item">
-                                    <a href="" class="footer__list-item-link">Chính sách bảo hành</a>
-                                </li>
-                    </div>
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Đăng ký nhận tin</h3>
-                        <ul class="footer__list">
-                            <li class="footer__list-item">
-                                <p href="" class="footer__text">Bạn muốn nhận khuyến mãi đặc biệt? Nhấn đăng ký ngay
-                                    </>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">
-                                    <i class="footer__icon fa-brands fa-facebook"></i>
-                                    Facebook
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- KThen viết nè -->
+        <footer>
+            <div class="mid-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="footer-block footer-click">
+
+                                <a href="/" class="logo-wrapper mb-3 d-block ">
+                                    <img src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/logo-footer.png?1714292295296"
+                                        alt="logo CyBer Store" width="" height="70">
                                 </a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">
-                                    <i class="footer__icon fa-brands fa-instagram"></i>
-                                    Instagram
-                                </a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">
-                                    <i class="footer__icon fa-brands fa-tiktok"></i>
-                                    Tiktok
-                                </a>
-                            </li>
-                        </ul>
+                                <div class="single-contact">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <div class="content">Địa chỉ:
+                                        <span><a class="link"
+                                                title="số 52, ngõ 121 Thái Hà, P. Trung Liệt, Q. Đống Đa, Hà Nội"
+                                                href="https://goo.gl/maps/QtUxzmiuw46MuMVL7" target="_blank">số 52, ngõ
+                                                121 Thái Hà, P. Trung Liệt, Q. Đống Đa, Hà Nội</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="single-contact">
+                                    <i class="fa fa-mobile-alt"></i>
+                                    <div class="content">
+                                        Số điện thoại: <a class="link" title="0888115511"
+                                            href="tel:0888115511">0888115511</a>
+                                    </div>
+                                </div>
+                                <div class="single-contact">
+                                    <i class="fa fa-envelope"></i>
+                                    <div class="content">
+                                        Email: <a title="sales@mokbstore.com" class="link"
+                                            href="mailto:sales@mokbstore.com">sales@cyberstore.com</a>
+                                    </div>
+                                </div>
+
+                                <div id="copyright" class="fot_copyright mt-3">
+                                    <span class="wsp">
+                                        © Bản quyền thuộc về <a href="https://mokbstore.com" rel="nofollow"
+                                            target="_blank">CyBer Store</a>
+
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="footer-block footer-click">
+                                        <h3 class="footer-title title-menu clicked">
+                                            Hướng dẫn
+                                            <i class="fa fa-angle-down d-md-none d-inline-block"></i>
+                                        </h3>
+                                        <ul class="list-menu toggle-mn">
+
+                                            <li class="li_menu">
+                                                <a class="link" href="/huong-dan"
+                                                    title="Hướng dẫn mua hàng và thanh toán">Hướng dẫn mua hàng và thanh
+                                                    toán</a>
+                                            </li>
+
+                                            <li class="li_menu">
+                                                <a class="link" href="/huong-dan-su-dung"
+                                                    title="Hướng dẫn sử dụng">Hướng dẫn sử dụng</a>
+                                            </li>
+
+                                            <li class="li_menu">
+                                                <a class="link" href="https://mokbstore.com/apps/kiem-tra-don-hang"
+                                                    title="Kiểm tra đơn hàng">Kiểm tra đơn hàng</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="footer-block footer-click">
+                                        <h3 class="footer-title title-menu clicked">
+                                            Chính sách
+                                            <i class="fa fa-angle-down d-md-none d-inline-block"></i>
+                                        </h3>
+                                        <ul class="list-menu toggle-mn">
+
+                                            <li class="li_menu">
+                                                <a class="link" href="/chinh-sach-group-buy"
+                                                    title="Chính sách Group Buy">Chính sách Group Buy</a>
+                                            </li>
+
+                                            <li class="li_menu">
+                                                <a class="link" href="/chinh-sach-bao-hanh"
+                                                    title="Chính sách bảo hành">Chính sách bảo hành</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="footer-block footer-click">
+
+                                        <h3 class="footer-title title-menu">ĐĂNG KÝ NHẬN TIN</h3>
+                                        <p class="mailchimp-title">
+                                            Bạn muốn nhận khuyến mãi đặc biệt? Đăng ký ngay. </p>
+                                        <div class="form_register ">
+                                            <script type="text/javascript" src="https://campaigns.zoho.com/js/zc.iframe.js"></script>
+                                            <iframe frameborder="0" id="iframewin" width="100%" height="100%"
+                                                src="https://zcvrp-zgvfh.maillist-manage.com/ua/Optin?od=11287ecc4a1546&amp;zx=12f9973b8&amp;tD=1f676f1c2e804fc9&amp;sD=1f676f1c2e866e65"></iframe>
+                                        </div>
+
+                                        <ul
+                                            class="follow_option d-flex flex-wrap align-items-center list-unstyled mt-2">
+
+                                            <li>
+                                                <a class="facebook link" href="https://www.facebook.com/mokbstore/"
+                                                    target="_blank" title="Theo dõi Facebook CyBer Store">
+                                                    <img src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/facebook.png?1714292295296"
+                                                        width="32" height="32" alt="facebook">
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a class="zalo link" href="https://zalo.me/0888115511" target="_blank"
+                                                    title="Theo dõi zalo CyBer Store">
+                                                    <img src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/zalo.png?1714292295296"
+                                                        width="32" height="32" alt="zalo">
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a class="instgram link" href="https://www.instagram.com/mokb.store/"
+                                                    target="_blank" title="Theo dõi instgram CyBer Store">
+                                                    <img src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/instagram.png?1714292295296"
+                                                        width="32" height="32" alt="instgram">
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+
+                                </div>
+                                <div class="col-lg-4">
+
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="grid__row-b">
-                <p class="footer__text footer__text-center">©2024 Bản quyền thuộc về Cyber Store</p>
-            </div>
-    </div>
-    </footer>
+        </footer>
     <!-- hehehe -->
     </div>
 
 
-    <script src=".\\asset\scrip.js"></script>
-
+    <script src=".\asset\js\scrip.js"></script>
+    <script src=".\asset\js\product.js"></script>
 </body>
 
 </html>
