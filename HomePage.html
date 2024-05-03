@@ -13,10 +13,9 @@
     <link rel="stylesheet" href=".\asset\css\HomePage.css">
     <link rel="stylesheet" href=".\asset\css\Product-style.css">
     <link rel="stylesheet" href=".\asset\css\ProductInfo-style.css">
-    <link rel="stylesheet" href=".\asset\css\_embeb.css">
     <link rel="stylesheet" href=".\asset\css\main.css">
     <link rel="stylesheet" href=".\asset\css\index.css">
-    <link rel="stylesheet" href=".\asset\css\addthis-sharing.css">
+    <link rel="stylesheet" href=".\asset\css\slider.css">
     
 </head>
 
@@ -259,8 +258,67 @@
 
         </header>
 
-        <section class="section awe-section-4">
 
+        <!-- Khung ảnh -->
+        <section class="section awe-section-1">
+            <div class="section_slider clearfix" style="">
+                <div class=" container py-2 ">
+        
+                    <div class="home-slider slick-initialized slick-slider slick-dotted" role="toolbar"><button type="button"
+                            data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button"
+                            style="display: block;">Previous</button>
+        
+                        <div aria-live="polite" class="slick-list draggable">
+                            <div class="slick-track" style="opacity: 1; width: 2400px;" role="listbox">
+                                <div class="items text-center slick-slide" data-color="#ffffff" data-slick-index="0"
+                                    aria-hidden="true"
+                                    style="width: 1200px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;"
+                                    tabindex="-1" role="option" aria-describedby="slick-slide00">
+                                    <a href="/krush65" title="Krush65" tabindex="-1">
+                                        <picture>
+                                            <source media="(max-width: 480px)"
+                                                srcset="//bizweb.dktcdn.net/thumb/large/100/484/752/themes/920128/assets/slider_1.jpg?1714359361508">
+                                            <img class=" img-fluid mx-auto" decoding="async"
+                                                src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/slider_1.jpg?1714359361508"
+                                                width="1920" height="775" alt="Krush65">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="items text-center slick-slide slick-current slick-active" data-color=""
+                                    data-slick-index="1" aria-hidden="false"
+                                    style="width: 1200px; position: relative; left: -1200px; top: 0px; z-index: 999; opacity: 1;"
+                                    tabindex="-1" role="option" aria-describedby="slick-slide01">
+                                    <a href="/protagonist" title="Protagonist keyboard kit" tabindex="0">
+                                        <picture>
+                                            <source media="(max-width: 480px)"
+                                                srcset="//bizweb.dktcdn.net/thumb/large/100/484/752/themes/920128/assets/slider_2.jpg?1714359361508">
+                                            <img class=" img-fluid mx-auto" decoding="async"
+                                                src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/slider_2.jpg?1714359361508"
+                                                width="1920" height="775" alt="Protagonist keyboard kit">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button"
+                            style="display: block;">Next</button>
+                        <ul class="slick-dots" style="display: flex;" role="tablist">
+                            <li class="" aria-hidden="true" role="presentation" aria-selected="true"
+                                aria-controls="navigation00" id="slick-slide00"><button type="button" data-role="none"
+                                    role="button" tabindex="0">1</button></li>
+                            <li aria-hidden="false" role="presentation" aria-selected="false" aria-controls="navigation01"
+                                id="slick-slide01" class="slick-active"><button type="button" data-role="none" role="button"
+                                    tabindex="0">2</button></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section awe-section-4">
             <section class="section_product_top section">
                 <div class="container border-0">
 
@@ -1969,6 +2027,7 @@
                                                         <span class="action-name">Xem nhanh</span>
                                                     </a>
                                                 </div>
+                                                
                                             </div>
 
                                             <div class="product-info">
@@ -2023,9 +2082,7 @@
                                                 <div class="action-bar">
                                                     <button class="action-child btn add_to_cart active ">
                                                         <i class="fas fa-shopping-cart"></i>
-                                                        <span class="action-name">
-                                                            Thêm vào giỏ
-                                                        </span>
+                                                        <span class="action-name" >Thêm vào giỏ </span>
                                                     </button>
 
                                                     <a href="/swk-catmint-switch" data-handle="swk-catmint-switch"
@@ -2757,6 +2814,7 @@
     <script src=".\asset\js\ega-gateway-min.js"></script>
     <script src=".\asset\js\cart.js"></script>
     <script src=".\asset\js\main.js"></script>
+    
 </body>
 
 </html>

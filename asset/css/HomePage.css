@@ -37,13 +37,13 @@ body {
     position: fixed; 
     display: flex;
     width: 100%; 
-    z-index: 999; 
     background-color: #fff; 
     top: 40px; 
     padding: 5px 10px; /* Khoảng cách giữa nội dung và viền     thứ tự top-right-bottom-left*/  
     align-items: center;
     width: 100%;
     height: 60px;
+    z-index: 1000;
 }
 
 
@@ -63,10 +63,6 @@ body {
 	padding-left: 15px
 }
 
-.container{
-    width: 100%;
-    padding: 0 auto;
-}
 
 .header__navbar{
     display: flex;
@@ -205,8 +201,6 @@ header nav li a{
     font-size: 24px; /* Đặt kích thước font là 24px hoặc bất kỳ kích thước nào bạn muốn */
     
 }
-
-
 
 .sidebar { 
     position: fixed;
@@ -528,249 +522,8 @@ button.shopping__cart-item-remove {
 }
 
 
-
-/* ---------------------------------------------------------------------------- */
-
-
 /* TEST*/
-.modal {
-	top: 0 !important
-}
 
-.slick-slider {
-	position: relative;
-	display: block;
-	box-sizing: border-box;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	-webkit-touch-callout: none;
-	-khtml-user-select: none;
-	-ms-touch-action: pan-y;
-	touch-action: pan-y;
-	-webkit-tap-highlight-color: transparent
-}
-
-.slick-list {
-	position: relative;
-	display: block;
-	overflow: hidden;
-	margin: 0;
-	padding: 0
-}
-
-.slick-list:focus {
-	outline: none
-}
-
-.slick-list.dragging {
-	cursor: pointer;
-	cursor: hand
-}
-
-.slick-slider .slick-track, .slick-slider .slick-list {
-	-webkit-transform: translate3d(0, 0, 0);
-	-moz-transform: translate3d(0, 0, 0);
-	-ms-transform: translate3d(0, 0, 0);
-	-o-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0)
-}
-
-.slick-track {
-	position: relative;
-	top: 0 !important;
-	left: 0;
-	display: block;
-	margin-left: auto;
-	margin-right: auto
-}
-
-.slick-track:before, .slick-track:after {
-	display: table;
-	content: ''
-}
-
-.slick-track:after {
-	clear: both
-}
-
-.slick-loading .slick-track {
-	visibility: hidden
-}
-
-.slick-slide {
-	display: none;
-	float: left;
-	height: 100%;
-	min-height: 1px
-}
-
-[dir='rtl'] .slick-slide {
-	float: right
-}
-
-.slick-slide img {
-	display: block
-}
-
-.slick-slide.slick-loading img {
-	display: none
-}
-
-.slick-slide.dragging img {
-	pointer-events: none
-}
-
-.slick-initialized .slick-slide {
-	display: block
-}
-
-.slick-loading .slick-slide {
-	visibility: hidden
-}
-
-.slick-vertical .slick-slide {
-	display: block;
-	height: auto;
-	border: 1px solid transparent
-}
-
-.slick-arrow.slick-hidden {
-	display: none
-}
-
-.slick-arrow {
-	--size: 44px;
-	top: 50%;
-	font-size: 0;
-	line-height: 0;
-	position: absolute;
-	display: block;
-	width: var(--size);
-	height: var(--size);
-	padding: 0;
-	-webkit-transform: translate(0, -50%);
-	-ms-transform: translate(0, -50%);
-	transform: translate(0, -50%);
-	cursor: pointer;
-	color: transparent;
-	border: none;
-	outline: none;
-	border: 1px solid #ebebeb;
-	background: #ebebeb;
-	line-height: var(--size);
-	text-align: center;
-	z-index: 1;
-	overflow: hidden;
-	opacity: .7;
-	border-radius: 100%
-}
-
-.slick-arrow:hover, .slick-arrow:focus {
-	outline: none
-}
-
-.slick-arrow.slick-disabled {
-	cursor: default;
-	display: none !important
-}
-
-.slick-arrow:not(.slick-disabled):hover {
-	opacity: 1;
-	box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.3);
-	background: #fff;
-	color: #333
-}
-
-.slick-arrow.slick-prev:before, .slick-arrow.slick-next:before {
-	font-family: "Font Awesome\ 5 Free";
-	background: transparent;
-	font-weight: 900;
-	height: var(--size);
-	width: var(--size);
-	font-size: 18px;
-	color: #333;
-	display: block;
-	-webkit-transition: all ease 0.3s;
-	-moz-transition: all ease 0.3s;
-	-ms-transition: all ease 0.3s;
-	-o-transition: all ease 0.3s;
-	transition: all ease 0.3s
-}
-
-.slick-arrow.slick-prev {
-	left: 0
-}
-
-.slick-arrow.slick-prev:before {
-	content: "\f104"
-}
-
-.slick-arrow.slick-next {
-	right: 0
-}
-
-.slick-arrow.slick-next:before {
-	content: "\f105"
-}
-
-.slick-dots {
-	text-align: center
-}
-
-.slick-dots li {
-	display: inline-block
-}
-
-.slick-dots li button {
-	border-radius: 0;
-	height: 10px;
-	width: 10px;
-	border: 1px solid #e5e5e5;
-	background-color: #fff;
-	padding: 0;
-	font-size: 0
-}
-
-.slick-dots li.slick-active button {
-	border-color: var(--primary-color);
-	background-color: var(--primary-color)
-}
-
-.slick-dots {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100px;
-	padding: 0;
-	border-radius: 15px;
-	height: 24px;
-	align-items: center;
-	display: flex !important;
-	justify-content: center
-}
-
-.slick-dots li button {
-	height: 2px;
-	width: 16px;
-	border: 1px solid #fff;
-	background: #fff;
-	border-radius: 0;
-	margin: 0 3px;
-	opacity: .5
-}
-
-.slick-dots li button:hover {
-	opacity: 1
-}
-
-.slick-dots li.slick-active button {
-	opacity: 1
-}
 
 /*  */
 
@@ -779,32 +532,9 @@ button.shopping__cart-item-remove {
     display: block;
 }
 
-.section_1 {
-    background-color: burlywood; /* Màu xám nhạt cho section 1 */
-
-
+.awe-section-4 {
+    top: 100px;
 }
-
-.section_2 {
-    background-color: green; /* Màu xám cho section 2 */
-
-}
-
-.section_3 {
-    background-color: blue; /* Màu xám nhạt cho section 3 */
-
-}
-
-.section_4 {
-    background-color:rgb(0, 255, 85);
-
-}
-
-.section_5 {
-    background-color:red; /* Màu xám cho section 5 */
-
-}
-
 
 /*=============== BREAKPOINTS ===============*/
 /* Responsive Styles */
