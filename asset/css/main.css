@@ -1290,13 +1290,16 @@ a.product-vendor:hover {
 }
 
 footer {
-	background: rgba(46, 45, 45, 0.986)
+	background: rgba(46, 45, 45, 0.986);
+	position: relative;
+	top: 70px;
 }
 
 .mid-footer {
 	color: rgb(232, 225, 225);
 	font-size: 15px;
 	padding-bottom: 40px;
+	
 }
 
 @media (max-width:991px) {
