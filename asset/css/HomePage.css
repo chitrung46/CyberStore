@@ -290,16 +290,14 @@ header nav li a{
 
 
 /* GIỎ HÀNG */
-.shopping__cart{
+.shopping__cart {
     position: relative;
     text-align: center;
     margin: 5px;
     z-index: 1000;
 }
 
-
-
-.shopping__cart-list{
+.shopping__cart-list {
     position: absolute;
     top: calc(100% + 8px);
     right: -15px;
@@ -313,41 +311,41 @@ header nav li a{
     cursor: default;
 }
 
-.shopping__cart-list::after{
+.shopping__cart-list::after {
     content: "";
     position: absolute;
     right: 7.5px;
-    top:-32px;
+    top: -32px;
     border-width: 16px 23px;
     border-style: solid;
     border-color: transparent transparent white transparent;
     cursor: pointer;
 }
 
-.shopping__cart:hover .shopping__cart-list{
+.shopping__cart:hover .shopping__cart-list {
     display: block;
 }
 
-
-.shopping__cart-list--no-cart{
-    padding: 24px 0;
+.shopping__cart-list--no-cart {
+    display: none;
 }
 
-/* Ko có SP */
+.shopping__cart:hover .shopping__cart-list--no-cart {
+    display: block;
+}
+
 .shopping__cart-list--no-cart .shopping__cart-list--no-cart-img,
-.shopping__cart-list--no-cart .shopping__cart-list--no-cart-msg{
+.shopping__cart-list--no-cart .shopping__cart-list--no-cart-msg {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.shopping__cart-list--no-cart-img{
+.shopping__cart-list--no-cart-img {
     width: 40%;
-    display: none;
 }
 
-.shopping__cart-list--no-cart-msg{
-    display: none;
+.shopping__cart-list--no-cart-msg {
     font-size: 1.4rem;
     margin-top: 14px;
     color: black;
@@ -356,12 +354,8 @@ header nav li a{
     font-weight: 500;
 }
 
-.shopping__cart:hover .shopping__cart-list{
-    display: block;
-}
-
 /* CÓ SP */
-.shopping__cart-notice{
+.shopping__cart-notice {
     position: absolute;
     padding: 3px 6px;
     background-color: #3f9790;
@@ -369,14 +363,13 @@ header nav li a{
     font-size: 0.7rem;
     line-height: 0.7rem;
     border-radius: 50%;
-    border: 2px solid  white;
+    border: 2px solid white;
     top: 5px; /* Đẩy lên trên */
     right: -10px; /* Nằm bên phải */
     z-index: 1; /* Đặt z-index để nó hiển thị trên các phần tử khác */
-    
 }
 
-.shopping__cart-heading{
+.shopping__cart-heading {
     margin: 8px 0 8px 12px;
     font-size: 1.1rem;
     font-weight: 500;
@@ -384,91 +377,95 @@ header nav li a{
     text-align: left;
 }
 
-.shopping__cart-list-item{
+.shopping__cart-list-item {
     padding-left: 0;
     list-style: none;
     display: block;
 }
 
-.shopping__cart-item{
+.shopping__cart-item {
     display: flex;
     align-items: center;
     width: 100%;
     height: fit-content;
 }
 
-.shopping__cart-item:hover{
+.shopping__cart-item:hover {
     background-color: #f9f5f5b3;
-
 }
 
-
-.shopping__cart-img{
+.shopping__cart-img {
     width: 42px;
     height: 42px;
     margin: 12px;
     border: 1px solid #e6e1e1b3;
 }
 
-.shopping__cart-item-info{
+.shopping__cart-item-info {
     width: 100%;
     margin-right: 12px;
 }
 
-.shopping__cart-item-head{
+.shopping__cart-item-head {
     display: flex;
     align-items: center;
     font-size: 0.8rem;
     justify-content: space-between;
 }
 
-.shopping__cart-item-name{
+.shopping__cart-item-name {
     font-size: 1rem;
     font-weight: 450;
     color: black;
     margin: 0;
 }
 
-.shopping__cart-item-price{
+.shopping__cart-item-price {
     font-size: 1.2rem;
     font-weight: 400;
     color: #267871;
 }
 
-.shopping__cart-item-multiply{
+.shopping__cart-item-multiply {
     font-size: 0.9rem;
     font-weight: 500;
-    margin: 0.4px  ;
+    margin: 0.4px;
     color: #636060;
-    
 }
-.shopping__cart-item-qnt{
+
+.shopping__cart-item-qnt {
     font-size: 1rem;
     font-weight: 500;
     margin: 0.4px;
     color: #636060;
 }
 
-.shopping__cart-item-body{
+.shopping__cart-item-body {
     display: flex;
     justify-content: space-between;
     text-align: left;
 }
 
-.shopping__cart-item-description{
+.shopping__cart-item-description {
     color: #3f9790;
     font-size: 1.1rem;
     font-weight: 400;
-
 }
 
-.shopping__cart-item-remove{
+.shopping__cart-item-remove {
     color: #636060;
     font-size: 1.1rem;
 }
 
-.shopping__cart-item-remove:hover{
+.shopping__cart-item-remove:hover {
     color: #c43f3f;
+    cursor: pointer;
+}
+
+button.shopping__cart-item-remove {
+    border: none;
+    background: none;
+    padding: 0;
     cursor: pointer;
 }
 

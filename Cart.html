@@ -17,6 +17,7 @@
     <link rel="stylesheet" href=".\asset\css\index.css">
     <link rel="stylesheet" href=".\asset\scss\reboot.scss">
     <link rel="stylesheet" href=".\asset\scss\buttom.scss">
+    
 
 </head>
 <body>
@@ -39,7 +40,7 @@
                     <div class="wrap-sidebar">
                         <nav class="sidebar-nav">
                             <ul class="sidebar-item">
-                                <li><a class="sidebar-link" href="HomePage.html">Trang chủ</a></li>
+                                <li><a class="sidebar-link" href="./HomePage.html">Trang chủ</a></li>
                                 <li><a class="sidebar-link" href="">Giới thiệu</a></li>
                                 <li><a class="sidebar-link" href="">Sản phẩm</a></li>
                                 <li><a class="sidebar-link" href="">Liên hệ</a></li>
@@ -248,70 +249,7 @@
                     </div>
             </div>
         </div>
-        <script type="text/x-custom-template" data-template="couponPopup">
-        <div id="coupon-modal" class="coupon-modal modal fade " role="dialog" style="display:none;">
-            <div class="modal-dialog align-vertical">
-            <div class="modal-content">
-                <button type="button" class="close window-close" data-dismiss="modal" data-backdrop="false"
-                aria-label="Close" style="z-index: 9;"><span aria-hidden="true">×</span></button>
-                <div class="coupon-content"></div>
-            </div>
-            </div>
-            </div>
-        </script>
-        <script>
-        $(document).ready(()=>{
-                let initCoupon = false
-                function initCoupons (){
-                if( initCoupon) return
-                initCoupon = true
-                if(!$('#coupon-modal').length){
-                $('body').append($('[data-template="couponPopup"]').html())
-                }
-                $('.coupon_info_toggle').click(function(e){
-                        e.preventDefault();
-                        const code = $(this).data('coupon')
-                        const info = $(this).next('.coupon_info').html()|| ''
-                        const title = $(this).parents('.coupon_body').find('.coupon_title').text() || ''
-                        const couponHtml = `
-                            <div class="coupon-title">${title}</div>
-                            <div class="coupon-row">
-                                <div class="coupon-label">Mã khuyến mãi:</div><span class="code">${code}</span>
-            
-                            </div>
-                            <div class="coupon-row">
-                                <div class="coupon-label">Điều kiện:</div><div class="coupon-info">${info}</div>
-                            </div>
-                            <div class="coupon-action">
-                            <button type="button" class="btn btn-main" data-dismiss="modal" data-backdrop="false"
-                                aria-label="Close" style="z-index: 9;">Đóng</button>
-                            <button class="btn btn-main coupon_copy" data-ega-coupon="${code}">
-                                <span>Sao chép</span></button>
-                            </div>
-                            `
-                        $('.coupon-modal .coupon-content').html(couponHtml)
-                        $("#coupon-modal").modal();
-                    })
-                    $(document).on('click','.coupon_copy', function() {
-                        
-                const copyText = "Sao chép";
-                const copiedText = "Đã sao chép";
-                const coupon = $(this).data().egaCoupon;
-                const _this = $(this);
-                _this.html(`<span>${copiedText}</span>`);
-                _this.addClass('disabled');
-                setTimeout(function() {
-                    _this.html(`<span>${copyText}</span>`);
-                    _this.removeClass('disabled');
-                }, 3000)
-                navigator.clipboard.writeText(coupon);
-            })
-                
-                }
-            $(window).one(' mousemove touchstart scroll', initCoupons)
-                    
-            })
-        </script>	
+        
         
         <div class="cart-coupon-footer ">
                 <button class="btn btn-main btn-block rounded-sm coupon-toggle-btn">
@@ -513,8 +451,14 @@
     </div>
 
 
+    <script src=".\asset\js\stast.js"></script>
     <script src=".\asset\js\scrip.js"></script>
     <script src=".\asset\js\product.js"></script>
+    <script src=".\asset\js\index.js"></script>
+    <script src=".\asset\js\api-jquery-custom.js"></script>
+    <script src=".\asset\js\ega-gateway-min.js"></script>
+    <script src=".\asset\js\cart.js"></script>
+    <script src=".\asset\js\main.js"></script>
 </body>
     
 </html>
