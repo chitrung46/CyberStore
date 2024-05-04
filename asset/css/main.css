@@ -1298,8 +1298,7 @@ footer {
 .mid-footer {
 	color: rgb(232, 225, 225);
 	font-size: 15px;
-	padding-bottom: 40px;
-	
+	padding-bottom: 30px;
 }
 
 @media (max-width:991px) {

@@ -44,6 +44,8 @@ body {
     width: 100%;
     height: 60px;
     z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 }
 
 
@@ -300,7 +302,7 @@ header nav li a{
     height: fit-content;
     border-radius: 2px;
     box-shadow: 0 1px 3.125rem 0 #e9e6e6;
-    display: none;
+    display: none; /* Hiển thị giỏ hàng nhanh*/
     animation: fadeIn ease-in 0.2s;
     cursor: default;
 }
@@ -340,7 +342,7 @@ header nav li a{
 }
 
 .shopping__cart-list--no-cart-msg {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     margin-top: 14px;
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -361,25 +363,31 @@ header nav li a{
     top: 5px; /* Đẩy lên trên */
     right: -10px; /* Nằm bên phải */
     z-index: 1; /* Đặt z-index để nó hiển thị trên các phần tử khác */
+    
 }
 
 .shopping__cart-heading {
-    margin: 8px 0 8px 12px;
+    margin: 10px 0 10px 12px;
     font-size: 1.1rem;
     font-weight: 500;
     color: #585656;
     text-align: left;
+    
 }
 
 .shopping__cart-list-item {
     padding-left: 0;
     list-style: none;
     display: block;
+    text-align: left;
+    max-height: 31ch;
+    overflow: auto;
+    word-wrap: break-word;
 }
 
 .shopping__cart-item {
     display: flex;
-    align-items: center;
+    align-items: start;
     width: 100%;
     height: fit-content;
 }
@@ -389,71 +397,94 @@ header nav li a{
 }
 
 .shopping__cart-img {
-    width: 42px;
-    height: 42px;
     margin: 12px;
     border: 1px solid #e6e1e1b3;
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+    cursor: pointer;
+    
 }
 
 .shopping__cart-item-info {
+    margin: 12px;
     width: 100%;
     margin-right: 12px;
+    margin-left: 8px;
+    display: block;
+    align-items: center;
+    position: relative;
+    align-items: flex-end;
 }
 
 .shopping__cart-item-head {
-    display: flex;
-    align-items: center;
+    display: block;
     font-size: 0.8rem;
-    justify-content: space-between;
+    
 }
 
 .shopping__cart-item-name {
     font-size: 1rem;
-    font-weight: 450;
+    font-weight: 400;
     color: black;
     margin: 0;
+    cursor: pointer;
+    text-align: left;
+}
+
+.shopping__cart-item-name:hover{
+    color: #c9341e;
+}
+
+.shopping__cart-item-body {
+    display:block;
+    text-align: right;
+    position: relative;
+    
 }
 
 .shopping__cart-item-price {
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 450;
     color: #267871;
+    display: inline-block;
+    align-items: center;
 }
 
 .shopping__cart-item-multiply {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0.4px;
+    color: #636060;
+
+}
+
+.shopping__cart-item-qnt {
     font-size: 0.9rem;
     font-weight: 500;
     margin: 0.4px;
     color: #636060;
-}
-
-.shopping__cart-item-qnt {
-    font-size: 1rem;
-    font-weight: 500;
-    margin: 0.4px;
-    color: #636060;
-}
-
-.shopping__cart-item-body {
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
+  
 }
 
 .shopping__cart-item-description {
     color: #3f9790;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 400;
+    display: block;
 }
 
 .shopping__cart-item-remove {
     color: #636060;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-left: auto;
+    display: block;
 }
 
 .shopping__cart-item-remove:hover {
     color: #c43f3f;
     cursor: pointer;
+    
 }
 
 button.shopping__cart-item-remove {
@@ -461,6 +492,7 @@ button.shopping__cart-item-remove {
     background: none;
     padding: 0;
     cursor: pointer;
+
 }
 
 /* SUB MENU */
@@ -533,7 +565,7 @@ button.shopping__cart-item-remove {
 }
 
 .awe-section-4 {
-    top: 100px;
+    top: 70px;
 }
 
 /*=============== BREAKPOINTS ===============*/
