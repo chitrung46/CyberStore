@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+<html class="floating-labels multistep" data-select2-id="select2-data-429-xjra">
+
+<head>
+    <meta http-equiv="origin-trial"
+        content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="MOKB Store - Thanh toán đơn hàng">
+
+    <title>Thông tin - MOKB Store - Thanh toán đơn hàng</title>
+
+    <script type="text/javascript" async=""
+        src="https://www.gstatic.com/recaptcha/releases/V6_85qpc2Xf2sbe3xTnRte7m/recaptcha__vi.js"
+        crossorigin="anonymous"
+        integrity="sha384-fOIj/MO5/g/YxE+tY/rPW2Hhk4ykc4S859bCz3wWFKrVh8loplREOL0Xi2gBpyvX"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="shortcut icon" href="//bizweb.dktcdn.net/assets/sapo_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css">
+
+    <link rel="stylesheet" href="\asset\css\ShippingInfo.vendor.css">
+
+
+    <link rel="stylesheet" href="\asset\css\ShippingInfo.css">
+   
+    <!-- Begin checkout custom css -->
+    <style>
+        a,
+        .radio__label__icon,
+        .payment-due__price,
+        .spinner--active,
+        .icon-print,
+        .alert--info,
+        .discount-icon,
+        .order-summary-toggle__total-recap {
+            color: #158998;
+        }
+
+        .input-checkbox:checked,
+        .input-radio:checked {
+            -webkit-box-shadow: 0 0 0 10px #12a8a8 inset;
+            box-shadow: 0 0 0 10px #2ea6bb inset;
+        }
+
+        .product-thumbnail__quantity {
+            background-color: #35b1af;
+        }
+
+
+
+        a:hover,
+        a:focus,
+        .icon-print:hover {
+            color: #50bbce;
+        }
+
+        .field__input:focus,
+        .select2-selection:focus,
+        .select2-search__field:focus {
+            border-color: #319dac;
+            box-shadow: 0 0 0 1px #319dac;
+        }
+
+        .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+            background-color: #27bfcd;
+        }
+
+        .btn {
+            background-color: #33a4ae;
+            border-color: #33a4ae;
+        }
+
+        .btn:focus {
+            outline-color: #2dc0d4;
+        }
+
+        .btn.disabled {
+            background-color: #3f7b8b;
+            border-color: #3f7b8b;
+        }
+
+        .btn:hover {
+            background-color: #12beca;
+            border-color: #12beca;
+        }
+
+
+        .btn,
+        .btn:hover,
+        .btn:focus {
+            color: #FFFFFF;
+        }
+
+        .product-thumbnail__quantity {
+            color: #FFFFFF;
+        }
+    </style>
+    <!-- End checkout custom css -->
+
+    <script src="//bizweb.dktcdn.net/assets/themes_support/libphonenumber-v3.2.30.min.js?1714897981039"></script>
+    <style>
+        @font-face {
+            font-family: 'monica-ext-font_YIBBBFG';
+            src: url('chrome-extension://ofpnmcalabcbjgholdjcjblkibolbppb/static/fonts/Hind-Light.otf');
+            font-weight: 300;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'monica-ext-font_YIBBBFG';
+            src: url('chrome-extension://ofpnmcalabcbjgholdjcjblkibolbppb/static/fonts/Hind-Regular.otf');
+            font-weight: 400;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'monica-ext-font_YIBBBFG';
+            src: url('chrome-extension://ofpnmcalabcbjgholdjcjblkibolbppb/static/fonts/Hind-Medium.otf');
+            font-weight: 500;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'monica-ext-font_YIBBBFG';
+            src: url('chrome-extension://ofpnmcalabcbjgholdjcjblkibolbppb/static/fonts/Hind-SemiBold.otf');
+            font-weight: 600;
+            font-display: swap;
+        }
+    </style>
+
+    <script src="\asset\js\ShippingInfo.vendor.js"></script>
+    <script src="\asset\js\ShippingInfo_multistep.js"></script>
+
+    <script>
+        var Bizweb = Bizweb || {};
+        Bizweb.id = '484752';
+        Bizweb.store = 'mokb.mysapo.net';
+
+        Bizweb.template = 'checkout';
+        Bizweb.Checkout = Bizweb.Checkout || {};
+
+    </script>
+
+    <script>
+        window.BizwebAnalytics = window.BizwebAnalytics || {};
+        window.BizwebAnalytics.meta = window.BizwebAnalytics.meta || {};
+        window.BizwebAnalytics.meta.currency = 'VND';
+        window.BizwebAnalytics.tracking_url = '/s';
+        var meta = {};
+
+
+        for (var attr in meta) {
+            window.BizwebAnalytics.meta[attr] = meta[attr];
+        }
+    </script>
+
+
+    <script src="\asset\js\stast.js"></script>
+    <script async="" src="//bizweb.dktcdn.net/web/assets/lib/js/fp.v3.3.0.min.js"></script>
+
+
+    <style id="monica-reading-highlight-style">
+        .monica-reading-highlight {
+            background: rgba(49, 192, 202, 0.2) !important;
+        }
+    </style>
+    <style class="darkreader darkreader--override" media="screen"></style>
+</head>
+
+<body data-no-turbolink="" monica-version="5.2.2" monica-id="ofpnmcalabcbjgholdjcjblkibolbppb"
+    data-select2-id="select2-data-428-nqf0">
+
+    <header class="banner">
+        <div class="wrap">
+            <div class="logo logo--left">
+
+                <a href="/">
+                    <img class="logo__image  logo__image--small " alt="MOKB Store"
+                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/logo.png?1714897981039">
+                </a>
+
+            </div>
+        </div>
+    </header>
+    <aside>
+        <button class="order-summary-toggle" data-toggle="#order-summary"
+            data-toggle-class="order-summary--is-collapsed">
+            <span class="wrap">
+                <span class="order-summary-toggle__inner">
+                    <span class="order-summary-toggle__text expandable">
+                        Đơn hàng (1 sản phẩm)
+                    </span>
+
+                    <span class="order-summary-toggle__total-recap" data-tg-refresh="refreshDiscount"
+                        id="order-summary-total-recap">
+                        620.000₫
+                    </span>
+
+                </span>
+            </span>
+        </button>
+    </aside>
+    <div class="content" data-select2-id="select2-data-427-ys2u">
+        <div class="wrap" data-select2-id="select2-data-426-nctn">
+            <main class="main">
+                <header class="main__header">
+                    <div class="logo logo--left">
+
+                        <a href="/">
+                            <img class="logo__image  logo__image--small " alt="MOKB Store"
+                                src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/logo.png?1714897981039">
+                        </a>
+
+                    </div>
+                    <nav>
+                        <ul class="progress-bar">
+
+                            <li class="progress-bar__item progress-bar__item--current">
+
+                                <span>Thông tin</span>
+
+                                <span class="progress-bar__pipe"></span>
+                            </li>
+
+                            <li class="progress-bar__item progress-bar__item--muted">
+
+                                <span>Vận chuyển</span>
+                                <span class="progress-bar__pipe"></span>
+                            </li>
+
+                            <li class="progress-bar__item progress-bar__item--muted ">
+
+                                <span>Thanh toán</span>
+
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="main__content" data-select2-id="select2-data-425-fmg6">
+                    <form action="/checkout/de7e2f5f1c12461489978e63598dcc14?step=contact_information"
+                        data-bind-event-submit="handleCheckoutSubmit(event)"
+                        data-define="{shouldSaveCheckoutAbandon: true}"
+                        data-bind-event-change="handleCheckoutChange(event)" method="post" id="checkoutForm"
+                        data-select2-id="select2-data-checkoutForm">
+                        <input type="hidden" name="step" value="contact_information">
+                        <article class="step animate-floating-labels" data-select2-id="select2-data-424-adn2">
+                            <div class="step__sections" data-select2-id="select2-data-423-f7nm">
+                                <!-- review block -->
+
+                                <!-- end review block -->
+                                <!-- main step block-->
+
+
+                                <section class="section" data-select2-id="select2-data-422-cn2r">
+                                    <div class="section__header">
+                                        <div class="layout-flex">
+                                            <h2 class="section__title layout-flex__item layout-flex__item--stretch">
+                                                <i
+                                                    class="fa fa-id-card-o fa-lg section__title--icon hide-on-desktop"></i>
+
+                                                Thông tin mua hàng
+
+                                            </h2>
+
+
+                                            <a
+                                                href="/account/login?returnUrl=/checkout/de7e2f5f1c12461489978e63598dcc14?step=contact_information">
+                                                <i class="fa-regular fa-user fa-lg"></i>
+                                                <span>Đăng nhập </span>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="section__content" data-select2-id="select2-data-421-e3aa">
+                                        <div class="fieldset">
+
+                                            <div class="field " data-bind-class="{'field--show-floating-label': email}">
+                                                <div class="field__input-wrapper">
+                                                    <label for="email" class="field__label">
+                                                        Email
+                                                    </label>
+                                                    <input name="email" id="email" type="email" class="field__input"
+                                                        data-bind="email" value="">
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="field "
+                                                data-bind-class="{'field--show-floating-label': billing.name}">
+                                                <div class="field__input-wrapper">
+                                                    <label for="billingName" class="field__label">Họ và tên</label>
+                                                    <input name="billingName" id="billingName" type="text"
+                                                        class="field__input" data-bind="billing.name" value="">
+                                                </div>
+
+                                            </div>
+
+                                            <div class="field "
+                                                data-bind-class="{'field--show-floating-label': billing.phone}">
+                                                <div class="field__input-wrapper field__input-wrapper--connected"
+                                                    data-define="{phoneInput: new InputPhone(this)}">
+                                                    <label for="billingPhone" class="field__label">
+                                                        Số điện thoại
+                                                    </label>
+                                                    <input name="billingPhone" id="billingPhone" type="tel"
+                                                        class="field__input" data-bind="billing.phone" value="">
+                                                    <div class="field__input-phone-region-wrapper">
+                                                        <select
+                                                            class="field__input select-phone-region select2-hidden-accessible"
+                                                            name="billingPhoneRegion" data-init-value="VN"
+                                                            data-select2-id="select2-data-7-2cyk" tabindex="-1"
+                                                            aria-hidden="true">
+                                                            <option value="AF" data-select2-id="select2-data-9-zpg0">
+                                                                Afghanistan (+93)</option>
+                                                            <option value="AL" data-select2-id="select2-data-10-391k">
+                                                                Albania (+355)</option>
+                                                            <option value="DZ" data-select2-id="select2-data-11-si3a">
+                                                                Algeria (+213)</option>
+                                                            <option value="AD" data-select2-id="select2-data-12-l3h2">
+                                                                Andorra (+376)</option>
+                                                            <option value="AO" data-select2-id="select2-data-13-w1r1">
+                                                                Angola (+244)</option>
+                                                            <option value="AG" data-select2-id="select2-data-14-64po">
+                                                                Antigua and Barbuda (+1)</option>
+                                                            <option value="AR" data-select2-id="select2-data-15-mjjh">
+                                                                Argentina (+54)</option>
+                                                            <option value="AM" data-select2-id="select2-data-16-5ms4">
+                                                                Armenia (+374)</option>
+                                                            <option value="AU" data-select2-id="select2-data-17-rg63">
+                                                                Australia (+61)</option>
+                                                            <option value="AT" data-select2-id="select2-data-18-3d6w">
+                                                                Austria (+43)</option>
+                                                            <option value="AZ" data-select2-id="select2-data-19-ccqu">
+                                                                Azerbaijan (+994)</option>
+                                                            <option value="BS" data-select2-id="select2-data-20-0xnm">
+                                                                Bahamas (+1)</option>
+                                                            <option value="BH" data-select2-id="select2-data-21-5xnt">
+                                                                Bahrain (+973)</option>
+                                                            <option value="BD" data-select2-id="select2-data-22-mcvn">
+                                                                Bangladesh (+880)</option>
+                                                            <option value="BB" data-select2-id="select2-data-23-yy5h">
+                                                                Barbados (+1)</option>
+                                                            <option value="BY" data-select2-id="select2-data-24-59j6">
+                                                                Belarus (+375)</option>
+                                                            <option value="BE" data-select2-id="select2-data-25-b5ts">
+                                                                Belgium (+32)</option>
+                                                            <option value="BZ" data-select2-id="select2-data-26-grol">
+                                                                Belize (+501)</option>
+                                                            <option value="BJ" data-select2-id="select2-data-27-vigk">
+                                                                Benin (+229)</option>
+                                                            <option value="BT" data-select2-id="select2-data-28-ow8u">
+                                                                Bhutan (+975)</option>
+                                                            <option value="BO" data-select2-id="select2-data-29-z8qo">
+                                                                Bolivia (+591)</option>
+                                                            <option value="BA" data-select2-id="select2-data-30-xnak">
+                                                                Bosnia and Herzegovina (+387)</option>
+                                                            <option value="BW" data-select2-id="select2-data-31-1y4a">
+                                                                Botswana (+267)</option>
+                                                            <option value="BR" data-select2-id="select2-data-32-vs44">
+                                                                Brazil (+55)</option>
+                                                            <option value="BN" data-select2-id="select2-data-33-ax4l">
+                                                                Brunei (+673)</option>
+                                                            <option value="BG" data-select2-id="select2-data-34-l3hn">
+                                                                Bulgaria (+359)</option>
+                                                            <option value="BF" data-select2-id="select2-data-35-io3o">
+                                                                Burkina Faso (+226)</option>
+                                                            <option value="BI" data-select2-id="select2-data-36-xsbh">
+                                                                Burundi (+257)</option>
+                                                            <option value="KH" data-select2-id="select2-data-37-ee65">
+                                                                Cambodia (+855)</option>
+                                                            <option value="CM" data-select2-id="select2-data-38-jftm">
+                                                                Cameroon (+237)</option>
+                                                            <option value="CA" data-select2-id="select2-data-39-vifg">
+                                                                Canada (+1)</option>
+                                                            <option value="CV" data-select2-id="select2-data-40-9jlq">
+                                                                Cape Verde (+238)</option>
+                                                            <option value="CF" data-select2-id="select2-data-41-t3b3">
+                                                                Central African Republic (+236)</option>
+                                                            <option value="TD" data-select2-id="select2-data-42-k9q8">
+                                                                Chad (+235)</option>
+                                                            <option value="CL" data-select2-id="select2-data-43-k0qb">
+                                                                Chile (+56)</option>
+                                                            <option value="CO" data-select2-id="select2-data-44-8og4">
+                                                                Colombia (+57)</option>
+                                                            <option value="KM" data-select2-id="select2-data-45-o9vw">
+                                                                Comoros (+269)</option>
+                                                            <option value="CG" data-select2-id="select2-data-46-p6pt">
+                                                                Congo-Brazzaville (+242)</option>
+                                                            <option value="CK" data-select2-id="select2-data-47-7arh">
+                                                                Congo-Kinshasa (+682)</option>
+                                                            <option value="CR" data-select2-id="select2-data-48-5g03">
+                                                                Costa Rica (+506)</option>
+                                                            <option value="CD" data-select2-id="select2-data-49-ssjv">
+                                                                Côte d'Ivoire (+243)</option>
+                                                            <option value="HR" data-select2-id="select2-data-50-ix7n">
+                                                                Croatia (+385)</option>
+                                                            <option value="CU" data-select2-id="select2-data-51-sjhb">
+                                                                Cuba (+53)</option>
+                                                            <option value="CY" data-select2-id="select2-data-52-hp9m">
+                                                                Cyprus (+357)</option>
+                                                            <option value="CZ" data-select2-id="select2-data-53-mlyp">
+                                                                Czech Republic (+420)</option>
+                                                            <option value="DK" data-select2-id="select2-data-54-kb5e">
+                                                                Denmark (+45)</option>
+                                                            <option value="DJ" data-select2-id="select2-data-55-qxkq">
+                                                                Djibouti (+253)</option>
+                                                            <option value="DM" data-select2-id="select2-data-56-4jrs">
+                                                                Dominica (+1)</option>
+                                                            <option value="DO" data-select2-id="select2-data-57-qt6c">
+                                                                Dominican Republic (+1)</option>
+                                                            <option value="TL" data-select2-id="select2-data-58-jjtc">
+                                                                East Timor (+670)</option>
+                                                            <option value="EC" data-select2-id="select2-data-59-no32">
+                                                                Ecuador (+593)</option>
+                                                            <option value="EG" data-select2-id="select2-data-60-8cwo">
+                                                                Egypt (+20)</option>
+                                                            <option value="SV" data-select2-id="select2-data-61-o6rp">El
+                                                                Salvador (+503)</option>
+                                                            <option value="GQ" data-select2-id="select2-data-62-dc5o">
+                                                                Equatorial Guinea (+240)</option>
+                                                            <option value="ER" data-select2-id="select2-data-63-08mo">
+                                                                Eritrea (+291)</option>
+                                                            <option value="EE" data-select2-id="select2-data-64-7prc">
+                                                                Estonia (+372)</option>
+                                                            <option value="ET" data-select2-id="select2-data-65-z9d8">
+                                                                Ethiopia (+251)</option>
+                                                            <option value="FJ" data-select2-id="select2-data-66-6z6o">
+                                                                Fiji (+679)</option>
+                                                            <option value="FI" data-select2-id="select2-data-67-5zqd">
+                                                                Finland (+358)</option>
+                                                            <option value="FR" data-select2-id="select2-data-68-3xjd">
+                                                                France (+33)</option>
+                                                            <option value="GA" data-select2-id="select2-data-69-1xyk">
+                                                                Gabon (+241)</option>
+                                                            <option value="GM" data-select2-id="select2-data-70-x51h">
+                                                                Gambia (+220)</option>
+                                                            <option value="GE" data-select2-id="select2-data-71-p8g4">
+                                                                Georgia (+995)</option>
+                                                            <option value="DE" data-select2-id="select2-data-72-0k6r">
+                                                                Germany (+49)</option>
+                                                            <option value="GH" data-select2-id="select2-data-73-xr21">
+                                                                Ghana (+233)</option>
+                                                            <option value="GR" data-select2-id="select2-data-74-8f0a">
+                                                                Greece (+30)</option>
+                                                            <option value="GD" data-select2-id="select2-data-75-bqzm">
+                                                                Grenada (+1)</option>
+                                                            <option value="GT" data-select2-id="select2-data-76-hc8i">
+                                                                Guatemala (+502)</option>
+                                                            <option value="GN" data-select2-id="select2-data-77-ctcp">
+                                                                Guinea (+224)</option>
+                                                            <option value="GW" data-select2-id="select2-data-78-f3x7">
+                                                                Guinea-Bissau (+245)</option>
+                                                            <option value="GY" data-select2-id="select2-data-79-ikze">
+                                                                Guyana (+592)</option>
+                                                            <option value="HT" data-select2-id="select2-data-80-f9gw">
+                                                                Haiti (+509)</option>
+                                                            <option value="HN" data-select2-id="select2-data-81-itxu">
+                                                                Honduras (+504)</option>
+                                                            <option value="HK" data-select2-id="select2-data-82-am35">
+                                                                Hong Kong (+852)</option>
+                                                            <option value="HU" data-select2-id="select2-data-83-pkkk">
+                                                                Hungary (+36)</option>
+                                                            <option value="IS" data-select2-id="select2-data-84-z4jm">
+                                                                Iceland (+354)</option>
+                                                            <option value="IN" data-select2-id="select2-data-85-rxeu">
+                                                                India (+91)</option>
+                                                            <option value="ID" data-select2-id="select2-data-86-2unn">
+                                                                Indonesia (+62)</option>
+                                                            <option value="IR" data-select2-id="select2-data-87-0yyd">
+                                                                Iran (+98)</option>
+                                                            <option value="IQ" data-select2-id="select2-data-88-k5dd">
+                                                                Iraq (+964)</option>
+                                                            <option value="IE" data-select2-id="select2-data-89-e8jg">
+                                                                Ireland (+353)</option>
+                                                            <option value="IL" data-select2-id="select2-data-90-sg7e">
+                                                                Israel (+972)</option>
+                                                            <option value="IT" data-select2-id="select2-data-91-ipku">
+                                                                Italy (+39)</option>
+                                                            <option value="JM" data-select2-id="select2-data-92-jy4b">
+                                                                Jamaica (+1)</option>
+                                                            <option value="JP" data-select2-id="select2-data-93-75le">
+                                                                Japan (Nippon) (+81)</option>
+                                                            <option value="JO" data-select2-id="select2-data-94-33a6">
+                                                                Jordan (+962)</option>
+                                                            <option value="KZ" data-select2-id="select2-data-95-ii6m">
+                                                                Kazakhstan (+7)</option>
+                                                            <option value="KE" data-select2-id="select2-data-96-dyao">
+                                                                Kenya (+254)</option>
+                                                            <option value="KI" data-select2-id="select2-data-97-hlrh">
+                                                                Kiribati (+686)</option>
+                                                            <option value="KP" data-select2-id="select2-data-98-au17">
+                                                                North Korea (+850)</option>
+                                                            <option value="XK" data-select2-id="select2-data-99-xfi7">
+                                                                Kosovo (+383)</option>
+                                                            <option value="KW" data-select2-id="select2-data-100-mofs">
+                                                                Kuwait (+965)</option>
+                                                            <option value="KG" data-select2-id="select2-data-101-dvi2">
+                                                                Kyrgyzstan (+996)</option>
+                                                            <option value="LA" data-select2-id="select2-data-102-pu5u">
+                                                                Laos (+856)</option>
+                                                            <option value="LV" data-select2-id="select2-data-103-p7rh">
+                                                                Latvia (+371)</option>
+                                                            <option value="LB" data-select2-id="select2-data-104-urgy">
+                                                                Lebanon (+961)</option>
+                                                            <option value="LS" data-select2-id="select2-data-105-xic3">
+                                                                Lesotho (+266)</option>
+                                                            <option value="LR" data-select2-id="select2-data-106-1l0b">
+                                                                Liberia (+231)</option>
+                                                            <option value="LY" data-select2-id="select2-data-107-myjn">
+                                                                Libya (+218)</option>
+                                                            <option value="LI" data-select2-id="select2-data-108-y751">
+                                                                Liechtenstein (+423)</option>
+                                                            <option value="LT" data-select2-id="select2-data-109-axkr">
+                                                                Lithuania (+370)</option>
+                                                            <option value="LU" data-select2-id="select2-data-110-nxlt">
+                                                                Luxembourg (+352)</option>
+                                                            <option value="MK" data-select2-id="select2-data-111-ad8g">
+                                                                Macedonia (FYROM) (+389)</option>
+                                                            <option value="MG" data-select2-id="select2-data-112-y8sx">
+                                                                Madagascar (+261)</option>
+                                                            <option value="MW" data-select2-id="select2-data-113-k7nx">
+                                                                Malawi (+265)</option>
+                                                            <option value="MY" data-select2-id="select2-data-114-hwwj">
+                                                                Malaysia (+60)</option>
+                                                            <option value="MV" data-select2-id="select2-data-115-80n9">
+                                                                Maldives (+960)</option>
+                                                            <option value="ML" data-select2-id="select2-data-116-m8y3">
+                                                                Mali (+223)</option>
+                                                            <option value="MT" data-select2-id="select2-data-117-l9uz">
+                                                                Malta (+356)</option>
+                                                            <option value="MH" data-select2-id="select2-data-118-rv9t">
+                                                                Marshall Islands (+692)</option>
+                                                            <option value="MR" data-select2-id="select2-data-119-lzyb">
+                                                                Mauritania (+222)</option>
+                                                            <option value="MU" data-select2-id="select2-data-120-uxgp">
+                                                                Mauritius (+230)</option>
+                                                            <option value="MX" data-select2-id="select2-data-121-8e14">
+                                                                Mexico (+52)</option>
+                                                            <option value="FM" data-select2-id="select2-data-122-f2ts">
+                                                                Micronesia (+691)</option>
+                                                            <option value="MD" data-select2-id="select2-data-123-3fj6">
+                                                                Moldova (+373)</option>
+                                                            <option value="MC" data-select2-id="select2-data-124-l54c">
+                                                                Monaco (+377)</option>
+                                                            <option value="MN" data-select2-id="select2-data-125-tbq7">
+                                                                Mongolia (+976)</option>
+                                                            <option value="ME" data-select2-id="select2-data-126-eoxp">
+                                                                Montenegro (+382)</option>
+                                                            <option value="MA" data-select2-id="select2-data-127-oe1a">
+                                                                Morocco (+212)</option>
+                                                            <option value="MZ" data-select2-id="select2-data-128-8ico">
+                                                                Mozambique (+258)</option>
+                                                            <option value="MM" data-select2-id="select2-data-129-gt41">
+                                                                Myanmar (+95)</option>
+                                                            <option value="NA" data-select2-id="select2-data-130-iwmo">
+                                                                Namibia (+264)</option>
+                                                            <option value="NR" data-select2-id="select2-data-131-ucnq">
+                                                                Nauru (+674)</option>
+                                                            <option value="NP" data-select2-id="select2-data-132-dfa3">
+                                                                Nepal (+977)</option>
+                                                            <option value="NL" data-select2-id="select2-data-133-jama">
+                                                                Netherlands (+31)</option>
+                                                            <option value="NZ" data-select2-id="select2-data-134-jlme">
+                                                                New Zealand (+64)</option>
+                                                            <option value="NI" data-select2-id="select2-data-135-hb61">
+                                                                Nicaragua (+505)</option>
+                                                            <option value="NE" data-select2-id="select2-data-136-62ek">
+                                                                Niger (+227)</option>
+                                                            <option value="NG" data-select2-id="select2-data-137-4a5f">
+                                                                Nigeria (+234)</option>
+                                                            <option value="KR" data-select2-id="select2-data-138-nmyh">
+                                                                South Korea (+82)</option>
+                                                            <option value="NC" data-select2-id="select2-data-139-zfwd">
+                                                                New Caledonia (+687)</option>
+                                                            <option value="NO" data-select2-id="select2-data-140-hkl4">
+                                                                Norway (+47)</option>
+                                                            <option value="OM" data-select2-id="select2-data-141-06nj">
+                                                                Oman (+968)</option>
+                                                            <option value="PK" data-select2-id="select2-data-142-0qic">
+                                                                Pakistan (+92)</option>
+                                                            <option value="PW" data-select2-id="select2-data-143-d5im">
+                                                                Palau (+680)</option>
+                                                            <option value="PS" data-select2-id="select2-data-144-0wjy">
+                                                                Palestine (+970)</option>
+                                                            <option value="PA" data-select2-id="select2-data-145-78pc">
+                                                                Panama (+507)</option>
+                                                            <option value="PG" data-select2-id="select2-data-146-e7av">
+                                                                Papua New Guinea (+675)</option>
+                                                            <option value="PY" data-select2-id="select2-data-147-ts1x">
+                                                                Paraguay (+595)</option>
+                                                            <option value="PE" data-select2-id="select2-data-148-icry">
+                                                                Peru (+51)</option>
+                                                            <option value="PH" data-select2-id="select2-data-149-kor9">
+                                                                Philippines (+63)</option>
+                                                            <option value="PL" data-select2-id="select2-data-150-mu7x">
+                                                                Poland (+48)</option>
+                                                            <option value="PT" data-select2-id="select2-data-151-xzr8">
+                                                                Portugal (+351)</option>
+                                                            <option value="QA" data-select2-id="select2-data-152-i4xe">
+                                                                Qatar (+974)</option>
+                                                            <option value="RO" data-select2-id="select2-data-153-436f">
+                                                                Romania (+40)</option>
+                                                            <option value="RU" data-select2-id="select2-data-154-pcte">
+                                                                Russia (+7)</option>
+                                                            <option value="RW" data-select2-id="select2-data-155-y7p4">
+                                                                Rwanda (+250)</option>
+                                                            <option value="KN" data-select2-id="select2-data-156-z0xx">
+                                                                Saint Kitts and Nevis (+1)</option>
+                                                            <option value="LC" data-select2-id="select2-data-157-1eo9">
+                                                                Saint Lucia (+1)</option>
+                                                            <option value="VC" data-select2-id="select2-data-158-k15w">
+                                                                Saint Vincent and the Grenadines (+1)</option>
+                                                            <option value="WS" data-select2-id="select2-data-159-cqpo">
+                                                                Samoa (+685)</option>
+                                                            <option value="SM" data-select2-id="select2-data-160-ql8u">
+                                                                San Marino (+378)</option>
+                                                            <option value="ST" data-select2-id="select2-data-161-0jpt">
+                                                                Sao Tome and Principe (+239)</option>
+                                                            <option value="SA" data-select2-id="select2-data-162-5do3">
+                                                                Saudi Arabia (+966)</option>
+                                                            <option value="SS" data-select2-id="select2-data-163-2c1v">
+                                                                South Sudan (+211)</option>
+                                                            <option value="SN" data-select2-id="select2-data-164-4i8c">
+                                                                Senegal (+221)</option>
+                                                            <option value="RS" data-select2-id="select2-data-165-ab99">
+                                                                Serbia (+381)</option>
+                                                            <option value="SC" data-select2-id="select2-data-166-5hqk">
+                                                                Seychelles (+248)</option>
+                                                            <option value="SL" data-select2-id="select2-data-167-r3yl">
+                                                                Sierra Leone (+232)</option>
+                                                            <option value="SG" data-select2-id="select2-data-168-qe2m">
+                                                                Singapore (+65)</option>
+                                                            <option value="SH" data-select2-id="select2-data-169-iuo8">
+                                                                Saint Helena (+290)</option>
+                                                            <option value="SK" data-select2-id="select2-data-170-isck">
+                                                                Slovakia (+421)</option>
+                                                            <option value="SI" data-select2-id="select2-data-171-vgh6">
+                                                                Slovenia (+386)</option>
+                                                            <option value="SB" data-select2-id="select2-data-172-twzi">
+                                                                Solomon Islands (+677)</option>
+                                                            <option value="SO" data-select2-id="select2-data-173-8dyj">
+                                                                Somalia (+252)</option>
+                                                            <option value="SJ" data-select2-id="select2-data-174-jl1r">
+                                                                Svalbard and Jan Mayen (+47)</option>
+                                                            <option value="ZA" data-select2-id="select2-data-175-op01">
+                                                                South Africa (+27)</option>
+                                                            <option value="ES" data-select2-id="select2-data-176-c33i">
+                                                                Spain (+34)</option>
+                                                            <option value="LK" data-select2-id="select2-data-177-9zg3">
+                                                                Sri Lanka (+94)</option>
+                                                            <option value="SD" data-select2-id="select2-data-178-ibmr">
+                                                                Sudan (+249)</option>
+                                                            <option value="SR" data-select2-id="select2-data-179-kgby">
+                                                                Suriname (+597)</option>
+                                                            <option value="SZ" data-select2-id="select2-data-180-p84s">
+                                                                Swaziland (+268)</option>
+                                                            <option value="SE" data-select2-id="select2-data-181-x3um">
+                                                                Sweden (+46)</option>
+                                                            <option value="CH" data-select2-id="select2-data-182-0hdc">
+                                                                Switzerland (+41)</option>
+                                                            <option value="SY" data-select2-id="select2-data-183-2txj">
+                                                                Syria (+963)</option>
+                                                            <option value="TJ" data-select2-id="select2-data-184-35vk">
+                                                                Tajikistan (+992)</option>
+                                                            <option value="TZ" data-select2-id="select2-data-185-3ifl">
+                                                                Tanzania (+255)</option>
+                                                            <option value="TH" data-select2-id="select2-data-186-zu29">
+                                                                Thailand (+66)</option>
+                                                            <option value="TG" data-select2-id="select2-data-187-ggye">
+                                                                Togo (+228)</option>
+                                                            <option value="TO" data-select2-id="select2-data-188-1vbm">
+                                                                Tonga (+676)</option>
+                                                            <option value="TK" data-select2-id="select2-data-189-neza">
+                                                                Tokelau (+690)</option>
+                                                            <option value="TT" data-select2-id="select2-data-190-pk0y">
+                                                                Trinidad and Tobago (+1)</option>
+                                                            <option value="TN" data-select2-id="select2-data-191-99ar">
+                                                                Tunisia (+216)</option>
+                                                            <option value="TR" data-select2-id="select2-data-192-cz5x">
+                                                                Turkey (+90)</option>
+                                                            <option value="CN" data-select2-id="select2-data-193-q8h3">
+                                                                China (+86)</option>
+                                                            <option value="TM" data-select2-id="select2-data-194-h4s7">
+                                                                Turkmenistan (+993)</option>
+                                                            <option value="TV" data-select2-id="select2-data-195-qwr7">
+                                                                Tuvalu (+688)</option>
+                                                            <option value="UG" data-select2-id="select2-data-196-yluw">
+                                                                Uganda (+256)</option>
+                                                            <option value="UA" data-select2-id="select2-data-197-27k2">
+                                                                Ukraine (+380)</option>
+                                                            <option value="AE" data-select2-id="select2-data-198-z35s">
+                                                                United Arab Emirates (+971)</option>
+                                                            <option value="GB" data-select2-id="select2-data-199-8q5q">
+                                                                United Kingdom (+44)</option>
+                                                            <option value="US" data-select2-id="select2-data-200-rd31">
+                                                                United States (+1)</option>
+                                                            <option value="UY" data-select2-id="select2-data-201-7bv0">
+                                                                Uruguay (+598)</option>
+                                                            <option value="UZ" data-select2-id="select2-data-202-ss5h">
+                                                                Uzbekistan (+998)</option>
+                                                            <option value="VU" data-select2-id="select2-data-203-tzhq">
+                                                                Vanuatu (+678)</option>
+                                                            <option value="VA" data-select2-id="select2-data-204-qjxb">
+                                                                Vatican (+39)</option>
+                                                            <option value="VE" data-select2-id="select2-data-205-odah">
+                                                                Venezuela (+58)</option>
+                                                            <option value="VN" data-select2-id="select2-data-206-nvsu">
+                                                                Vietnam (+84)</option>
+                                                            <option value="EH" data-select2-id="select2-data-207-43l2">
+                                                                Western Sahara (+212)</option>
+                                                            <option value="YE" data-select2-id="select2-data-208-o2d8">
+                                                                Yemen (+967)</option>
+                                                            <option value="ZM" data-select2-id="select2-data-209-ajo2">
+                                                                Zambia (+260)</option>
+                                                            <option value="ZW" data-select2-id="select2-data-210-nup8">
+                                                                Zimbabwe (+263)</option>
+                                                            <option value="TW" data-select2-id="select2-data-211-sd14">
+                                                                Taiwan (+886)</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="field "
+                                                data-bind-class="{'field--show-floating-label': billing.address}">
+                                                <div class="field__input-wrapper">
+                                                    <label for="billingAddress" class="field__label">
+                                                        Địa chỉ
+                                                    </label>
+                                                    <input name="billingAddress" id="billingAddress" type="text"
+                                                        class="field__input" data-bind="billing.address" value="">
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="field-group">
+                                                <div class="field field--show-floating-label ">
+                                                    <div class="field__input-wrapper field__input-wrapper--select2"
+                                                        data-select2-id="select2-data-420-eo8x">
+                                                        <label for="billingProvince" class="field__label">Tỉnh thành</label>
+                                                        <select name="billingProvince" id="billingProvince" size="1"
+                                                            class="field__input field__input--select select2-hidden-accessible"
+                                                            value="" data-address-type="province"
+                                                            data-address-zone="billing"
+                                                            data-select2-id="select2-data-billingProvince" tabindex="-1"
+                                                            aria-hidden="true">
+                                                            <option value="" hidden=""
+                                                                data-select2-id="select2-data-417-d3tt">---</option>
+                                                            <option value="1" data-select2-id="select2-data-430-nh3x">Hà Nội</option>
+                                                            <option value="2" data-select2-id="select2-data-431-2lei">TP Hồ Chí Minh</option>
+                                                            <option value="3" data-select2-id="select2-data-432-xxy8">An Giang</option>
+                                                            <option value="4" data-select2-id="select2-data-433-90hx">Bà Rịa-Vũng Tàu</option>
+                                                            <option value="5" data-select2-id="select2-data-434-1b4b">Bắc Giang</option>
+                                                            <option value="6" data-select2-id="select2-data-435-gpfp">Bắc Kạn</option>
+                                                            <option value="7" data-select2-id="select2-data-436-c1b8">Bạc Liêu</option>
+                                                            <option value="8" data-select2-id="select2-data-437-a1bh">Bắc Ninh</option>
+                                                            <option value="9" data-select2-id="select2-data-438-j4ck">Bến Tre</option>
+                                                            <option value="10" data-select2-id="select2-data-439-c9ue">Bình Dương</option>
+                                                            <option value="11" data-select2-id="select2-data-440-vi9y">Bình Định</option>
+                                                            <option value="12" data-select2-id="select2-data-441-2qt9">Bình Phước</option>
+                                                            <option value="13" data-select2-id="select2-data-442-om4s">Bình Thuận</option>
+                                                            <option value="14" data-select2-id="select2-data-443-mlv3">Cà Mau</option>
+                                                            <option value="15" data-select2-id="select2-data-444-w6zj">Cao Bằng</option>
+                                                            <option value="16" data-select2-id="select2-data-445-ry5f">Cần Thơ</option>
+                                                            <option value="17" data-select2-id="select2-data-446-spj4">Đà Nẵng</option>
+                                                            <option value="18" data-select2-id="select2-data-447-5d1y">Đắk Lắk</option>
+                                                            <option value="19" data-select2-id="select2-data-448-s6ye">Đắk Nông</option>
+                                                            <option value="20" data-select2-id="select2-data-449-rqnm">Điện Biên</option>
+                                                            <option value="21" data-select2-id="select2-data-450-hz4t">Đồng Nai</option>
+                                                            <option value="22" data-select2-id="select2-data-451-s6jr">Đồng Tháp</option>
+                                                            <option value="23" data-select2-id="select2-data-452-xm60">Gia Lai</option>
+                                                            <option value="24" data-select2-id="select2-data-453-7hm1">Hà Giang</option>
+                                                            <option value="25" data-select2-id="select2-data-454-pwjh">Hà Nam</option>
+                                                            <option value="26" data-select2-id="select2-data-455-l9lj">Hà Tĩnh</option>
+                                                            <option value="27" data-select2-id="select2-data-456-yknd">Hải Dương</option>
+                                                            <option value="28" data-select2-id="select2-data-457-l76e">Hải Phòng</option>
+                                                            <option value="29" data-select2-id="select2-data-458-ntao">Hậu Giang</option>
+                                                            <option value="30" data-select2-id="select2-data-459-1f5a">Hòa Bình</option>
+                                                            <option value="31" data-select2-id="select2-data-460-okjx">Hưng Yên</option>
+                                                            <option value="32" data-select2-id="select2-data-461-54rr">Khánh Hòa</option>
+                                                            <option value="33" data-select2-id="select2-data-462-s5cs">Kiên Giang</option>
+                                                            <option value="34" data-select2-id="select2-data-463-e3et">Kon Tum</option>
+                                                            <option value="35" data-select2-id="select2-data-464-2bo1">Lai Châu</option>
+                                                            <option value="36" data-select2-id="select2-data-465-66te">Lâm Đồng</option>
+                                                            <option value="37" data-select2-id="select2-data-466-ssvr">Lạng Sơn</option>
+                                                            <option value="38" data-select2-id="select2-data-467-awpx">Lào Cai</option>
+                                                            <option value="39" data-select2-id="select2-data-468-f56d">Long An</option>
+                                                            <option value="40" data-select2-id="select2-data-469-kc3r">Nam Định</option>
+                                                            <option value="41" data-select2-id="select2-data-470-eo1j">Nghệ An</option>
+                                                            <option value="42" data-select2-id="select2-data-471-kx4f">Ninh Bình</option>
+                                                            <option value="43" data-select2-id="select2-data-472-ckuv">Ninh Thuận</option>
+                                                            <option value="44" data-select2-id="select2-data-473-3kmj">Phú Thọ</option>
+                                                            <option value="45" data-select2-id="select2-data-474-e3wg">Phú Yên</option>
+                                                            <option value="46" data-select2-id="select2-data-475-lrif">Quảng Bình</option>
+                                                            <option value="47" data-select2-id="select2-data-476-xkkn">Quảng Nam</option>
+                                                            <option value="48" data-select2-id="select2-data-477-ttq9">Quảng Ngãi</option>
+                                                            <option value="49" data-select2-id="select2-data-478-rv7m">Quảng Ninh</option>
+                                                            <option value="50" data-select2-id="select2-data-479-lo2u">Quảng Trị</option>
+                                                            <option value="51" data-select2-id="select2-data-480-dmmf">Sóc Trăng</option>
+                                                            <option value="52" data-select2-id="select2-data-481-af65">Sơn La</option>
+                                                            <option value="53" data-select2-id="select2-data-482-in39">Tây Ninh</option>
+                                                            <option value="54" data-select2-id="select2-data-483-x32e">Thái Bình</option>
+                                                            <option value="55" data-select2-id="select2-data-484-de5x">Thái Nguyên</option>
+                                                            <option value="56" data-select2-id="select2-data-485-6kg9">Thanh Hóa</option>
+                                                            <option value="57" data-select2-id="select2-data-486-cwhk">Thừa Thiên Huế</option>
+                                                            <option value="58" data-select2-id="select2-data-487-c9hr">Tiền Giang</option>
+                                                            <option value="59" data-select2-id="select2-data-488-rwxn">Trà Vinh</option>
+                                                            <option value="60" data-select2-id="select2-data-489-aayu">Tuyên Quang</option>
+                                                            <option value="61" data-select2-id="select2-data-490-jmtr">Vĩnh Long</option>
+                                                            <option value="62" data-select2-id="select2-data-491-pfcx">Vĩnh Phúc</option>
+                                                            <option value="63" data-select2-id="select2-data-492-2esv">Yên Bái</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="field field--show-floating-label ">
+                                                    <div class="field__input-wrapper field__input-wrapper--select2"
+                                                        data-select2-id="select2-data-496-k3ls">
+                                                        <label for="billingDistrict" class="field__label">Quận huyện</label>
+                                                        <select name="billingDistrict" id="billingDistrict" size="1"
+                                                            class="field__input field__input--select select2-hidden-accessible"
+                                                            value="" data-address-type="district"
+                                                            data-address-zone="billing"
+                                                            data-select2-id="select2-data-billingDistrict" tabindex="-1"
+                                                            aria-hidden="true">
+                                                            <option value="" hidden=""
+                                                                data-select2-id="select2-data-494-uql3">---</option>
+                                                            <option value="30" data-select2-id="select2-data-497-ar1l">
+                                                                Quận 1</option>
+                                                            <option value="31" data-select2-id="select2-data-498-2bbw">
+                                                                Quận 2</option>
+                                                            <option value="32" data-select2-id="select2-data-499-t3vx">
+                                                                Quận 3</option>
+                                                            <option value="33" data-select2-id="select2-data-500-nw9q">
+                                                                Quận 4</option>
+                                                            <option value="34" data-select2-id="select2-data-501-tsvw">
+                                                                Quận 5</option>
+                                                            <option value="35" data-select2-id="select2-data-502-0q9b">
+                                                                Quận 6</option>
+                                                            <option value="36" data-select2-id="select2-data-503-5sqj">
+                                                                Quận 7</option>
+                                                            <option value="37" data-select2-id="select2-data-504-uacl">
+                                                                Quận 8</option>
+                                                            <option value="38" data-select2-id="select2-data-505-m8p6">
+                                                                Quận 9</option>
+                                                            <option value="39" data-select2-id="select2-data-506-1crh">
+                                                                Quận 10</option>
+                                                            <option value="40" data-select2-id="select2-data-507-zub3">
+                                                                Quận 11</option>
+                                                            <option value="41" data-select2-id="select2-data-508-tk8k">
+                                                                Quận 12</option>
+                                                            <option value="42" data-select2-id="select2-data-509-7top">
+                                                                Quận Gò Vấp</option>
+                                                            <option value="43" data-select2-id="select2-data-510-5pnn">
+                                                                Quận Tân Bình</option>
+                                                            <option value="44" data-select2-id="select2-data-511-v1t6">
+                                                                Quận Tân Phú</option>
+                                                            <option value="45" data-select2-id="select2-data-512-r6ij">
+                                                                Quận Bình Thạnh</option>
+                                                            <option value="46" data-select2-id="select2-data-513-ztfp">
+                                                                Quận Phú Nhuận</option>
+                                                            <option value="47" data-select2-id="select2-data-514-pphs">
+                                                                Quận Thủ Đức</option>
+                                                            <option value="48" data-select2-id="select2-data-515-9pj8">
+                                                                Quận Bình Tân</option>
+                                                            <option value="49" data-select2-id="select2-data-516-tdo4">
+                                                                Huyện Củ Chi</option>
+                                                            <option value="50" data-select2-id="select2-data-517-9zvq">
+                                                                Huyện Hóc Môn</option>
+                                                            <option value="51" data-select2-id="select2-data-518-13ft">
+                                                                Huyện Bình Chánh</option>
+                                                            <option value="52" data-select2-id="select2-data-519-vlzt">
+                                                                Huyện Nhà Bè</option>
+                                                            <option value="53" data-select2-id="select2-data-520-xbic">
+                                                                Huyện Cần Giờ</option>
+                                                            <option value="10924"
+                                                                data-select2-id="select2-data-521-500i">Thành phố Thủ
+                                                                Đức</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="field field--show-floating-label ">
+                                                    <div class="field__input-wrapper field__input-wrapper--select2"
+                                                        data-select2-id="select2-data-525-zalf">
+                                                        <label for="billingWard" class="field__label">
+                                                            Phường xã
+                                                        </label>
+                                                        <select name="billingWard" id="billingWard" size="1"
+                                                            class="field__input field__input--select select2-hidden-accessible"
+                                                            value="" data-address-type="ward"
+                                                            data-address-zone="billing"
+                                                            data-select2-id="select2-data-billingWard" tabindex="-1"
+                                                            aria-hidden="true">
+                                                            <option value="" hidden=""
+                                                                data-select2-id="select2-data-523-c16q">---</option>
+                                                            <option value="9340"
+                                                                data-select2-id="select2-data-526-pzvc">Phường Thảo Điền
+                                                            </option>
+                                                            <option value="9341"
+                                                                data-select2-id="select2-data-527-slz8">Phường An Phú
+                                                            </option>
+                                                            <option value="9342"
+                                                                data-select2-id="select2-data-528-sy2e">Phường Bình An
+                                                            </option>
+                                                            <option value="9343"
+                                                                data-select2-id="select2-data-529-k6yo">Phường Bình
+                                                                Trưng Đông</option>
+                                                            <option value="9344"
+                                                                data-select2-id="select2-data-530-6n0k">Phường Bình
+                                                                Trưng Tây</option>
+                                                            <option value="9345"
+                                                                data-select2-id="select2-data-531-ku1c">Phường Bình
+                                                                Khánh</option>
+                                                            <option value="9346"
+                                                                data-select2-id="select2-data-532-sw25">Phường An Khánh
+                                                            </option>
+                                                            <option value="9347"
+                                                                data-select2-id="select2-data-533-2b7u">Phường Cát Lái
+                                                            </option>
+                                                            <option value="9348"
+                                                                data-select2-id="select2-data-534-zdna">Phường Thạnh Mỹ
+                                                                Lợi</option>
+                                                            <option value="9349"
+                                                                data-select2-id="select2-data-535-lf3q">Phường An Lợi Đông
+                                                            </option>
+                                                            <option value="9350"
+                                                                data-select2-id="select2-data-536-cqa1">Phường Thủ Thiêm
+                                                            </option>
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="field">
+                                                <div class="checkbox-wrapper">
+                                                    <div class="checkbox__input">
+                                                        <input type="checkbox" name="differenceAddress"
+                                                            id="differenceAddress" class="input-checkbox"
+                                                            data-bind="differenceAddress" value="true"
+                                                            data-toggle="#shipping-address"
+                                                            data-toggle-class="visually-hidden"
+                                                            data-listener-added_6ea29a68="true">
+                                                    </div>
+                                                    <label for="differenceAddress" class="checkbox__label">
+                                                        Giao hàng đến địa chỉ khác
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="section visually-hidden" id="shipping-address">
+                                    <div class="section__header">
+                                        <div class="layout-flex">
+                                            <h2 class="section__title layout-flex__item layout-flex__item--stretch">
+                                                <i
+                                                    class="fa fa-id-card-o fa-lg section__title--icon hide-on-desktop"></i>
+                                                Thông tin nhận hàng
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="section__content">
+                                        <div class="fieldset">
+                                            <div class="field "
+                                                data-bind-class="{'field--show-floating-label': shipping.name}">
+                                                <div class="field__input-wrapper">
+                                                    <label for="shippingName" class="field__label">Họ và tên</label>
+                                                    <input name="shippingName" id="shippingName" type="text"
+                                                        class="field__input" data-bind="shipping.name" value=""
+                                                        tabindex="-1">
+                                                </div>
+
+                                            </div>
+
+                                            <div class="field "
+                                                data-bind-class="{'field--show-floating-label': shipping.phone}">
+                                                <div class="field__input-wrapper field__input-wrapper--connected"
+                                                    data-define="{shippingPhoneInput: new InputPhone(this)}">
+                                                    <label for="shippingPhone" class="field__label">
+                                                        Số điện thoại
+                                                    </label>
+                                                    <input name="shippingPhone" id="shippingPhone" type="tel"
+                                                        class="field__input" data-bind="shipping.phone" value=""
+                                                        tabindex="-1">
+                                                    <div class="field__input-phone-region-wrapper">
+                                                        <select
+                                                            class="field__input select-phone-region select2-hidden-accessible"
+                                                            name="shippingPhoneRegion" data-init-value="VN"
+                                                            data-select2-id="select2-data-212-j7fs" tabindex="-1"
+                                                            aria-hidden="true">
+                                                            <option value="AF" data-select2-id="select2-data-214-94nz">
+                                                                Afghanistan (+93)</option>
+                                                            <option value="AL" data-select2-id="select2-data-215-nq6p">
+                                                                Albania (+355)</option>
+                                                            <option value="DZ" data-select2-id="select2-data-216-ff0d">
+                                                                Algeria (+213)</option>
+                                                            <option value="AD" data-select2-id="select2-data-217-e11j">
+                                                                Andorra (+376)</option>
+                                                            <option value="AO" data-select2-id="select2-data-218-p1ix">
+                                                                Angola (+244)</option>
+                                                            <option value="AG" data-select2-id="select2-data-219-wqsd">
+                                                                Antigua and Barbuda (+1)</option>
+                                                            <option value="AR" data-select2-id="select2-data-220-t4z2">
+                                                                Argentina (+54)</option>
+                                                            <option value="AM" data-select2-id="select2-data-221-wd7n">
+                                                                Armenia (+374)</option>
+                                                            <option value="AU" data-select2-id="select2-data-222-e5hn">
+                                                                Australia (+61)</option>
+                                                            <option value="AT" data-select2-id="select2-data-223-s3ry">
+                                                                Austria (+43)</option>
+                                                            <option value="AZ" data-select2-id="select2-data-224-wklz">
+                                                                Azerbaijan (+994)</option>
+                                                            <option value="BS" data-select2-id="select2-data-225-u17f">
+                                                                Bahamas (+1)</option>
+                                                            <option value="BH" data-select2-id="select2-data-226-usiq">
+                                                                Bahrain (+973)</option>
+                                                            <option value="BD" data-select2-id="select2-data-227-tx49">
+                                                                Bangladesh (+880)</option>
+                                                            <option value="BB" data-select2-id="select2-data-228-a95v">
+                                                                Barbados (+1)</option>
+                                                            <option value="BY" data-select2-id="select2-data-229-lxjd">
+                                                                Belarus (+375)</option>
+                                                            <option value="BE" data-select2-id="select2-data-230-d3y3">
+                                                                Belgium (+32)</option>
+                                                            <option value="BZ" data-select2-id="select2-data-231-b0es">
+                                                                Belize (+501)</option>
+                                                            <option value="BJ" data-select2-id="select2-data-232-9jc4">
+                                                                Benin (+229)</option>
+                                                            <option value="BT" data-select2-id="select2-data-233-m5uk">
+                                                                Bhutan (+975)</option>
+                                                            <option value="BO" data-select2-id="select2-data-234-kylm">
+                                                                Bolivia (+591)</option>
+                                                            <option value="BA" data-select2-id="select2-data-235-u122">
+                                                                Bosnia and Herzegovina (+387)</option>
+                                                            <option value="BW" data-select2-id="select2-data-236-s44k">
+                                                                Botswana (+267)</option>
+                                                            <option value="BR" data-select2-id="select2-data-237-2pbr">
+                                                                Brazil (+55)</option>
+                                                            <option value="BN" data-select2-id="select2-data-238-zp1k">
+                                                                Brunei (+673)</option>
+                                                            <option value="BG" data-select2-id="select2-data-239-nypi">
+                                                                Bulgaria (+359)</option>
+                                                            <option value="BF" data-select2-id="select2-data-240-o5x3">
+                                                                Burkina Faso (+226)</option>
+                                                            <option value="BI" data-select2-id="select2-data-241-quac">
+                                                                Burundi (+257)</option>
+                                                            <option value="KH" data-select2-id="select2-data-242-0qoo">
+                                                                Cambodia (+855)</option>
+                                                            <option value="CM" data-select2-id="select2-data-243-hvgd">
+                                                                Cameroon (+237)</option>
+                                                            <option value="CA" data-select2-id="select2-data-244-bj5d">
+                                                                Canada (+1)</option>
+                                                            <option value="CV" data-select2-id="select2-data-245-tcf2">
+                                                                Cape Verde (+238)</option>
+                                                            <option value="CF" data-select2-id="select2-data-246-548l">
+                                                                Central African Republic (+236)</option>
+                                                            <option value="TD" data-select2-id="select2-data-247-9wym">
+                                                                Chad (+235)</option>
+                                                            <option value="CL" data-select2-id="select2-data-248-yxpc">
+                                                                Chile (+56)</option>
+                                                            <option value="CO" data-select2-id="select2-data-249-q49z">
+                                                                Colombia (+57)</option>
+                                                            <option value="KM" data-select2-id="select2-data-250-suxr">
+                                                                Comoros (+269)</option>
+                                                            <option value="CG" data-select2-id="select2-data-251-en07">
+                                                                Congo-Brazzaville (+242)</option>
+                                                            <option value="CK" data-select2-id="select2-data-252-547k">
+                                                                Congo-Kinshasa (+682)</option>
+                                                            <option value="CR" data-select2-id="select2-data-253-owri">
+                                                                Costa Rica (+506)</option>
+                                                            <option value="CD" data-select2-id="select2-data-254-ev1w">
+                                                                Côte d'Ivoire (+243)</option>
+                                                            <option value="HR" data-select2-id="select2-data-255-t9dm">
+                                                                Croatia (+385)</option>
+                                                            <option value="CU" data-select2-id="select2-data-256-kmsc">
+                                                                Cuba (+53)</option>
+                                                            <option value="CY" data-select2-id="select2-data-257-g3p0">
+                                                                Cyprus (+357)</option>
+                                                            <option value="CZ" data-select2-id="select2-data-258-j2fm">
+                                                                Czech Republic (+420)</option>
+                                                            <option value="DK" data-select2-id="select2-data-259-vuzl">
+                                                                Denmark (+45)</option>
+                                                            <option value="DJ" data-select2-id="select2-data-260-vxn1">
+                                                                Djibouti (+253)</option>
+                                                            <option value="DM" data-select2-id="select2-data-261-zzi4">
+                                                                Dominica (+1)</option>
+                                                            <option value="DO" data-select2-id="select2-data-262-84iq">
+                                                                Dominican Republic (+1)</option>
+                                                            <option value="TL" data-select2-id="select2-data-263-vwvg">
+                                                                East Timor (+670)</option>
+                                                            <option value="EC" data-select2-id="select2-data-264-cykb">
+                                                                Ecuador (+593)</option>
+                                                            <option value="EG" data-select2-id="select2-data-265-snc9">
+                                                                Egypt (+20)</option>
+                                                            <option value="SV" data-select2-id="select2-data-266-jvci">
+                                                                El Salvador (+503)</option>
+                                                            <option value="GQ" data-select2-id="select2-data-267-u493">
+                                                                Equatorial Guinea (+240)</option>
+                                                            <option value="ER" data-select2-id="select2-data-268-qd9m">
+                                                                Eritrea (+291)</option>
+                                                            <option value="EE" data-select2-id="select2-data-269-7lyz">
+                                                                Estonia (+372)</option>
+                                                            <option value="ET" data-select2-id="select2-data-270-5cx5">
+                                                                Ethiopia (+251)</option>
+                                                            <option value="FJ" data-select2-id="select2-data-271-9tp5">
+                                                                Fiji (+679)</option>
+                                                            <option value="FI" data-select2-id="select2-data-272-8nom">
+                                                                Finland (+358)</option>
+                                                            <option value="FR" data-select2-id="select2-data-273-et03">
+                                                                France (+33)</option>
+                                                            <option value="GA" data-select2-id="select2-data-274-6jhc">
+                                                                Gabon (+241)</option>
+                                                            <option value="GM" data-select2-id="select2-data-275-vvsp">
+                                                                Gambia (+220)</option>
+                                                            <option value="GE" data-select2-id="select2-data-276-iyzo">
+                                                                Georgia (+995)</option>
+                                                            <option value="DE" data-select2-id="select2-data-277-qill">
+                                                                Germany (+49)</option>
+                                                            <option value="GH" data-select2-id="select2-data-278-njlc">
+                                                                Ghana (+233)</option>
+                                                            <option value="GR" data-select2-id="select2-data-279-xvas">
+                                                                Greece (+30)</option>
+                                                            <option value="GD" data-select2-id="select2-data-280-ws85">
+                                                                Grenada (+1)</option>
+                                                            <option value="GT" data-select2-id="select2-data-281-el6q">
+                                                                Guatemala (+502)</option>
+                                                            <option value="GN" data-select2-id="select2-data-282-dqaf">
+                                                                Guinea (+224)</option>
+                                                            <option value="GW" data-select2-id="select2-data-283-ejz2">
+                                                                Guinea-Bissau (+245)</option>
+                                                            <option value="GY" data-select2-id="select2-data-284-v29e">
+                                                                Guyana (+592)</option>
+                                                            <option value="HT" data-select2-id="select2-data-285-bvgg">
+                                                                Haiti (+509)</option>
+                                                            <option value="HN" data-select2-id="select2-data-286-zkzh">
+                                                                Honduras (+504)</option>
+                                                            <option value="HK" data-select2-id="select2-data-287-zexl">
+                                                                Hong Kong (+852)</option>
+                                                            <option value="HU" data-select2-id="select2-data-288-gekc">
+                                                                Hungary (+36)</option>
+                                                            <option value="IS" data-select2-id="select2-data-289-5whj">
+                                                                Iceland (+354)</option>
+                                                            <option value="IN" data-select2-id="select2-data-290-jc20">
+                                                                India (+91)</option>
+                                                            <option value="ID" data-select2-id="select2-data-291-04hz">
+                                                                Indonesia (+62)</option>
+                                                            <option value="IR" data-select2-id="select2-data-292-z3jn">
+                                                                Iran (+98)</option>
+                                                            <option value="IQ" data-select2-id="select2-data-293-dz02">
+                                                                Iraq (+964)</option>
+                                                            <option value="IE" data-select2-id="select2-data-294-4nxq">
+                                                                Ireland (+353)</option>
+                                                            <option value="IL" data-select2-id="select2-data-295-55ik">
+                                                                Israel (+972)</option>
+                                                            <option value="IT" data-select2-id="select2-data-296-2jjk">
+                                                                Italy (+39)</option>
+                                                            <option value="JM" data-select2-id="select2-data-297-pf38">
+                                                                Jamaica (+1)</option>
+                                                            <option value="JP" data-select2-id="select2-data-298-3naz">
+                                                                Japan (Nippon) (+81)</option>
+                                                            <option value="JO" data-select2-id="select2-data-299-hxrn">
+                                                                Jordan (+962)</option>
+                                                            <option value="KZ" data-select2-id="select2-data-300-zvd2">
+                                                                Kazakhstan (+7)</option>
+                                                            <option value="KE" data-select2-id="select2-data-301-n4g6">
+                                                                Kenya (+254)</option>
+                                                            <option value="KI" data-select2-id="select2-data-302-zuuu">
+                                                                Kiribati (+686)</option>
+                                                            <option value="KP" data-select2-id="select2-data-303-38ho">
+                                                                North Korea (+850)</option>
+                                                            <option value="XK" data-select2-id="select2-data-304-8azq">
+                                                                Kosovo (+383)</option>
+                                                            <option value="KW" data-select2-id="select2-data-305-qhz4">
+                                                                Kuwait (+965)</option>
+                                                            <option value="KG" data-select2-id="select2-data-306-k9lg">
+                                                                Kyrgyzstan (+996)</option>
+                                                            <option value="LA" data-select2-id="select2-data-307-crzo">
+                                                                Laos (+856)</option>
+                                                            <option value="LV" data-select2-id="select2-data-308-p4yd">
+                                                                Latvia (+371)</option>
+                                                            <option value="LB" data-select2-id="select2-data-309-rfty">
+                                                                Lebanon (+961)</option>
+                                                            <option value="LS" data-select2-id="select2-data-310-e0w6">
+                                                                Lesotho (+266)</option>
+                                                            <option value="LR" data-select2-id="select2-data-311-1kg4">
+                                                                Liberia (+231)</option>
+                                                            <option value="LY" data-select2-id="select2-data-312-d6n6">
+                                                                Libya (+218)</option>
+                                                            <option value="LI" data-select2-id="select2-data-313-n677">
+                                                                Liechtenstein (+423)</option>
+                                                            <option value="LT" data-select2-id="select2-data-314-f9dm">
+                                                                Lithuania (+370)</option>
+                                                            <option value="LU" data-select2-id="select2-data-315-0mjh">
+                                                                Luxembourg (+352)</option>
+                                                            <option value="MK" data-select2-id="select2-data-316-vodg">
+                                                                Macedonia (FYROM) (+389)</option>
+                                                            <option value="MG" data-select2-id="select2-data-317-207a">
+                                                                Madagascar (+261)</option>
+                                                            <option value="MW" data-select2-id="select2-data-318-0gqu">
+                                                                Malawi (+265)</option>
+                                                            <option value="MY" data-select2-id="select2-data-319-mij7">
+                                                                Malaysia (+60)</option>
+                                                            <option value="MV" data-select2-id="select2-data-320-llgz">
+                                                                Maldives (+960)</option>
+                                                            <option value="ML" data-select2-id="select2-data-321-683j">
+                                                                Mali (+223)</option>
+                                                            <option value="MT" data-select2-id="select2-data-322-ses0">
+                                                                Malta (+356)</option>
+                                                            <option value="MH" data-select2-id="select2-data-323-ln0n">
+                                                                Marshall Islands (+692)</option>
+                                                            <option value="MR" data-select2-id="select2-data-324-jpg2">
+                                                                Mauritania (+222)</option>
+                                                            <option value="MU" data-select2-id="select2-data-325-ohf0">
+                                                                Mauritius (+230)</option>
+                                                            <option value="MX" data-select2-id="select2-data-326-wb3e">
+                                                                Mexico (+52)</option>
+                                                            <option value="FM" data-select2-id="select2-data-327-qch2">
+                                                                Micronesia (+691)</option>
+                                                            <option value="MD" data-select2-id="select2-data-328-sp7j">
+                                                                Moldova (+373)</option>
+                                                            <option value="MC" data-select2-id="select2-data-329-fo8b">
+                                                                Monaco (+377)</option>
+                                                            <option value="MN" data-select2-id="select2-data-330-2kld">
+                                                                Mongolia (+976)</option>
+                                                            <option value="ME" data-select2-id="select2-data-331-l11l">
+                                                                Montenegro (+382)</option>
+                                                            <option value="MA" data-select2-id="select2-data-332-3e0b">
+                                                                Morocco (+212)</option>
+                                                            <option value="MZ" data-select2-id="select2-data-333-dd25">
+                                                                Mozambique (+258)</option>
+                                                            <option value="MM" data-select2-id="select2-data-334-b6i8">
+                                                                Myanmar (+95)</option>
+                                                            <option value="NA" data-select2-id="select2-data-335-90gv">
+                                                                Namibia (+264)</option>
+                                                            <option value="NR" data-select2-id="select2-data-336-jeeu">
+                                                                Nauru (+674)</option>
+                                                            <option value="NP" data-select2-id="select2-data-337-101y">
+                                                                Nepal (+977)</option>
+                                                            <option value="NL" data-select2-id="select2-data-338-6wdb">
+                                                                Netherlands (+31)</option>
+                                                            <option value="NZ" data-select2-id="select2-data-339-nzvm">
+                                                                New Zealand (+64)</option>
+                                                            <option value="NI" data-select2-id="select2-data-340-ve6j">
+                                                                Nicaragua (+505)</option>
+                                                            <option value="NE" data-select2-id="select2-data-341-23gy">
+                                                                Niger (+227)</option>
+                                                            <option value="NG" data-select2-id="select2-data-342-qcbu">
+                                                                Nigeria (+234)</option>
+                                                            <option value="KR" data-select2-id="select2-data-343-o9fd">
+                                                                South Korea (+82)</option>
+                                                            <option value="NC" data-select2-id="select2-data-344-re08">
+                                                                New Caledonia (+687)</option>
+                                                            <option value="NO" data-select2-id="select2-data-345-m4up">
+                                                                Norway (+47)</option>
+                                                            <option value="OM" data-select2-id="select2-data-346-d7bt">
+                                                                Oman (+968)</option>
+                                                            <option value="PK" data-select2-id="select2-data-347-33qk">
+                                                                Pakistan (+92)</option>
+                                                            <option value="PW" data-select2-id="select2-data-348-3u01">
+                                                                Palau (+680)</option>
+                                                            <option value="PS" data-select2-id="select2-data-349-zewn">
+                                                                Palestine (+970)</option>
+                                                            <option value="PA" data-select2-id="select2-data-350-d5j6">
+                                                                Panama (+507)</option>
+                                                            <option value="PG" data-select2-id="select2-data-351-5nv9">
+                                                                Papua New Guinea (+675)</option>
+                                                            <option value="PY" data-select2-id="select2-data-352-egsm">
+                                                                Paraguay (+595)</option>
+                                                            <option value="PE" data-select2-id="select2-data-353-blh8">
+                                                                Peru (+51)</option>
+                                                            <option value="PH" data-select2-id="select2-data-354-8pln">
+                                                                Philippines (+63)</option>
+                                                            <option value="PL" data-select2-id="select2-data-355-n8s9">
+                                                                Poland (+48)</option>
+                                                            <option value="PT" data-select2-id="select2-data-356-xhbz">
+                                                                Portugal (+351)</option>
+                                                            <option value="QA" data-select2-id="select2-data-357-1maf">
+                                                                Qatar (+974)</option>
+                                                            <option value="RO" data-select2-id="select2-data-358-74tf">
+                                                                Romania (+40)</option>
+                                                            <option value="RU" data-select2-id="select2-data-359-vslo">
+                                                                Russia (+7)</option>
+                                                            <option value="RW" data-select2-id="select2-data-360-7fpr">
+                                                                Rwanda (+250)</option>
+                                                            <option value="KN" data-select2-id="select2-data-361-gi62">
+                                                                Saint Kitts and Nevis (+1)</option>
+                                                            <option value="LC" data-select2-id="select2-data-362-fasj">
+                                                                Saint Lucia (+1)</option>
+                                                            <option value="VC" data-select2-id="select2-data-363-wigr">
+                                                                Saint Vincent and the Grenadines (+1)</option>
+                                                            <option value="WS" data-select2-id="select2-data-364-qbsj">
+                                                                Samoa (+685)</option>
+                                                            <option value="SM" data-select2-id="select2-data-365-cj2e">
+                                                                San Marino (+378)</option>
+                                                            <option value="ST" data-select2-id="select2-data-366-6w0s">
+                                                                Sao Tome and Principe (+239)</option>
+                                                            <option value="SA" data-select2-id="select2-data-367-vtsj">
+                                                                Saudi Arabia (+966)</option>
+                                                            <option value="SS" data-select2-id="select2-data-368-nlj3">
+                                                                South Sudan (+211)</option>
+                                                            <option value="SN" data-select2-id="select2-data-369-8l7m">
+                                                                Senegal (+221)</option>
+                                                            <option value="RS" data-select2-id="select2-data-370-088n">
+                                                                Serbia (+381)</option>
+                                                            <option value="SC" data-select2-id="select2-data-371-htbx">
+                                                                Seychelles (+248)</option>
+                                                            <option value="SL" data-select2-id="select2-data-372-vb50">
+                                                                Sierra Leone (+232)</option>
+                                                            <option value="SG" data-select2-id="select2-data-373-7eg2">
+                                                                Singapore (+65)</option>
+                                                            <option value="SH" data-select2-id="select2-data-374-tpou">
+                                                                Saint Helena (+290)</option>
+                                                            <option value="SK" data-select2-id="select2-data-375-e76c">
+                                                                Slovakia (+421)</option>
+                                                            <option value="SI" data-select2-id="select2-data-376-8xep">
+                                                                Slovenia (+386)</option>
+                                                            <option value="SB" data-select2-id="select2-data-377-yw4q">
+                                                                Solomon Islands (+677)</option>
+                                                            <option value="SO" data-select2-id="select2-data-378-nunp">
+                                                                Somalia (+252)</option>
+                                                            <option value="SJ" data-select2-id="select2-data-379-17ly">
+                                                                Svalbard and Jan Mayen (+47)</option>
+                                                            <option value="ZA" data-select2-id="select2-data-380-6fdx">
+                                                                South Africa (+27)</option>
+                                                            <option value="ES" data-select2-id="select2-data-381-gzsg">
+                                                                Spain (+34)</option>
+                                                            <option value="LK" data-select2-id="select2-data-382-77do">
+                                                                Sri Lanka (+94)</option>
+                                                            <option value="SD" data-select2-id="select2-data-383-p5ob">
+                                                                Sudan (+249)</option>
+                                                            <option value="SR" data-select2-id="select2-data-384-meqx">
+                                                                Suriname (+597)</option>
+                                                            <option value="SZ" data-select2-id="select2-data-385-z6r5">
+                                                                Swaziland (+268)</option>
+                                                            <option value="SE" data-select2-id="select2-data-386-j3n6">
+                                                                Sweden (+46)</option>
+                                                            <option value="CH" data-select2-id="select2-data-387-v1lk">
+                                                                Switzerland (+41)</option>
+                                                            <option value="SY" data-select2-id="select2-data-388-no35">
+                                                                Syria (+963)</option>
+                                                            <option value="TJ" data-select2-id="select2-data-389-gnpd">
+                                                                Tajikistan (+992)</option>
+                                                            <option value="TZ" data-select2-id="select2-data-390-ttlg">
+                                                                Tanzania (+255)</option>
+                                                            <option value="TH" data-select2-id="select2-data-391-qmbw">
+                                                                Thailand (+66)</option>
+                                                            <option value="TG" data-select2-id="select2-data-392-hcz3">
+                                                                Togo (+228)</option>
+                                                            <option value="TO" data-select2-id="select2-data-393-hd9f">
+                                                                Tonga (+676)</option>
+                                                            <option value="TK" data-select2-id="select2-data-394-kuvi">
+                                                                Tokelau (+690)</option>
+                                                            <option value="TT" data-select2-id="select2-data-395-gf9w">
+                                                                Trinidad and Tobago (+1)</option>
+                                                            <option value="TN" data-select2-id="select2-data-396-0l7w">
+                                                                Tunisia (+216)</option>
+                                                            <option value="TR" data-select2-id="select2-data-397-b7lt">
+                                                                Turkey (+90)</option>
+                                                            <option value="CN" data-select2-id="select2-data-398-gefn">
+                                                                China (+86)</option>
+                                                            <option value="TM" data-select2-id="select2-data-399-kf4h">
+                                                                Turkmenistan (+993)</option>
+                                                            <option value="TV" data-select2-id="select2-data-400-slgl">
+                                                                Tuvalu (+688)</option>
+                                                            <option value="UG" data-select2-id="select2-data-401-4mds">
+                                                                Uganda (+256)</option>
+                                                            <option value="UA" data-select2-id="select2-data-402-1ft4">
+                                                                Ukraine (+380)</option>
+                                                            <option value="AE" data-select2-id="select2-data-403-qm02">
+                                                                United Arab Emirates (+971)</option>
+                                                            <option value="GB" data-select2-id="select2-data-404-mra2">
+                                                                United Kingdom (+44)</option>
+                                                            <option value="US" data-select2-id="select2-data-405-wfdy">
+                                                                United States (+1)</option>
+                                                            <option value="UY" data-select2-id="select2-data-406-5oe9">
+                                                                Uruguay (+598)</option>
+                                                            <option value="UZ" data-select2-id="select2-data-407-qz8z">
+                                                                Uzbekistan (+998)</option>
+                                                            <option value="VU" data-select2-id="select2-data-408-mkhv">
+                                                                Vanuatu (+678)</option>
+                                                            <option value="VA" data-select2-id="select2-data-409-zgnk">
+                                                                Vatican (+39)</option>
+                                                            <option value="VE" data-select2-id="select2-data-410-myxs">
+                                                                Venezuela (+58)</option>
+                                                            <option value="VN" data-select2-id="select2-data-411-bep2">
+                                                                Vietnam (+84)</option>
+                                                            <option value="EH" data-select2-id="select2-data-412-1pm6">
+                                                                Western Sahara (+212)</option>
+                                                            <option value="YE" data-select2-id="select2-data-413-56lp">
+                                                                Yemen (+967)</option>
+                                                            <option value="ZM" data-select2-id="select2-data-414-a30y">
+                                                                Zambia (+260)</option>
+                                                            <option value="ZW" data-select2-id="select2-data-415-81q9">
+                                                                Zimbabwe (+263)</option>
+                                                            <option value="TW" data-select2-id="select2-data-416-nwsk">
+                                                                Taiwan (+886)</option>
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="field "
+                                                data-bind-class="{'field--show-floating-label': shipping.address}">
+                                                <div class="field__input-wrapper">
+                                                    <label for="shippingAddress" class="field__label">
+                                                        Địa chỉ
+                                                    </label>
+                                                    <input name="shippingAddress" id="shippingAddress" type="text"
+                                                        class="field__input" data-bind="shipping.address" value=""
+                                                        tabindex="-1">
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="field-group">
+                                                <div class="field field--show-floating-label ">
+                                                    <div class="field__input-wrapper field__input-wrapper--select2">
+                                                        <label for="shippingProvince" class="field__label">Tỉnh
+                                                            thành</label>
+                                                        <select name="shippingProvince" id="shippingProvince" size="1"
+                                                            class="field__input field__input--select select2-hidden-accessible"
+                                                            value="" data-address-type="province"
+                                                            data-address-zone="shipping"
+                                                            data-select2-id="select2-data-shippingProvince"
+                                                            tabindex="-1" aria-hidden="true">
+                                                            <option value="" hidden=""
+                                                                data-select2-id="select2-data-418-r939">---</option>
+                                                            <option value="1">Hà Nội</option>
+                                                            <option value="2">TP Hồ Chí Minh</option>
+                                                            <option value="3">An Giang</option>
+                                                            <option value="4">Bà Rịa-Vũng Tàu</option>
+                                                            <option value="5">Bắc Giang</option>
+                                                            <option value="6">Bắc Kạn</option>
+                                                            <option value="7">Bạc Liêu</option>
+                                                            <option value="8">Bắc Ninh</option>
+                                                            <option value="9">Bến Tre</option>
+                                                            <option value="10">Bình Dương</option>
+                                                            <option value="11">Bình Định</option>
+                                                            <option value="12">Bình Phước</option>
+                                                            <option value="13">Bình Thuận</option>
+                                                            <option value="14">Cà Mau</option>
+                                                            <option value="15">Cao Bằng</option>
+                                                            <option value="16">Cần Thơ</option>
+                                                            <option value="17">Đà Nẵng</option>
+                                                            <option value="18">Đắk Lắk</option>
+                                                            <option value="19">Đắk Nông</option>
+                                                            <option value="20">Điện Biên</option>
+                                                            <option value="21">Đồng Nai</option>
+                                                            <option value="22">Đồng Tháp</option>
+                                                            <option value="23">Gia Lai</option>
+                                                            <option value="24">Hà Giang</option>
+                                                            <option value="25">Hà Nam</option>
+                                                            <option value="26">Hà Tĩnh</option>
+                                                            <option value="27">Hải Dương</option>
+                                                            <option value="28">Hải Phòng</option>
+                                                            <option value="29">Hậu Giang</option>
+                                                            <option value="30">Hòa Bình</option>
+                                                            <option value="31">Hưng Yên</option>
+                                                            <option value="32">Khánh Hòa</option>
+                                                            <option value="33">Kiên Giang</option>
+                                                            <option value="34">Kon Tum</option>
+                                                            <option value="35">Lai Châu</option>
+                                                            <option value="36">Lâm Đồng</option>
+                                                            <option value="37">Lạng Sơn</option>
+                                                            <option value="38">Lào Cai</option>
+                                                            <option value="39">Long An</option>
+                                                            <option value="40">Nam Định</option>
+                                                            <option value="41">Nghệ An</option>
+                                                            <option value="42">Ninh Bình</option>
+                                                            <option value="43">Ninh Thuận</option>
+                                                            <option value="44">Phú Thọ</option>
+                                                            <option value="45">Phú Yên</option>
+                                                            <option value="46">Quảng Bình</option>
+                                                            <option value="47">Quảng Nam</option>
+                                                            <option value="48">Quảng Ngãi</option>
+                                                            <option value="49">Quảng Ninh</option>
+                                                            <option value="50">Quảng Trị</option>
+                                                            <option value="51">Sóc Trăng</option>
+                                                            <option value="52">Sơn La</option>
+                                                            <option value="53">Tây Ninh</option>
+                                                            <option value="54">Thái Bình</option>
+                                                            <option value="55">Thái Nguyên</option>
+                                                            <option value="56">Thanh Hóa</option>
+                                                            <option value="57">Thừa Thiên Huế</option>
+                                                            <option value="58">Tiền Giang</option>
+                                                            <option value="59">Trà Vinh</option>
+                                                            <option value="60">Tuyên Quang</option>
+                                                            <option value="61">Vĩnh Long</option>
+                                                            <option value="62">Vĩnh Phúc</option>
+                                                            <option value="63">Yên Bái</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="field field--show-floating-label ">
+                                                    <div class="field__input-wrapper field__input-wrapper--select2">
+                                                        <label for="shippingDistrict" class="field__label">Quận
+                                                            huyện</label>
+                                                        <select name="shippingDistrict" id="shippingDistrict" size="1"
+                                                            class="field__input field__input--select select2-hidden-accessible"
+                                                            value="" data-address-type="district"
+                                                            data-address-zone="shipping"
+                                                            data-select2-id="select2-data-shippingDistrict"
+                                                            tabindex="-1" aria-hidden="true" disabled="disabled">
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="field field--show-floating-label ">
+                                                    <div class="field__input-wrapper field__input-wrapper--select2">
+                                                        <label for="shippingWard" class="field__label">
+                                                            Phường xã
+                                                        </label>
+                                                        <select name="shippingWard" id="shippingWard" size="1"
+                                                            class="field__input field__input--select select2-hidden-accessible"
+                                                            value="" data-address-type="ward"
+                                                            data-address-zone="shipping"
+                                                            data-select2-id="select2-data-shippingWard" tabindex="-1"
+                                                            aria-hidden="true" disabled="disabled">
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <div class="fieldset section section--no-title">
+                                    <h3 class="visually-hidden">Ghi chú</h3>
+                                    <div class="field " data-bind-class="{'field--show-floating-label': note}">
+                                        <div class="field__input-wrapper">
+                                            <label for="note" class="field__label">
+                                                Ghi chú (tùy chọn)
+                                            </label>
+                                            <textarea name="note" id="note" class="field__input"
+                                                data-bind="note"></textarea>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="fieldset" id="grecaptchaBox">
+                                    <h3 class="visually-hidden">recaptcha</h3>
+                                    <div class="field ">
+                                        <div class="g-recaptcha" data-callback="onRecaptchaValid"
+                                            data-sitekey="6LcMQ98ZAAAAANN5eF2M_1TGZXPdFzPYOCZjHSOL">
+                                            <div style="width: 304px; height: 78px;">
+                                                <div><iframe title="reCAPTCHA" width="304" height="78"
+                                                        role="presentation" name="a-um0iwh8k3v82" frameborder="0"
+                                                        scrolling="no"
+                                                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                                                        src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcMQ98ZAAAAANN5eF2M_1TGZXPdFzPYOCZjHSOL&amp;co=aHR0cHM6Ly9tb2tic3RvcmUuY29tOjQ0Mw..&amp;hl=vi&amp;v=V6_85qpc2Xf2sbe3xTnRte7m&amp;size=normal&amp;cb=kx7svby2pi0"></iframe>
+                                                </div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                                    class="g-recaptcha-response"
+                                                    style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                            </div><iframe style="display: none;"></iframe>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                                <!-- end main step block -->
+                            </div>
+                            <div class="step__footer">
+                                <div id="common-alert" data-tg-refresh="refreshError">
+
+
+                                </div>
+                                <div class="step__btn-group">
+
+                                    <button class="btn spinner" type="submit">
+                                        <span class="spinner-label">
+
+                                            Tiếp tục chọn phương thức vận chuyển
+
+                                        </span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="spinner-loader">
+                                            <use href="#spinner"></use>
+                                        </svg>
+                                    </button>
+
+
+                                </div>
+                            </div>
+                        </article>
+                    </form>
+                </div>
+
+            </main>
+            <aside class="sidebar">
+                <div class="sidebar__header">
+                    <h2 class="sidebar__title">
+                        Đơn hàng (1 sản phẩm)
+                    </h2>
+                </div>
+                <div class="sidebar__content">
+                    <div id="order-summary" class="order-summary order-summary--is-collapsed">
+                        <div class="order-summary__sections">
+                            <div
+                                class="order-summary__section order-summary__section--product-list order-summary__section--is-scrollable order-summary--collapse-element">
+                                <table class="product-table" id="product-table" data-tg-refresh="refreshDiscount">
+                                    <caption class="visually-hidden">Chi tiết đơn hàng</caption>
+                                    <thead class="product-table__header">
+                                        <tr>
+                                            <th>
+                                                <span class="visually-hidden">Ảnh sản phẩm</span>
+                                            </th>
+                                            <th>
+                                                <span class="visually-hidden">Mô tả</span>
+                                            </th>
+                                            <th>
+                                                <span class="visually-hidden">Sổ lượng</span>
+                                            </th>
+                                            <th>
+                                                <span class="visually-hidden">Đơn giá</span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr class="product">
+                                            <td class="product__image">
+                                                <div class="product-thumbnail">
+                                                    <div class="product-thumbnail__wrapper" data-tg-static="">
+                                                        <img src="//bizweb.dktcdn.net/thumb/thumb/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
+                                                            alt="" class="product-thumbnail__image">
+                                                    </div>
+                                                    <span class="product-thumbnail__quantity">1</span>
+                                                </div>
+                                            </td>
+                                            <th class="product__description">
+                                                <span class="product__description__name">
+                                                    [Order] Mousepad - Spy x Family (Anya Edition)
+                                                </span>
+
+
+
+                                                <span class="product__description__property">
+                                                    <span>
+                                                        <span class="discount-icon"><i class="fa fa-tag"></i></span>
+                                                        <span>Mousepad Spy x Family order (-80.000₫)</span>
+                                                    </span>
+                                                </span>
+
+                                            </th>
+                                            <td class="product__quantity visually-hidden"><em>Số lượng:</em> 1</td>
+                                            <td class="product__price">
+
+                                                540.000₫
+
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="order-summary__section order-summary__section--discount-code">
+                                <h3 class="visually-hidden">Mã khuyến mại</h3>
+                                <div class="edit_checkout animate-floating-labels">
+                                    <form method="post" id="reductionCodeForm"
+                                        action="/checkout/de7e2f5f1c12461489978e63598dcc14"
+                                        data-tg-refresh="refreshDiscount">
+                                        <input type="hidden" name="_method" value="patch">
+                                        <input type="hidden" name="step" value="contact_information">
+                                        <div class="fieldset">
+                                            <div class="field ">
+                                                <div class="field__input-btn-wrapper">
+                                                    <div class="field__input-wrapper">
+                                                        <label for="reductionCode" class="field__label">Nhập mã giảm
+                                                            giá</label>
+                                                        <input name="reductionCode" id="reductionCode" type="text"
+                                                            class="field__input" autocomplete="off"
+                                                            data-define="{reductionCode: null}"
+                                                            data-bind-event-keypress="handleReductionCodeKeyPress(event)"
+                                                            data-bind="reductionCode">
+                                                    </div>
+                                                    <button class="field__input-btn btn spinner btn--disabled"
+                                                        type="button"
+                                                        data-bind-disabled="isLoadingReductionCode || !reductionCode"
+                                                        data-bind-class="{'spinner--active': isLoadingReductionCode, 'btn--disabled': !reductionCode}"
+                                                        data-bind-event-click="applyReductionCode()" disabled="">
+                                                        <span class="spinner-label">Áp dụng</span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="spinner-loader">
+                                                            <use href="#spinner"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="order-summary__section order-summary__section--total-lines order-summary--collapse-element"
+                                data-define="{subTotalPriceText: '540.000₫'}" data-tg-refresh="refreshOrderTotalPrice"
+                                id="orderSummary">
+                                <table class="total-line-table">
+                                    <caption class="visually-hidden">Tổng giá trị</caption>
+                                    <thead>
+                                        <tr>
+                                            <td><span class="visually-hidden">Mô tả</span></td>
+                                            <td><span class="visually-hidden">Giá tiền</span></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="total-line-table__tbody">
+                                        <tr class="total-line total-line--subtotal">
+                                            <th class="total-line__name">
+                                                Tạm tính
+                                            </th>
+                                            <td class="total-line__price">540.000₫</td>
+                                        </tr>
+
+
+
+                                        <tr class="total-line total-line--shipping-fee">
+                                            <th class="total-line__name">
+                                                Phí vận chuyển
+                                            </th>
+
+                                            <td class="total-line__price">
+
+                                                -
+
+                                            </td>
+
+                                        </tr>
+
+
+
+                                    </tbody>
+                                    <tfoot class="total-line-table__footer">
+                                        <tr class="total-line payment-due">
+                                            <th class="total-line__name">
+                                                <span class="payment-due__label-total">
+                                                    Tổng cộng
+                                                </span>
+                                            </th>
+                                            <td class="total-line__price">
+
+                                                <span class="payment-due__price">
+                                                    620.000₫
+                                                </span>
+
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="spinner">
+            <svg viewBox="0 0 30 30">
+                <circle stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="85%"
+                    cx="50%" cy="50%" r="40%">
+                    <animateTransform attributeName="transform" type="rotate" from="0 15 15" to="360 15 15" dur="0.7s"
+                        repeatCount="indefinite"></animateTransform>
+                </circle>
+            </svg>
+        </symbol>
+        <symbol id="angle-right">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                <path fill="currentColor"
+                    d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
+                </path>
+            </svg>
+        </symbol>
+    </svg>
+
+
+    <div id="monica-content-root" class="monica-widget" data-darkreader-mode="dynamic" data-darkreader-scheme="dark">
+        <meta name="darkreader" content="7e31a21ccd344ee3b44ad9a6f8ee09eb">
+    </div>
+    <div
+        style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;">
+        <div
+            style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;">
+        </div>
+        <div class="g-recaptcha-bubble-arrow"
+            style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;">
+        </div>
+        <div class="g-recaptcha-bubble-arrow"
+            style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;">
+        </div>
+        <div style="z-index: 2000000000; position: relative;"><iframe
+                title="hình ảnh xác thực reCAPTCHA sẽ hết hạn sau 2 phút nữa" name="c-um0iwh8k3v82" frameborder="0"
+                scrolling="no"
+                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                src="https://www.google.com/recaptcha/api2/bframe?hl=vi&amp;v=V6_85qpc2Xf2sbe3xTnRte7m&amp;k=6LcMQ98ZAAAAANN5eF2M_1TGZXPdFzPYOCZjHSOL"
+                style="width: 100%; height: 100%;"></iframe></div>
+    </div>
+</body>
+
+</html>
