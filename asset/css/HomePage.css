@@ -560,12 +560,23 @@ button.shopping__cart-item-remove {
 /*  */
 
 .section{
-    position: relative;
+    position: absolute;
     display: block;
 }
 
+.awe-section-1{
+    position: relative;
+    margin-bottom: 100px;
+}
+
 .awe-section-4 {
-    top: 70px;
+    position: relative;
+    z-index: 1;
+}
+
+.section_product_top {
+    position: relative;
+    z-index: 2;
 }
 
 /*=============== BREAKPOINTS ===============*/

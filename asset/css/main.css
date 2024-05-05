@@ -1736,15 +1736,19 @@ footer {
 }
 .tabs li:after{
 	content: '';
-    background-color: currentColor;
-    bottom: 0;
-    content: "";
-    height: 2px;
-    left: 0;
     position: absolute;
-    width: 0;
-    transition: width .2s ease-in-out;
+    left: 0;
+    bottom: 3px;
+    width: 0; 
+    height: 2.5px; 
+    background-color: #1ba1a4; 
+    transition: width 0.3s ease; 
 }
+
+.tabs .link:hover:after{
+	width: 100%;
+}
+
 .tabs li:not(:last-of-type) {
 	margin-right: .5rem
 }
@@ -1755,7 +1759,7 @@ footer {
 
 .tabs li.current {
     border-radius: 0;
-    color: #000;
+    color: #1ba1a4;
 }
 
 .tabs li.current:after{
@@ -1766,7 +1770,7 @@ footer {
 	background: var(--primary-color)
 }
 .tabs li:hover{
-	color: var(--primary-color)
+	color: #1787899a
 }
 
 .tab-content {

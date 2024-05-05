@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="MOKB Store - Thanh toán đơn hàng">
 
-    <title>Thông tin - MOKB Store - Thanh toán đơn hàng</title>
+    <title>Thông tin - Cyber Store - Thanh toán đơn hàng</title>
 
     <script type="text/javascript" async=""
         src="https://www.gstatic.com/recaptcha/releases/V6_85qpc2Xf2sbe3xTnRte7m/recaptcha__vi.js"
@@ -88,7 +88,6 @@
             background-color: #12beca;
             border-color: #12beca;
         }
-
 
         .btn,
         .btn:hover,
@@ -178,12 +177,7 @@
     <header class="banner">
         <div class="wrap">
             <div class="logo logo--left">
-
-                <a href="/">
-                    <img class="logo__image  logo__image--small " alt="MOKB Store"
-                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/logo.png?1714897981039">
-                </a>
-
+                <a href="" id="logo"> <img src=".\\img\LogoCyBer1.png" alt="CyberStore.vn"></a>
             </div>
         </div>
     </header>
@@ -211,10 +205,7 @@
                 <header class="main__header">
                     <div class="logo logo--left">
 
-                        <a href="/">
-                            <img class="logo__image  logo__image--small " alt="MOKB Store"
-                                src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/logo.png?1714897981039">
-                        </a>
+                        <a href="" id="logo" > <img src=".\\img\LogoCyBer1.png" alt="CyberStore.vn" style="max-width: 70px; max-height: 70px;"></a>
 
                     </div>
                     <nav>
@@ -268,8 +259,7 @@
                                             </h2>
 
 
-                                            <a
-                                                href="/account/login?returnUrl=/checkout/de7e2f5f1c12461489978e63598dcc14?step=contact_information">
+                                            <a href="/account/login?returnUrl=/checkout/de7e2f5f1c12461489978e63598dcc14?step=contact_information">
                                                 <i class="fa-regular fa-user fa-lg"></i>
                                                 <span>Đăng nhập </span>
                                             </a>
@@ -1600,15 +1590,17 @@
 
                                     <button class="btn spinner" type="submit">
                                         <span class="spinner-label">
-
                                             Tiếp tục chọn phương thức vận chuyển
-
                                         </span>
                                         <svg xmlns="http://www.w3.org/2000/svg" class="spinner-loader">
                                             <use href="#spinner"></use>
                                         </svg>
                                     </button>
 
+                                    <a href="Cart.html" class="previous-link">
+										<i class="previous-link__arrow">❮</i>
+										<span class="previous-link__content">Giỏ hàng</span>
+									</a>
 
                                 </div>
                             </div>
@@ -1696,8 +1688,7 @@
                                             <div class="field ">
                                                 <div class="field__input-btn-wrapper">
                                                     <div class="field__input-wrapper">
-                                                        <label for="reductionCode" class="field__label">Nhập mã giảm
-                                                            giá</label>
+                                                        <label for="reductionCode" class="field__label">Nhập mã giảm giá</label>
                                                         <input name="reductionCode" id="reductionCode" type="text"
                                                             class="field__input" autocomplete="off"
                                                             data-define="{reductionCode: null}"

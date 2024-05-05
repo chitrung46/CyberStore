@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cyber Store</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" media="all">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href=".\asset\css\HomePage.css">
@@ -45,34 +46,8 @@
     col-xs-6 có nghĩa là nếu chạy trên màn hình điện thoại (xs) thì cột này có độ rộng là 6/12 (nữa màn hình ==> 2 cột / dòng)
     col-sm-4 có nghĩa là nếu chạy trên màn hình máy tính bảng (sm) thì cột này có độ rộng là 4/12 (1/3 màn hình ==> có 3 cột/dòng)
     col-md-2 có nghĩa là nếu chạy trên màn hình máy tính nhỏ (md) thì cột này có độ rộng là 2/12 (1/6 màn hình ==> có 6 cột/dòng)
-    col-lg-1 có nghĩa là nếu chạy trên màn hình máy tính phân giải cao (lg) thì cột này có độ rộng là 1/12 (1/12 màn hình ==> có 12 cột/dòng)
-
-
+    col-lg-1 có nghĩa là nếu chạy trên màn hình máy tính phân giải cao (lg) thì cột này có độ rộng là 1/12 (1/12 màn hình ==> có 12 cột/dòng
  -->
-
-    <style>
-        /*Smart phone nhỏ*/
-        @media screen and (min-width: 240px) {}
-
-        /*Iphone(480 x 640)*/
-        @media screen and (min-width: 320px) {}
-
-        /*Tablet nhỏ(480 x 640)*/
-        @media screen and (min-width: 480px) {}
-
-        /*Ipad dọc(768 x 1024)*/
-        @media screen and (min-width: 768px) {}
-
-        @media (max-width:991px) {
-            section {
-                margin-bottom: 25px
-            }
-        }
-
-        /*Ipad ngang(1024 x 768)*/
-        @media screen and (min-width: 1024px) {}
-    </style>
-
     <div class="wrapper">
 
         <div class="top-banner position-raletive" style="background-color: #61317F;">
@@ -127,7 +102,8 @@
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="#">Group Buy</a>
+                                <a class="nav-link" href="#">Group Buy <i class="fa-solid fa-angle-down"
+                                        style="margin-left: 10px;"></i></a>
                                 <ul class="sub-menu gropuBuy">
                                     <li><a href="">Live GB</a></li>
                                     <li><a href="">Ended GB</a></li>
@@ -135,7 +111,8 @@
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="#">Instock</a>
+                                <a class="nav-link" href="#">Instock <i class="fa-solid fa-angle-down"
+                                        style="margin-left: 10px;"></i></a>
                                 <ul class="sub-menu instock">
                                     <li><a href="">Bàn phím cơ</a></li>
                                     <li><a href="">Keycap</a></li>
@@ -1163,9 +1140,7 @@
                                     class="btn btn-main btn-icon btn-pill">
                                     Xem tất cả
 
-                                    <svg class="icon">
-                                        <use xlink:href="#icon-arrow"></use>
-                                    </svg>
+                                    <i class="fa-solid fa-angle-right"></i>
                                 </a>
                             </div>
 
@@ -2488,13 +2463,15 @@
 
                                 <div class="col-12 col-xl-15 product-col">
                                     <div class="item_product_main">
-                                
-                                        <form action="/cart/add" method="post" class="variants product-action" data-id="product-actions-35113526"
-                                            enctype="multipart/form-data">
+
+                                        <form action="/cart/add" method="post" class="variants product-action"
+                                            data-id="product-actions-35113526" enctype="multipart/form-data">
                                             <div class="product-thumbnail pos-relative">
-                                                <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="/bo-keycap-cute-cat"
+                                                <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                    href="/bo-keycap-cute-cat"
                                                     title="Bộ keycap Cute Cat (MAO / PBT Dyesub)">
-                                                    <img loading="lazy" class="img-fetured" width="480" height="480" style="--image-scale: 1;"
+                                                    <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                        style="--image-scale: 1;"
                                                         src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/keycap-cute-cat-2-1711781576289.jpg?v=1711781592750"
                                                         alt="Bộ keycap Cute Cat (MAO / PBT Dyesub)">
                                                 </a>
@@ -2506,16 +2483,16 @@
                                                             Thêm vào giỏ
                                                         </span>
                                                     </button>
-                                
+
                                                     <a href="/bo-keycap-cute-cat" data-handle="bo-keycap-cute-cat"
                                                         class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
                                                         <i class="fas fa-eye"></i>
                                                         <span class="action-name">Xem nhanh</span>
                                                     </a>
                                                 </div>
-                                
+
                                             </div>
-                                
+
                                             <div class="product-info">
                                                 <span class="product-vendor"></span>
                                                 <span class="product-name "><a class="link" href="/bo-keycap-cute-cat"
@@ -2526,20 +2503,21 @@
                                                         <span class="price">770.000₫</span>
                                                     </div>
                                                 </div>
-                                
+
                                                 <div class="item-color-chosen">
-                                
-                                
+
+
                                                 </div>
-                                
+
                                                 <div class="product-promotion hidden">
-                                                    <span class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <span
+                                                        class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
                                                         <img alt="Lưu ý"
                                                             src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714292295296"
                                                             width="16" height="16" class="mr-2">
                                                         Lưu ý
                                                     </span>
-                                
+
                                                     <ul class="promotion-box">
                                                         <li></li>
                                                         <li></li>
@@ -2552,22 +2530,23 @@
                                         </form>
                                     </div>
                                 </div>
-                                
+
                                 <div class="col-12 col-xl-15 product-col">
                                     <div class="item_product_main">
 
-                                        <form action="/cart/add" method="post" class="variants product-action" data-id="product-actions-34508041"
-                                            enctype="multipart/form-data">
+                                        <form action="/cart/add" method="post" class="variants product-action"
+                                            data-id="product-actions-34508041" enctype="multipart/form-data">
                                             <div class="product-thumbnail pos-relative">
-                                
+
                                                 <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
                                                     href="/order-mousepad-spy-x-family-anya-edition"
                                                     title="[Order] Mousepad - Spy x Family (Anya Edition)">
-                                
-                                                    <img loading="lazy" class="img-fetured" width="480" height="480" style="--image-scale: 1;"
+
+                                                    <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                        style="--image-scale: 1;"
                                                         src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
                                                         alt="[Order] Mousepad - Spy x Family (Anya Edition)">
-                                
+
                                                 </a>
                                                 <div class="label_product ">
                                                     <div class="label_wrapper">
@@ -2582,7 +2561,7 @@
                                                             Thêm vào giỏ
                                                         </span>
                                                     </button>
-                                
+
                                                     <a href="/order-mousepad-spy-x-family-anya-edition"
                                                         data-handle="order-mousepad-spy-x-family-anya-edition"
                                                         class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
@@ -2590,13 +2569,15 @@
                                                         <span class="action-name">Xem nhanh</span>
                                                     </a>
                                                 </div>
-                                
+
                                             </div>
                                             <div class="product-info">
-                                
+
                                                 <span class="product-vendor">MONOKEI</span>
-                                                <span class="product-name "><a class="link" href="/order-mousepad-spy-x-family-anya-edition"
-                                                        title="[Order] Mousepad - Spy x Family (Anya Edition)">[Order] Mousepad - Spy x Family (Anya
+                                                <span class="product-name "><a class="link"
+                                                        href="/order-mousepad-spy-x-family-anya-edition"
+                                                        title="[Order] Mousepad - Spy x Family (Anya Edition)">[Order]
+                                                        Mousepad - Spy x Family (Anya
                                                         Edition)</a></span>
                                                 <div class="product-item-cta position-relative">
                                                     <div class="price-box">
@@ -2607,25 +2588,27 @@
                                                                 -13%
                                                             </div>
                                                         </div>
-                                
+
                                                     </div>
                                                 </div>
-                                
+
                                                 <div class="item-color-chosen">
-                                
-                                
+
+
                                                 </div>
-                                
+
                                                 <div class="product-promotion hidden">
-                                                    <span class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <span
+                                                        class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
                                                         <img alt="Lưu ý"
                                                             src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714359361508"
                                                             width="16" height="16" class="mr-2">
                                                         Lưu ý
                                                     </span>
-                                
+
                                                     <ul>
-                                                        <li><b>Đây là sản phẩm order, thời gian trả hàng dự kiến: Cuối quý 2/2024</b></li>
+                                                        <li><b>Đây là sản phẩm order, thời gian trả hàng dự kiến: Cuối
+                                                                quý 2/2024</b></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -2634,7 +2617,6 @@
                                 </div>
 
                             </div>
-
 
                             <div class="text-center mt-3 col-12">
                                 <a href="/instock" title="Xem tất cả" class="btn btn-main btn-icon btn-pill">Xem tất cả
@@ -2648,6 +2630,2420 @@
                     </div>
                 </div>
             </section>
+        </section>
+
+
+        <section class="section_product_top section">
+
+            <div class="container border-0">
+
+                <div class="title_module_main heading-bar e-tabs  d-flex align-items-center flex-wrap heading-style1 justify-content-around">
+                    <h2 class="heading-bar__title"></h2>
+
+                    <ul class="tabs tabs-title list-unstyled  m-0 mt-2 tabs-group d-flex align-items-center">
+
+                        <li class="ega-small tab-link link   current" data-tab="product_top_2-tab-1">
+                            Keycap
+                        </li>
+
+                        <li class="ega-small tab-link link ml-4  " data-tab="product_top_2-tab-2">
+                            Switch
+                        </li>
+
+                        <li class="ega-small tab-link link ml-4  " data-tab="product_top_2-tab-3">
+                            Phụ kiện
+                        </li>
+                    </ul>
+                </div>
+                <div class="e-tabs">
+
+                    <div id="product_top_2-tab-1" class="tab-content content_extabcurrent current">
+
+                        <div class="row mt-3" data-section="tab-section">
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-35460930" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/tutkeys-game-1989-keycap-set"
+                                                title="TUTKEYS Game 1989 Keycap set">
+
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/tutkeys-game-1989-keycap-set.jpg?v=1713608819107"
+                                                    alt="TUTKEYS Game 1989 Keycap set">
+
+                                            </a>
+
+                                            <input type="hidden" name="variantId" value="114804361">
+                                            <div class="action-bar">
+                                                <a href="/tutkeys-game-1989-keycap-set"
+                                                    class="action-child btn-circle btn-views btn_view btn right-to m-0">
+                                                    <img width="20" height="20" class="icon-option"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-options.png?1714906312483"
+                                                        alt="icon-option">
+                                                    <span class="action-name">Tùy chọn</span>
+                                                </a>
+
+                                                <a href="/tutkeys-game-1989-keycap-set"
+                                                    data-handle="tutkeys-game-1989-keycap-set"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor">TUTKEYS</span>
+                                            <span class="product-name "><a class="link"
+                                                    href="/tutkeys-game-1989-keycap-set"
+                                                    title="TUTKEYS Game 1989 Keycap set">TUTKEYS Game 1989 Keycap
+                                                    set</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">2.199.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul class="promotion-box">
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-35113532" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/bo-keycap-dessert-shop"
+                                                title="Bộ keycap Dessert Shop (MOA / PBT Dyesub)">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/keycap-dessert-shop-8-1711782423472.jpg?v=1711782440750"
+                                                    alt="Bộ keycap Dessert Shop (MOA / PBT Dyesub)">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="112834603">
+                                            <div class="action-bar">
+                                                <button class="action-child btn add_to_cart active ">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    <span class="action-name">
+                                                        Thêm vào giỏ
+                                                    </span>
+                                                </button>
+
+                                                <a href="/bo-keycap-dessert-shop" data-handle="bo-keycap-dessert-shop"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor"></span>
+                                            <span class="product-name "><a class="link" href="/bo-keycap-dessert-shop"
+                                                    title="Bộ keycap Dessert Shop (MOA / PBT Dyesub)">Bộ keycap Dessert
+                                                    Shop (MOA / PBT Dyesub)</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">780.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul class="promotion-box">
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-35113530" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/bo-keycap-cat-coffe"
+                                                title="Bộ keycap Cat Coffe (MOA / PBT Dyesub)">
+
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/cat-coffe-3-1711781525905.jpg?v=1711781542740"
+                                                    alt="Bộ keycap Cat Coffe (MOA / PBT Dyesub)">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="112834601">
+                                            <div class="action-bar">
+                                                <button class="action-child btn add_to_cart active ">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    <span class="action-name">
+                                                        Thêm vào giỏ
+                                                    </span>
+                                                </button>
+
+                                                <a href="/bo-keycap-cat-coffe" data-handle="bo-keycap-cat-coffe"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor"></span>
+                                            <span class="product-name "><a class="link" href="/bo-keycap-cat-coffe"
+                                                    title="Bộ keycap Cat Coffe (MOA / PBT Dyesub)">Bộ keycap Cat Coffe
+                                                    (MOA / PBT Dyesub)</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">780.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul class="promotion-box">
+
+
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-35113529" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/bo-keycap-samurai"
+                                                title="Bộ keycap Samurai (Cherry / PBT Dyesub)">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/keycap-samurai-1-1711781409725.jpg?v=1711781414507"
+                                                    alt="Bộ keycap Samurai (Cherry / PBT Dyesub)">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="112834600">
+                                            <div class="action-bar">
+                                                <button class="action-child btn add_to_cart active " disabled="">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    <span class="action-name">
+                                                        Hết hàng
+                                                    </span>
+                                                </button>
+
+                                                <a href="/bo-keycap-samurai" data-handle="bo-keycap-samurai"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                            <div class="available-cr">
+                                                Hết hàng
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor"></span>
+                                            <span class="product-name "><a class="link" href="/bo-keycap-samurai"
+                                                    title="Bộ keycap Samurai (Cherry / PBT Dyesub)">Bộ keycap Samurai
+                                                    (Cherry / PBT Dyesub)</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">950.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul class="promotion-box">
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-35113528" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/bo-keycap-heavy-industry"
+                                                title="Bộ keycap Heavy Industry (Cherry / PBT Dyesub)">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/keycap-heavy-industry-1-1711774676517.jpg?v=1711780511797"
+                                                    alt="Bộ keycap Heavy Industry (Cherry / PBT Dyesub)">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="112834599">
+                                            <div class="action-bar">
+                                                <button class="action-child btn add_to_cart active ">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    <span class="action-name">
+                                                        Thêm vào giỏ
+                                                    </span>
+                                                </button>
+
+                                                <a href="/bo-keycap-heavy-industry"
+                                                    data-handle="bo-keycap-heavy-industry"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor"></span>
+                                            <span class="product-name "><a class="link" href="/bo-keycap-heavy-industry"
+                                                    title="Bộ keycap Heavy Industry (Cherry / PBT Dyesub)">Bộ keycap
+                                                    Heavy Industry (Cherry / PBT Dyesub)</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">780.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul class="promotion-box">
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-35113527" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/bo-keycap-black-white-cow"
+                                                title="Bộ Keycap Black &amp; White Cow (MOA / PBT Dyesub)">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/keycap-black-white-cow-5-1711782197387.jpg?v=1711782213737"
+                                                    alt="Bộ Keycap Black &amp; White Cow (MOA / PBT Dyesub)">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="112834598">
+                                            <div class="action-bar">
+                                                <button class="action-child btn add_to_cart active ">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    <span class="action-name">
+                                                        Thêm vào giỏ
+                                                    </span>
+                                                </button>
+
+                                                <a href="/bo-keycap-black-white-cow"
+                                                    data-handle="bo-keycap-black-white-cow"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor"></span>
+                                            <span class="product-name "><a class="link"
+                                                    href="/bo-keycap-black-white-cow"
+                                                    title="Bộ Keycap Black &amp; White Cow (MOA / PBT Dyesub)">Bộ Keycap
+                                                    Black &amp; White Cow (MOA / PBT Dyesub)</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">530.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul class="promotion-box">
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-35113526" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/bo-keycap-cute-cat"
+                                                title="Bộ keycap Cute Cat (MAO / PBT Dyesub)">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/keycap-cute-cat-2-1711781576289.jpg?v=1711781592750"
+                                                    alt="Bộ keycap Cute Cat (MAO / PBT Dyesub)">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="112834597">
+                                            <div class="action-bar">
+                                                <button class="action-child btn add_to_cart active ">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    <span class="action-name">
+                                                        Thêm vào giỏ
+                                                    </span>
+                                                </button>
+
+                                                <a href="/bo-keycap-cute-cat" data-handle="bo-keycap-cute-cat"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor"></span>
+                                            <span class="product-name "><a class="link" href="/bo-keycap-cute-cat"
+                                                    title="Bộ keycap Cute Cat (MAO / PBT Dyesub)">Bộ keycap Cute Cat
+                                                    (MAO / PBT Dyesub)</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">770.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul class="promotion-box">
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-35055080" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/pbtfans-retro-100-keycap"
+                                                title="Bộ keycap PBTfans Retro 100 (Cherry / PBT)">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/1-icon-base-1711453048925.jpg?v=1711455058227"
+                                                    alt="Bộ keycap PBTfans Retro 100 (Cherry / PBT)">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="112551459">
+                                            <div class="action-bar">
+                                                <a href="/pbtfans-retro-100-keycap"
+                                                    class="action-child btn-circle btn-views btn_view btn right-to m-0">
+                                                    <img width="20" height="20" class="icon-option"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-options.png?1714906312483"
+                                                        alt="icon-option">
+                                                    <span class="action-name">Tùy chọn</span>
+                                                </a>
+
+                                                <a href="/pbtfans-retro-100-keycap"
+                                                    data-handle="pbtfans-retro-100-keycap"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor">PBTfans</span>
+                                            <span class="product-name "><a class="link" href="/pbtfans-retro-100-keycap"
+                                                    title="Bộ keycap PBTfans Retro 100 (Cherry / PBT)">Bộ keycap PBTfans
+                                                    Retro 100 (Cherry / PBT)</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">2.125.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul class="promotion-box">
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-34884399" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/gmk-cyl-panels" title="GMK CYL PANELS">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/gmk-cyl-panels-1710245559466.jpg?v=1710245574973"
+                                                    alt="GMK CYL PANELS">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="111878270">
+                                            <div class="action-bar">
+                                                <button class="action-child btn add_to_cart active " disabled="">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    <span class="action-name">
+                                                        Hết hàng
+                                                    </span>
+                                                </button>
+
+                                                <a href="/gmk-cyl-panels" data-handle="gmk-cyl-panels"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                            <div class="available-cr">
+                                                Hết hàng
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor">GMK</span>
+                                            <span class="product-name "><a class="link" href="/gmk-cyl-panels"
+                                                    title="GMK CYL PANELS">GMK CYL PANELS</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">2.500.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul class="promotion-box">
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-34884376" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/gmk-cyl-olivia-no3" title="GMK CYL Olivia Nº3">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/gmk-cyl-oliviano3-1710245908860.jpg?v=1710245928277"
+                                                    alt="GMK CYL Olivia Nº3">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="111877467">
+                                            <div class="action-bar">
+                                                <a href="/gmk-cyl-olivia-no3"
+                                                    class="action-child btn-circle btn-views btn_view btn right-to m-0">
+                                                    <img width="20" height="20" class="icon-option"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-options.png?1714906312483"
+                                                        alt="icon-option">
+                                                    <span class="action-name">Tùy chọn</span>
+                                                </a>
+
+                                                <a href="/gmk-cyl-olivia-no3" data-handle="gmk-cyl-olivia-no3"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                            <div class="available-cr">
+                                                Hết hàng
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor">GMK</span>
+                                            <span class="product-name "><a class="link" href="/gmk-cyl-olivia-no3"
+                                                    title="GMK CYL Olivia Nº3">GMK CYL Olivia Nº3</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">2.500.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul class="promotion-box">
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="text-center mt-3 col-12">
+                            <a href="/keycap" title="Xem tất cả" class="btn btn-main btn-icon btn-pill">
+                                Xem tất cả
+
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div id="product_top_2-tab-2" class="tab-content content_extab">
+
+                        <div class="row mt-3" data-section="tab-section">
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-35460890" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/ktt-80retros-game-1989-switch"
+                                                title="KTT 80Retros - Game 1989 Switch (Pack 45 switch)">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/game-1989-switch-8-1713606966978.jpg?v=1714233034310"
+                                                    alt="KTT 80Retros - Game 1989 Switch (Pack 45 switch)">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="114804299">
+                                            <div class="action-bar">
+                                                <a href="/ktt-80retros-game-1989-switch"
+                                                    class="action-child btn-circle btn-views btn_view btn right-to m-0">
+                                                    <img width="20" height="20" class="icon-option"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-options.png?1714906312483"
+                                                        alt="icon-option">
+                                                    <span class="action-name">Tùy chọn</span>
+                                                </a>
+
+                                                <a href="/ktt-80retros-game-1989-switch"
+                                                    data-handle="ktt-80retros-game-1989-switch"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor">KTT</span>
+                                            <span class="product-name "><a class="link"
+                                                    href="/ktt-80retros-game-1989-switch"
+                                                    title="KTT 80Retros - Game 1989 Switch (Pack 45 switch)">KTT
+                                                    80Retros - Game 1989 Switch (Pack 45 switch)</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">315.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <p><strong>Việc Switch bị cong chân trong quá trình vận chuyển là việc
+                                                        rất bình thường không thể tránh khỏi, có thể nắn thẳng lại bằng
+                                                        nhíp và không làm ảnh hưởng đến hiệu năng của switch.</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-35220834" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/swk-catmint-switch" title="SWK Catmint Switch">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/swk-catmint-switch-1712716564156.jpg?v=1712716570937"
+                                                    alt="SWK Catmint Switch">
+                                            </a>
+                                            <input type="hidden" name="variantId" value="113485931">
+                                            <div class="action-bar">
+                                                <button class="action-child btn add_to_cart active ">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    <span class="action-name">
+                                                        Thêm vào giỏ
+                                                    </span>
+                                                </button>
+
+                                                <a href="/swk-catmint-switch" data-handle="swk-catmint-switch"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="product-info">
+                                            <span class="product-vendor">SWK</span>
+                                            <span class="product-name "><a class="link" href="/swk-catmint-switch"
+                                                    title="SWK Catmint Switch">SWK Catmint Switch</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">11.500₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <p><strong>Việc Switch bị cong chân trong quá trình vận chuyển là việc
+                                                        rất bình thường không thể tránh khỏi, có thể nắn thẳng lại bằng
+                                                        nhíp và không làm ảnh hưởng đến hiệu năng của switch.</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-35043234" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/gateron-summertime-switch-v2"
+                                                title="Gateron Summertime Switch V2">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/gateron-summertime-1-1712539359425.jpg?v=1712539364353"
+                                                    alt="Gateron Summertime Switch V2">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="112469358">
+                                            <div class="action-bar">
+                                                <button class="action-child btn add_to_cart active ">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    <span class="action-name">
+                                                        Thêm vào giỏ
+                                                    </span>
+                                                </button>
+
+                                                <a href="/gateron-summertime-switch-v2"
+                                                    data-handle="gateron-summertime-switch-v2"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor">PuNkShoO</span>
+                                            <span class="product-name "><a class="link"
+                                                    href="/gateron-summertime-switch-v2"
+                                                    title="Gateron Summertime Switch V2">Gateron Summertime Switch
+                                                    V2</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">13.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <p><strong>Việc Switch bị cong chân trong quá trình vận chuyển là việc
+                                                        rất bình thường không thể tránh khỏi, có thể nắn thẳng lại bằng
+                                                        nhíp và không làm ảnh hưởng đến hiệu năng của switch.</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-35028701" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/swk-jieum-v2-switch" title="SWK Jieum V2 Switch">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/swk-jieum-v2-6-1711114119607.jpg?v=1711114123113"
+                                                    alt="SWK Jieum V2 Switch">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="112377463">
+                                            <div class="action-bar">
+                                                <button class="action-child btn add_to_cart active ">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    <span class="action-name">
+                                                        Thêm vào giỏ
+                                                    </span>
+                                                </button>
+
+                                                <a href="/swk-jieum-v2-switch" data-handle="swk-jieum-v2-switch"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor">SWK</span>
+                                            <span class="product-name "><a class="link" href="/swk-jieum-v2-switch"
+                                                    title="SWK Jieum V2 Switch">SWK Jieum V2 Switch</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">11.500₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <p><strong>Việc Switch bị cong chân trong quá trình vận chuyển là việc
+                                                        rất bình thường không thể tránh khỏi, có thể nắn thẳng lại bằng
+                                                        nhíp và không làm ảnh hưởng đến hiệu năng của switch.</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-35028689" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/bsun-tai-chi-switch" title="BSUN Tai Chi Switch">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/bsun-taichi-1-1711096647189.jpg?v=1711096651207"
+                                                    alt="BSUN Tai Chi Switch">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="112377399">
+                                            <div class="action-bar">
+                                                <button class="action-child btn add_to_cart active ">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    <span class="action-name">
+                                                        Thêm vào giỏ
+                                                    </span>
+                                                </button>
+
+                                                <a href="/bsun-tai-chi-switch" data-handle="bsun-tai-chi-switch"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor">BSUN</span>
+                                            <span class="product-name "><a class="link" href="/bsun-tai-chi-switch"
+                                                    title="BSUN Tai Chi Switch">BSUN Tai Chi Switch</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">2.500₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <p><strong>Việc Switch bị cong chân trong quá trình vận chuyển là việc
+                                                        rất bình thường không thể tránh khỏi, có thể nắn thẳng lại bằng
+                                                        nhíp và không làm ảnh hưởng đến hiệu năng của switch.</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-34534743" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/sarokeys-strawberry-wine-v2-switch"
+                                                title="Sarokeys Strawberry Wine V2 Switch">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/sarokeys-strawberry-wine-v2-switch-1-1708051238476.jpg?v=1708051253560"
+                                                    alt="Sarokeys Strawberry Wine V2 Switch">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="109661051">
+                                            <div class="action-bar">
+                                                <a href="/sarokeys-strawberry-wine-v2-switch"
+                                                    class="action-child btn-circle btn-views btn_view btn right-to m-0">
+                                                    <img width="20" height="20" class="icon-option"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-options.png?1714906312483"
+                                                        alt="icon-option">
+                                                    <span class="action-name">Tùy chọn</span>
+                                                </a>
+
+                                                <a href="/sarokeys-strawberry-wine-v2-switch"
+                                                    data-handle="sarokeys-strawberry-wine-v2-switch"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor">Geon</span>
+                                            <span class="product-name "><a class="link"
+                                                    href="/sarokeys-strawberry-wine-v2-switch"
+                                                    title="Sarokeys Strawberry Wine V2 Switch">Sarokeys Strawberry Wine
+                                                    V2 Switch</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">10.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <p><strong>Việc Switch bị cong chân trong quá trình vận chuyển là việc
+                                                        rất bình thường không thể tránh khỏi, có thể nắn thẳng lại bằng
+                                                        nhíp và không làm ảnh hưởng đến hiệu năng của switch.</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-33904834" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/pre-order-ktt-macaron-switch" title="KTT Macaron Switches">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/ktt-macaron-1702900790465.jpg?v=1702900799237"
+                                                    alt="KTT Macaron Switches">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="105644509">
+                                            <div class="action-bar">
+                                                <a href="/pre-order-ktt-macaron-switch"
+                                                    class="action-child btn-circle btn-views btn_view btn right-to m-0">
+                                                    <img width="20" height="20" class="icon-option"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-options.png?1714906312483"
+                                                        alt="icon-option">
+                                                    <span class="action-name">Tùy chọn</span>
+                                                </a>
+
+                                                <a href="/pre-order-ktt-macaron-switch"
+                                                    data-handle="pre-order-ktt-macaron-switch"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor">KTT</span>
+                                            <span class="product-name "><a class="link"
+                                                    href="/pre-order-ktt-macaron-switch"
+                                                    title="KTT Macaron Switches">KTT Macaron Switches</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">6.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul>
+                                                    <li><strong>Việc Switch bị cong chân trong quá trình vận chuyển là
+                                                            việc rất bình thường không thể tránh khỏi, có thể nắn thẳng
+                                                            lại bằng nhíp và không làm ảnh hưởng đến hiệu năng của
+                                                            switch.</strong></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-33904651" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/pre-order-ktt-baby-switch" title="KTT Baby Switches">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/ktt-baby-switch-1702897953208.jpg?v=1702897959287"
+                                                    alt="KTT Baby Switches">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="105643916">
+                                            <div class="action-bar">
+                                                <a href="/pre-order-ktt-baby-switch"
+                                                    class="action-child btn-circle btn-views btn_view btn right-to m-0">
+                                                    <img width="20" height="20" class="icon-option"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-options.png?1714906312483"
+                                                        alt="icon-option">
+                                                    <span class="action-name">Tùy chọn</span>
+                                                </a>
+
+                                                <a href="/pre-order-ktt-baby-switch"
+                                                    data-handle="pre-order-ktt-baby-switch"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="product-info">
+                                            <span class="product-vendor">KTT</span>
+                                            <span class="product-name "><a class="link"
+                                                    href="/pre-order-ktt-baby-switch" title="KTT Baby Switches">KTT Baby
+                                                    Switches</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">4.500₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul>
+                                                    <li><strong>Việc Switch bị cong chân trong quá trình vận chuyển là
+                                                            việc rất bình thường không thể tránh khỏi, có thể nắn thẳng
+                                                            lại bằng nhíp và không làm ảnh hưởng đến hiệu năng của
+                                                            switch.</strong></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-33807503" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/diamond-w1-switch" title="Diamond W1 Switch">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/w1-swich-1-1700644039802-528d1083-111d-4ab9-b78d-28a955b7d674.jpg?v=1702994207357"
+                                                    alt="Diamond W1 Switch">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="104953420">
+                                            <div class="action-bar">
+                                                <a href="/diamond-w1-switch"
+                                                    class="action-child btn-circle btn-views btn_view btn right-to m-0">
+                                                    <img width="20" height="20" class="icon-option"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-options.png?1714906312483"
+                                                        alt="icon-option">
+                                                    <span class="action-name">Tùy chọn</span>
+                                                </a>
+
+                                                <a href="/diamond-w1-switch" data-handle="diamond-w1-switch"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="product-info">
+                                            <span class="product-vendor">Naughty</span>
+                                            <span class="product-name "><a class="link" href="/diamond-w1-switch"
+                                                    title="Diamond W1 Switch">Diamond W1 Switch</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">12.500₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+                                                <div data-variant-id="104953420" class="color-dot selected"
+                                                    style="background: url(//bizweb.dktcdn.net/thumb/thumb/100/484/752/products/diamond-w1-switch-5-1700129617611-d15ce80f-e70c-4476-b801-a49cc7940684.jpg?v=1702994221967) no-repeat center center; background-size: cover">
+                                                    <span class="color-name">Pink</span>
+                                                </div>
+
+                                                <div data-variant-id="104953422" class="color-dot "
+                                                    style="background: url(//bizweb.dktcdn.net/thumb/thumb/100/484/752/products/diamond-w1-switch-7-1700129618349-c10a35d7-6e85-485f-94e0-1e146565490e.jpg?v=1702994222723) no-repeat center center; background-size: cover">
+                                                    <span class="color-name">Yellow</span>
+                                                </div>
+                                                <a href="/diamond-w1-switch" data-handle="diamond-w1-switch"
+                                                    class="color-more quick-view">
+                                                    +2 <span class="action-name">Xem thêm 2 màu khác</span>
+                                                </a>
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <p><strong>Việc Switch bị cong chân trong quá trình vận chuyển là việc
+                                                        rất bình thường không thể tránh khỏi, có thể nắn thẳng lại bằng
+                                                        nhíp và không làm ảnh hưởng đến hiệu năng của switch.</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-33742953" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/hmx-cloud-switch" title="HMX Cloud Switch">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/hmx-cloud-1-1702716700875.jpg?v=1702716705177"
+                                                    alt="HMX Cloud Switch">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="104527941">
+                                            <div class="action-bar">
+                                                <button class="action-child btn add_to_cart active ">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    <span class="action-name">
+                                                        Thêm vào giỏ
+                                                    </span>
+                                                </button>
+
+                                                <a href="/hmx-cloud-switch" data-handle="hmx-cloud-switch"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor">HMX</span>
+                                            <span class="product-name "><a class="link" href="/hmx-cloud-switch"
+                                                    title="HMX Cloud Switch">HMX Cloud Switch</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">6.500₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <p><strong>Việc Switch bị cong chân trong quá trình vận chuyển là việc
+                                                        rất bình thường không thể tránh khỏi, có thể nắn thẳng lại bằng
+                                                        nhíp và không làm ảnh hưởng đến hiệu năng của switch.</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="text-center mt-3 col-12">
+                            <a href="/switch-cong-tac-ban-phim-co" title="Xem tất cả"
+                                class="btn btn-main btn-icon btn-pill">
+                                Xem tất cả
+
+                                <svg class="icon">
+                                    <use xlink:href="#icon-arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div id="product_top_2-tab-3" class="tab-content content_extab">
+                        <div class="row mt-3" data-section="tab-section">
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-33958901" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/deadline-studio-screws-tray" title="DEADLINE Studio Screws Tray">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/deadline-studio-screws-tray-1-1703552043453.jpg?v=1703552070267"
+                                                    alt="DEADLINE Studio Screws Tray">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="105970354">
+                                            <div class="action-bar">
+                                                <a href="/deadline-studio-screws-tray"
+                                                    class="action-child btn-circle btn-views btn_view btn right-to m-0">
+                                                    <img width="20" height="20" class="icon-option"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-options.png?1714906312483"
+                                                        alt="icon-option">
+                                                    <span class="action-name">Tùy chọn</span>
+                                                </a>
+
+                                                <a href="/deadline-studio-screws-tray"
+                                                    data-handle="deadline-studio-screws-tray"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                            <div class="available-cr">
+                                                Hết hàng
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor">Deadline Studio</span>
+                                            <span class="product-name "><a class="link"
+                                                    href="/deadline-studio-screws-tray"
+                                                    title="DEADLINE Studio Screws Tray">DEADLINE Studio Screws
+                                                    Tray</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">490.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+                                                <div data-variant-id="105970354" class="color-dot selected"
+                                                    style="background: url(//bizweb.dktcdn.net/thumb/thumb/100/484/752/products/deadline-studio-screws-tray-2-1703552044622.jpg?v=1703552070293) no-repeat center center; background-size: cover">
+                                                    <span class="color-name">Silver</span>
+                                                </div>
+
+                                                <div data-variant-id="105970355" class="color-dot "
+                                                    style="background: url(//bizweb.dktcdn.net/thumb/thumb/100/484/752/products/deadline-studio-screws-tray-1-1703552043453.jpg?v=1703552070267) no-repeat center center; background-size: cover">
+                                                    <span class="color-name">Black</span>
+                                                </div>
+
+                                                <a href="/deadline-studio-screws-tray"
+                                                    data-handle="deadline-studio-screws-tray"
+                                                    class="color-more quick-view">
+                                                    +1 <span class="action-name">Xem thêm 1 màu khác</span>
+                                                </a>
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul class="promotion-box">
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-33951276" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/mo-lube-krytox-205g0" title="Mỡ lube Krytox 205g0">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/dscf0691-1703238148962.jpg?v=1703238699917"
+                                                    alt="Mỡ lube Krytox 205g0">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="105898605">
+                                            <div class="action-bar">
+                                                <button class="action-child btn add_to_cart active ">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    <span class="action-name">
+                                                        Thêm vào giỏ
+                                                    </span>
+                                                </button>
+
+                                                <a href="/mo-lube-krytox-205g0" data-handle="mo-lube-krytox-205g0"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor">Krytox</span>
+                                            <span class="product-name "><a class="link" href="/mo-lube-krytox-205g0"
+                                                    title="Mỡ lube Krytox 205g0">Mỡ lube Krytox 205g0</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">150.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul class="promotion-box">
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-33949886" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/pre-order-staebies-v2-1-stabilizers"
+                                                title="Staebies V2.1 Stabilizers">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/aeboards-staebies-v21-clr-1706019328933.jpg?v=1706019332167"
+                                                    alt="Staebies V2.1 Stabilizers">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="105889465">
+                                            <div class="action-bar">
+                                                <a href="/pre-order-staebies-v2-1-stabilizers"
+                                                    class="action-child btn-circle btn-views btn_view btn right-to m-0">
+                                                    <img width="20" height="20" class="icon-option"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-options.png?1714906312483"
+                                                        alt="icon-option">
+                                                    <span class="action-name">Tùy chọn</span>
+                                                </a>
+
+                                                <a href="/pre-order-staebies-v2-1-stabilizers"
+                                                    data-handle="pre-order-staebies-v2-1-stabilizers"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor">AEboards</span>
+                                            <span class="product-name "><a class="link"
+                                                    href="/pre-order-staebies-v2-1-stabilizers"
+                                                    title="Staebies V2.1 Stabilizers">Staebies V2.1
+                                                    Stabilizers</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">480.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+                                                <div data-variant-id="105889465" class="color-dot selected"
+                                                    style="background: url(//bizweb.dktcdn.net/thumb/thumb/100/484/752/products/aeboards-staebies-v21-clr-1706019328933.jpg?v=1706019332167) no-repeat center center; background-size: cover">
+                                                    <span class="color-name">Clear</span>
+                                                </div>
+
+                                                <div data-variant-id="105889467" class="color-dot "
+                                                    style="background: url(//bizweb.dktcdn.net/thumb/thumb/100/484/752/products/aeboards-staebies-v21-blk-1706019329564.jpg?v=1706019333220) no-repeat center center; background-size: cover">
+                                                    <span class="color-name">Black</span>
+                                                </div>
+
+                                                <a href="/pre-order-staebies-v2-1-stabilizers"
+                                                    data-handle="pre-order-staebies-v2-1-stabilizers"
+                                                    class="color-more quick-view">
+                                                    +1 <span class="action-name">Xem thêm 1 màu khác</span>
+                                                </a>
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul class="promotion-box">
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-33851469" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/staebies-v2-stabilizers" title="Staebies V2 Stabilizers">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/staebies-v2-stabilizers-pc-2-1702384154414.jpg?v=1702384167397"
+                                                    alt="Staebies V2 Stabilizers">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="105264853">
+                                            <div class="action-bar">
+                                                <a href="/staebies-v2-stabilizers"
+                                                    class="action-child btn-circle btn-views btn_view btn right-to m-0">
+                                                    <img width="20" height="20" class="icon-option"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-options.png?1714906312483"
+                                                        alt="icon-option">
+                                                    <span class="action-name">Tùy chọn</span>
+                                                </a>
+
+                                                <a href="/staebies-v2-stabilizers" data-handle="staebies-v2-stabilizers"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                            <div class="available-cr">
+                                                Hết hàng
+                                            </div>
+
+                                        </div>
+
+                                        <div class="product-info">
+                                            <span class="product-vendor">AEboards</span>
+                                            <span class="product-name "><a class="link" href="/staebies-v2-stabilizers"
+                                                    title="Staebies V2 Stabilizers">Staebies V2 Stabilizers</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">480.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+                                                <div data-variant-id="105264853" class="color-dot selected"
+                                                    style="background: url(//bizweb.dktcdn.net/thumb/thumb/100/484/752/products/staebies-v2-stabilizers-pc-2-1702384154414.jpg?v=1702384167397) no-repeat center center; background-size: cover">
+                                                    <span class="color-name">Clear</span>
+                                                </div>
+
+                                                <div data-variant-id="105264854" class="color-dot "
+                                                    style="background-color: black;">
+                                                    <span class="color-name">Black</span>
+                                                </div>
+
+                                                <a href="/staebies-v2-stabilizers" data-handle="staebies-v2-stabilizers"
+                                                    class="color-more quick-view">
+                                                    +1 <span class="action-name">Xem thêm 1 màu khác</span>
+                                                </a>
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul class="promotion-box">
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-32754424" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/tx-ap-stabilizers-screw-in" title="TX AP Stabilizers (Screw-In)">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/scr-20230925-ri8-jpeg-1695646115519.jpg?v=1695646120090"
+                                                    alt="TX AP Stabilizers (Screw-In)">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="98600642">
+                                            <div class="action-bar">
+                                                <a href="/tx-ap-stabilizers-screw-in"
+                                                    class="action-child btn-circle btn-views btn_view btn right-to m-0">
+                                                    <img width="20" height="20" class="icon-option"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-options.png?1714906312483"
+                                                        alt="icon-option">
+                                                    <span class="action-name">Tùy chọn</span>
+                                                </a>
+
+                                                <a href="/tx-ap-stabilizers-screw-in"
+                                                    data-handle="tx-ap-stabilizers-screw-in"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="product-info">
+                                            <span class="product-vendor">TX</span>
+                                            <span class="product-name "><a class="link"
+                                                    href="/tx-ap-stabilizers-screw-in"
+                                                    title="TX AP Stabilizers (Screw-In)">TX AP Stabilizers
+                                                    (Screw-In)</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">380.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul class="promotion-box">
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-32632385" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/neo65-cables" title="15Cables x MOKB Neo65 Cables">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/neo65-cable-banner-1695204567710.png?v=1695204829147"
+                                                    alt="15Cables x MOKB Neo65 Cables">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="98237523">
+                                            <div class="action-bar">
+                                                <a href="/neo65-cables"
+                                                    class="action-child btn-circle btn-views btn_view btn right-to m-0">
+                                                    <img width="20" height="20" class="icon-option"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-options.png?1714906312483"
+                                                        alt="icon-option">
+                                                    <span class="action-name">Tùy chọn</span>
+                                                </a>
+
+                                                <a href="/neo65-cables" data-handle="neo65-cables"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="product-info">
+                                            <span class="product-vendor">15Cables</span>
+                                            <span class="product-name "><a class="link" href="/neo65-cables"
+                                                    title="15Cables x MOKB Neo65 Cables">15Cables x MOKB Neo65
+                                                    Cables</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">640.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul>
+                                                    <li><strong><span style="color:#c0392b;">Nhập mã 15CablesNeo65 để
+                                                                được giảm giá còn 550k khi mua kèm bàn phím
+                                                                Neo65</span></strong></li>
+                                                    <li><strong><span style="color:#c0392b;">Để không lỡ việc đặt hàng,
+                                                                nếu việc áp mã báo lỗi, bạn hãy ưu tiên tiếp tục hoàn
+                                                                thành việc đặt hàng, sau đó bạn có thể <a
+                                                                    href="https://m.me/mokbstore" target="_blank">inbox
+                                                                    shop</a> để được hỗ trợ áp mã</span></strong></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-32613049" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/stab-mlv2-pro" title="Stab ML v2 Pro">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/stab-mlv2-pro-2-1695132982719.jpg?v=1695133024270"
+                                                    alt="Stab ML v2 Pro">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="98146935">
+                                            <div class="action-bar">
+                                                <a href="/stab-mlv2-pro"
+                                                    class="action-child btn-circle btn-views btn_view btn right-to m-0">
+                                                    <img width="20" height="20" class="icon-option"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-options.png?1714906312483"
+                                                        alt="icon-option">
+                                                    <span class="action-name">Tùy chọn</span>
+                                                </a>
+
+                                                <a href="/stab-mlv2-pro" data-handle="stab-mlv2-pro"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor">ML</span>
+                                            <span class="product-name "><a class="link" href="/stab-mlv2-pro"
+                                                    title="Stab ML v2 Pro">Stab ML v2 Pro</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">230.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul class="promotion-box">
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-32503701" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/shimat-sleep" title="Shimat Sleep - pad bàn phím cơ">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/shimat-sleep-1700661991021.jpg?v=1705890512353"
+                                                    alt="Shimat Sleep - pad bàn phím cơ">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="97523781">
+                                            <div class="action-bar">
+                                                <a href="/shimat-sleep"
+                                                    class="action-child btn-circle btn-views btn_view btn right-to m-0">
+                                                    <img width="20" height="20" class="icon-option"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-options.png?1714906312483"
+                                                        alt="icon-option">
+                                                    <span class="action-name">Tùy chọn</span>
+                                                </a>
+
+                                                <a href="/shimat-sleep" data-handle="shimat-sleep"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor">Shibay</span>
+                                            <span class="product-name "><a class="link" href="/shimat-sleep"
+                                                    title="Shimat Sleep - pad bàn phím cơ">Shimat Sleep - pad bàn phím
+                                                    cơ</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">195.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul class="promotion-box">
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-32503700" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/shimat-space" title="Shimat Space - pad bàn phím cơ">
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/shimat-space-1700662005610.jpg?v=1705890519927"
+                                                    alt="Shimat Space - pad bàn phím cơ">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="97523777">
+                                            <div class="action-bar">
+                                                <a href="/shimat-space"
+                                                    class="action-child btn-circle btn-views btn_view btn right-to m-0">
+                                                    <img width="20" height="20" class="icon-option"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-options.png?1714906312483"
+                                                        alt="icon-option">
+                                                    <span class="action-name">Tùy chọn</span>
+                                                </a>
+
+                                                <a href="/shimat-space" data-handle="shimat-space"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor">Shibay</span>
+                                            <span class="product-name "><a class="link" href="/shimat-space"
+                                                    title="Shimat Space - pad bàn phím cơ">Shimat Space - pad bàn phím
+                                                    cơ</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">195.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul class="promotion-box">
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-15 product-col">
+                                <div class="item_product_main">
+                                    <form action="/cart/add" method="post" class="variants product-action"
+                                        data-id="product-actions-32500827" enctype="multipart/form-data">
+                                        <div class="product-thumbnail pos-relative">
+
+                                            <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
+                                                href="/tx-switch-puller-thep-khong-gi"
+                                                title="TX Switch Puller (Thép không gỉ)">
+
+                                                <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                    style="--image-scale: 1;"
+                                                    src="//bizweb.dktcdn.net/thumb/large/100/484/752/products/tx-switch-puller-6-1694655799526.jpg?v=1694655826247"
+                                                    alt="TX Switch Puller (Thép không gỉ)">
+
+                                            </a>
+                                            <input type="hidden" name="variantId" value="97469011">
+                                            <div class="action-bar">
+                                                <a href="/tx-switch-puller-thep-khong-gi"
+                                                    class="action-child btn-circle btn-views btn_view btn right-to m-0">
+                                                    <img width="20" height="20" class="icon-option"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-options.png?1714906312483"
+                                                        alt="icon-option">
+                                                    <span class="action-name">Tùy chọn</span>
+                                                </a>
+
+                                                <a href="/tx-switch-puller-thep-khong-gi"
+                                                    data-handle="tx-switch-puller-thep-khong-gi"
+                                                    class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                    <i class="fas fa-eye"></i>
+                                                    <span class="action-name">Xem nhanh</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-info">
+
+                                            <span class="product-vendor">TX</span>
+                                            <span class="product-name "><a class="link"
+                                                    href="/tx-switch-puller-thep-khong-gi"
+                                                    title="TX Switch Puller (Thép không gỉ)">TX Switch Puller (Thép
+                                                    không gỉ)</a></span>
+                                            <div class="product-item-cta position-relative">
+                                                <div class="price-box">
+                                                    <span class="price">165.000₫</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-color-chosen">
+
+                                                <div data-variant-id="97469011" class="color-dot selected"
+                                                    style="background: url(//bizweb.dktcdn.net/thumb/thumb/100/484/752/products/tx-switch-puller-3-1694655761672.jpg?v=1694655827783) no-repeat center center; background-size: cover">
+                                                    <span class="color-name">Black</span>
+                                                </div>
+
+                                                <div data-variant-id="97469012" class="color-dot "
+                                                    style="background: url(//bizweb.dktcdn.net/thumb/thumb/100/484/752/products/tx-switch-puller-1-1694655768673.jpg?v=1694655827817) no-repeat center center; background-size: cover">
+                                                    <span class="color-name">Red</span>
+                                                </div>
+
+                                                <a href="/tx-switch-puller-thep-khong-gi"
+                                                    data-handle="tx-switch-puller-thep-khong-gi"
+                                                    class="color-more quick-view">
+                                                    +4 <span class="action-name">Xem thêm 4 màu khác</span>
+                                                </a>
+
+                                            </div>
+
+                                            <div class="product-promotion hidden">
+                                                <span
+                                                    class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
+                                                    <img alt="Lưu ý"
+                                                        src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714906312483"
+                                                        width="16" height="16" class="mr-2">
+                                                    Lưu ý
+                                                </span>
+
+                                                <ul class="promotion-box">
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+
+                                                    <li></li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="text-center mt-3 col-12">
+                            <a href="/accessories-phu-kien-ban-phim-co" title="Xem tất cả"
+                                class="btn btn-main btn-icon btn-pill">
+                                Xem tất cả
+
+                                <svg class="icon">
+                                    <use xlink:href="#icon-arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <!-- KThen viết nè -->
@@ -2891,7 +5287,8 @@
                         </div>
                         <div class="tfoot-popup-2 clearfix">
                             <a class="button btn-continue close-pop" title="Tiếp tục mua hàng" href="javascript:;"
-                                onclick="$('#popup-cart').modal('hide');"><span><span>Tiếp tục mua hàng</span></span></a>
+                                onclick="$('#popup-cart').modal('hide');"><span><span>Tiếp tục mua
+                                        hàng</span></span></a>
                             <a class="button checkout_ btn-proceed-checkout" title="Thực hiện thanh toán"
                                 href="/checkout"><span>Thực hiện thanh toán</span></a>
                         </div>
@@ -2965,7 +5362,7 @@
     </div>
 
     <!-- XEM NHANH -->
-    <div id="quick-view-product" class="quickview-product" >
+    <div id="quick-view-product" class="quickview-product">
         <div class="quickview-overlay fancybox-overlay fancybox-overlay-fixed"></div>
         <div class="quick-view-product align-verticle">
             <div class="block-quickview primary_block details-product">
@@ -3061,7 +5458,11 @@
                                     <div class="custom input_number_product soluong1">
                                         <button class="btn_num btn num_1 button button_qty"
                                             onclick="var result = document.getElementById('quantity-detail'); var qtyqv = result.value; if( !isNaN( qtyqv ) &amp;&amp; qtyqv > 1 ) result.value--;return false;">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 11.2px;"><path fill="#b0b0b0" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                style="width: 11.2px;">
+                                                <path fill="#b0b0b0"
+                                                    d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
+                                            </svg>
                                         </button>
                                         <input type="text" id="quantity-detail" name="quantity" value="1" maxlength="2"
                                             class="form-control prd_quantity"
@@ -3069,7 +5470,11 @@
                                             onchange="if(this.value == 0)this.value=1;">
                                         <button class="btn_num  btn num_2 button button_qty"
                                             onclick="var result = document.getElementById('quantity-detail'); var qtyqv = result.value; if( !isNaN( qtyqv )) result.value++;return false;">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 11.2px;"><path fill="#b0b0b0" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                style="width: 11.2px;">
+                                                <path fill="#b0b0b0"
+                                                    d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                            </svg>
                                         </button>
                                     </div>
                                     <div class="button_actions clearfix mb-0">
