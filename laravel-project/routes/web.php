@@ -4,14 +4,16 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Client\HomeController;
+
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index']);
+
 Route::get('/dashboard', function () {
     return view('admin.dashboard.index');
 })->name('dashboard');
+
 Route::get('/home', function () {
     return view('client.layouts.app');
 });
