@@ -2,21 +2,22 @@
 
 namespace App\Models;
 
-use App\Traits\HandleImageTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    use HasFactory,HandleImageTrait;
-    protected $fillable=[
+    use HasFactory;
+
+    protected $fillable = [
         'name',
+        'manufacturer',
         'description',
-        'sale',
+        'size',
+        'color',
         'price',
+        'quantity',
+        'caterogyId'
+
     ];
-    public function images()
-{
-    return $this->morphMany(Image::class, 'imageable');
-}
 }

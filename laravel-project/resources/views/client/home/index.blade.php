@@ -1,3 +1,3 @@
-@extends('client.layouts.app')
+<!-- @extends('client.layouts.app')
 @section('title', 'Home')
-@section('content')
+@section('content') -->

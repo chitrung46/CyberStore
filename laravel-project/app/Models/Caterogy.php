@@ -5,14 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Coupon extends Model
+class Caterogy extends Model
 {
     use HasFactory;
-    protected $fillable=[
-        'name',
-        'type',
-        'value',
-        'expery_date',
-        
+
+    protected $fillable = [
+        'name'
     ];
 }
