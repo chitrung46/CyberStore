@@ -13,11 +13,8 @@ class Product extends Model
         'name',
         'manufacturer',
         'description',
-        'size',
         'color',
         'price',
-        'quantity',
-        'caterogyId'
-
+        'quantity'
     ];
 }

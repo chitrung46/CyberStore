@@ -5,12 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Cart extends Model
+class DetailOrder extends Model
 {
     use HasFactory;
 
     protected $fillable = [
+        'productId',
         'quantity',
-        'userId'
+        'totalPrice'
     ];
 }
