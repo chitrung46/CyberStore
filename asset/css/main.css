@@ -1,12 +1,9 @@
-.recent-view-list, .section_prd_feature {
-	margin-left: -5px;
-	margin-right: -5px;
-}
-.section_prd_feature .product-col, .recent-view-list .product-col {
+
+.section_prd_feature .product-col {
 	height: inherit;
 	padding: 0 15px
 }
-.section_prd_feature:not(.slick-slider) .product-col, .recent-view-list:not(.slick-slider) .product-col {
+.section_prd_feature:not(.slick-slider) .product-col {
 	flex: 0 0 20%;
 	max-width: 20%;
 }
@@ -1276,10 +1273,6 @@ a.product-vendor:hover {
 
 }
 
-.footer {
-	position: relative;
-	overflow: hidden
-}
 
 .mailchimp-error {
 	color: #F51B1B
@@ -1292,7 +1285,12 @@ a.product-vendor:hover {
 footer {
 	background: rgba(46, 45, 45, 0.986);
 	position: relative;
-	top: 70px;
+	/* top: 70px; */
+	overflow: hidden;
+	width: 100%;
+	bottom: 0;
+    left: 0;
+
 }
 
 .mid-footer {
@@ -2577,7 +2575,7 @@ body.menu-is-hover .subheader {
         padding-right: 0;
     }
 
-    .section_prd_feature:not(.slick-slider) .product-col, .recent-view-list:not(.slick-slider) .product-col {
+    .section_prd_feature:not(.slick-slider) .product-col{
         flex: 0 0 70%;
         max-width: 70%;
     }

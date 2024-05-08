@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Giỏ hàng - Cyber Store</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -23,445 +23,499 @@
 
 <body>
 
-    <div class="wrapper">
+    <div class="top-banner position-raletive" style="background-color: #61317F;">
+        Key of Word - The World of Keyboard
 
-        <div class="top-banner position-raletive" style="background-color: #61317F;">
-            Key of Word - The World of Keyboard
-
-        </div>
-
-        <header class="header">
-
-            <div class="container">
-                <div class="sidebar" id="sidebar">
-                    <!-- <div class="user">
-
-                    </div> -->
-
-                    <div class="wrap-sidebar">
-                        <nav class="sidebar-nav">
-                            <ul class="sidebar-item">
-                                <li><a class="sidebar-link" href="./HomePage.html">Trang chủ</a></li>
-                                <li><a class="sidebar-link" href="">Giới thiệu</a></li>
-                                <li><a class="sidebar-link" href="">Sản phẩm</a></li>
-                                <li><a class="sidebar-link" href="">Liên hệ</a></li>
-                                <li><a class="sidebar-link" href="">Đăng ký</a></li>
-                                <li><a class="sidebar-link" href="">Đăng nhập</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-
-                </div>
-                <div class="sidebar-overlay" id="sidebar-overlay" onclick="hideSidebar()"></div>
-
-
-                <nav class="header__navbar">
-
-                    <div class="menu-bar">
-                        <a href="#" onclick="event.preventDefault(); ">
-                            <i class="fa-solid fa-bars large-icon" id="sidebar-toggle" onclick="opensidebar()"></i>
-                        </a>
-
-                    </div>
-
-                    <div class="header__navbar-left ">
-                        <a href="" id="logo"> <img src=".\\img\LogoCyBer1.png" alt="CyberStore.vn"></a>
-                        <h3 class="header__logo">CyBer<br>StoRe</h3>
-                        <!-- /* Đổi kiểu cho LOGO*/ -->
-                    </div>
-
-                    <div class="header__navbar-center ">
-                        <ul class="nav justify-content-center">
-                            <li class="nav-item">
-                                <a class="nav-link" href="HomePage.html">Trang chủ</a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#">Group Buy</a>
-                                <ul class="sub-menu gropuBuy">
-                                    <li><a href="">Live GB</a></li>
-                                    <li><a href="">Ended GB</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#">Instock</a>
-                                <ul class="sub-menu instock">
-                                    <li><a href="">Bàn phím cơ</a></li>
-                                    <li><a href="">Keycap</a></li>
-                                    <li><a href="">Công tắc bàn phím cơ</a></li>
-                                    <li><a href="">Thanh cân bằng - Stabilizers</a></li>
-                                    <li>
-                                        <a href="">Phụ kiện bàn phím cơ</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Hướng dẫn sử dụng</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Liên hệ</a>
-                            </li>
-                        </ul>
-
-                    </div>
-
-                    <div class="header__navbar-right ">
-                        <ul class="nav ">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item user-cart">
-                                <a class="nav-link" href="#">
-                                    <i class="fa-regular fa-user " style=" padding-top: 1px"></i>
-                                </a>
-                            </li>
-
-                            <li class="nav-item shopping__cart">
-                                <a class="nav-link" href="#">
-                                    <img src=".\\img\shopping.svg " alt="Giỏ hàng">
-
-                                    <span class="shopping__cart-notice" id="num-products">3</span>
-
-                                </a>
-                                <!--Không có SP: shopping__cart-list--no-cart  -->
-                                <div class="shopping__cart-list ">
-                                    <img src=".\\img\empty-cart.svg" alt="" class="shopping__cart-list--no-cart-img">
-                                    <p class="shopping__cart-list--no-cart-msg">Hổng cóa sản phẩm :<<< </p>
-                                    <h4 class="shopping__cart-heading">Sản phẩm đã thêm</h4>
-                                    
-                                    <ul class="shopping__cart-list-item">
-                                        <li class="shopping__cart-item">
-                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
-                                                alt="" class="shopping__cart-img">
-                                            <div class="shopping__cart-item-info">
-                                                <div class="shopping__cart-item-head">
-                                                    <h5 class="shopping__cart-item-name">Mousepad siu cuti</h5>
-                                                    <div class="shopping__cart-item-price-wrap">
-                                                        <span class="shopping__cart-item-price">500.000đ</span>
-                                                        <span class="shopping__cart-item-multiply">x</span>
-                                                        <span class="shopping__cart-item-qnt">2</span>
-                                                    </div>
-                                                </div>
-                        
-                                                <div class="shopping__cart-item-body">
-                                                    <span class="shopping__cart-item-description">
-                                                        Phân loại: Mousepad
-                                                    </span>
-                                                    <span class="shopping__cart-item-remove">Xóa</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                        
-                                        <li class="shopping__cart-item">
-                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
-                                                alt="" class="shopping__cart-img">
-                                            <div class="shopping__cart-item-info">
-                                                <div class="shopping__cart-item-head">
-                                                    <h5 class="shopping__cart-item-name">Mousepad siu cuti</h5>
-                                                    <div class="shopping__cart-item-price-wrap">
-                                                        <span class="shopping__cart-item-price">500.000đ</span>
-                                                        <span class="shopping__cart-item-multiply">x</span>
-                                                        <span class="shopping__cart-item-qnt">2</span>
-                                                    </div>
-                                                </div>
-                        
-                                                <div class="shopping__cart-item-body">
-                                                    <span class="shopping__cart-item-description">
-                                                        Phân loại: Mousepad
-                                                    </span>
-                                                    <span class="shopping__cart-item-remove">Xóa</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                        
-                                        <li class="shopping__cart-item">
-                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
-                                                alt="" class="shopping__cart-img">
-                                            <div class="shopping__cart-item-info">
-                                                <div class="shopping__cart-item-head">
-                                                    <h5 class="shopping__cart-item-name">Mousepad siu cuti</h5>
-                                                    <div class="shopping__cart-item-price-wrap">
-                                                        <span class="shopping__cart-item-price">500.000đ</span>
-                                                        <span class="shopping__cart-item-multiply">x</span>
-                                                        <span class="shopping__cart-item-qnt">2</span>
-                                                    </div>
-                                                </div>
-                        
-                                                <div class="shopping__cart-item-body">
-                                                    <span class="shopping__cart-item-description">
-                                                        Phân loại: Mousepad
-                                                    </span>
-                                                    <span class="shopping__cart-item-remove">Xóa</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-
-                    </div>
-
-                </nav>
-            </div>
-
-        </header>
-
-
-        <section class="bread-crumb mb-3">
-            <span class="crumb-border"></span>
-            <div class="container ">
-                <div class="row">
-                    <div class="col-12 a-left">
-                        <ul class="breadcrumb m-0 px-0 py-2">
-                            <li class="home">
-                                <a href="/" class="link"><span>Trang chủ</span></a>
-                                <span class="mr_lr">&nbsp;/&nbsp;</span>
-                            </li>
-
-                            <li><strong><span>Giỏ hàng</span></strong></li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="cart-coupon my-4">
-            <div class="cart-coupon-header">
-                <span class="coupon-toggle-btn">
-                    <i class="fa fa-arrow-left "> </i>
-                </span>
-                <span>Mã giảm giá</span>
-            </div>
-            <link rel="preload" as="style" type="text/css"
-                href="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/coupon.css?1714359361508">
-
-            <link rel="stylesheet" href="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/coupon.css?1714359361508">
-
-
-            <div class="section_coupons">
-                <div class="container">
-                    <div class="row scroll justify-content-xl-center">
-
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="cart-coupon-footer ">
-                <button class="btn btn-main btn-block rounded-sm coupon-toggle-btn">
-                    Quay lại trang giỏ hàng
-                </button>
-            </div>
-        </div>
-
-        <div class="cart-coupon-overlay coupon-toggle-btn"></div>
-        <div id="tab-header"></div>
-
-        <section class="main-cart-page main-container col1-layout mobile-tab active" id="cart-tab"
-            data-title="Giỏ hàng">
-            <div
-                class="wrap_background_aside padding-top-15 margin-bottom-40 padding-left-0 padding-right-0 cartmbstyle">
-                <div class="cart-mobile container card border-0 py-2">
-                    <form action="/cart" method="post" novalidate="" class="margin-bottom-0">
-                        <div class="header-cart">
-                        </div>
-
-
-                        <div class="header-cart-content"></div>
-                    </form>
-                </div>
-                <div class="cart-empty container card border-0 py-2 ">
-                    <div class="alert green-alert section" role="alert">
-                        <div class="title-cart text-center">
-                            <h1 class="d-none">Giỏ hàng</h1>
-                            <div>
-
-                                <img src="./img\empty-cart.svg" class="img-fluid" width="298" height="152">
-                            </div>
-                            <h3>
-                                “Hổng” có gì trong giỏ hết
-                            </h3>
-                            <p> Về trang cửa hàng để chọn mua sản phẩm bạn nhé!!</p>
-                            <a href=".\HomePage.html" title="Mua sắm ngay" class="btn btn-main">Mua sắm ngay</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- KThen viết nè -->
-        <footer>
-            <div class="mid-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="footer-block footer-click">
-
-                                <a href="/" class="logo-wrapper mb-3 d-block ">
-                                    <img src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/logo-footer.png?1714292295296"
-                                        alt="logo CyBer Store" width="" height="70">
-                                </a>
-                                <div class="single-contact">
-                                    <i class="fa fa-map-marker-alt"></i>
-                                    <div class="content">Địa chỉ:
-                                        <span><a class="link"
-                                                title="số 52, ngõ 121 Thái Hà, P. Trung Liệt, Q. Đống Đa, Hà Nội"
-                                                href="https://goo.gl/maps/QtUxzmiuw46MuMVL7" target="_blank">số 52, ngõ
-                                                121 Thái Hà, P. Trung Liệt, Q. Đống Đa, Hà Nội</a></span>
-                                    </div>
-                                </div>
-
-                                <div class="single-contact">
-                                    <i class="fa fa-mobile-alt"></i>
-                                    <div class="content">
-                                        Số điện thoại: <a class="link" title="0888115511"
-                                            href="tel:0888115511">0888115511</a>
-                                    </div>
-                                </div>
-                                <div class="single-contact">
-                                    <i class="fa fa-envelope"></i>
-                                    <div class="content">
-                                        Email: <a title="sales@mokbstore.com" class="link"
-                                            href="mailto:sales@mokbstore.com">sales@cyberstore.com</a>
-                                    </div>
-                                </div>
-
-                                <div id="copyright" class="fot_copyright mt-3">
-                                    <span class="wsp">
-                                        © Bản quyền thuộc về <a href="https://mokbstore.com" rel="nofollow"
-                                            target="_blank">CyBer Store</a>
-
-                                    </span>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-lg-9">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="footer-block footer-click">
-                                        <h3 class="footer-title title-menu clicked">
-                                            Hướng dẫn
-                                            <i class="fa fa-angle-down d-md-none d-inline-block"></i>
-                                        </h3>
-                                        <ul class="list-menu toggle-mn">
-
-                                            <li class="li_menu">
-                                                <a class="link" href="/huong-dan"
-                                                    title="Hướng dẫn mua hàng và thanh toán">Hướng dẫn mua hàng và thanh
-                                                    toán</a>
-                                            </li>
-
-                                            <li class="li_menu">
-                                                <a class="link" href="/huong-dan-su-dung"
-                                                    title="Hướng dẫn sử dụng">Hướng dẫn sử dụng</a>
-                                            </li>
-
-                                            <li class="li_menu">
-                                                <a class="link" href="https://mokbstore.com/apps/kiem-tra-don-hang"
-                                                    title="Kiểm tra đơn hàng">Kiểm tra đơn hàng</a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="footer-block footer-click">
-                                        <h3 class="footer-title title-menu clicked">
-                                            Chính sách
-                                            <i class="fa fa-angle-down d-md-none d-inline-block"></i>
-                                        </h3>
-                                        <ul class="list-menu toggle-mn">
-
-                                            <li class="li_menu">
-                                                <a class="link" href="/chinh-sach-group-buy"
-                                                    title="Chính sách Group Buy">Chính sách Group Buy</a>
-                                            </li>
-
-                                            <li class="li_menu">
-                                                <a class="link" href="/chinh-sach-bao-hanh"
-                                                    title="Chính sách bảo hành">Chính sách bảo hành</a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="footer-block footer-click">
-
-                                        <h3 class="footer-title title-menu">ĐĂNG KÝ NHẬN TIN</h3>
-                                        <p class="mailchimp-title">
-                                            Bạn muốn nhận khuyến mãi đặc biệt? Đăng ký ngay. </p>
-                                        <div class="form_register ">
-                                            <script type="text/javascript"
-                                                src="https://campaigns.zoho.com/js/zc.iframe.js"></script>
-                                            <iframe frameborder="0" id="iframewin" width="100%" height="100%"
-                                                src="https://zcvrp-zgvfh.maillist-manage.com/ua/Optin?od=11287ecc4a1546&amp;zx=12f9973b8&amp;tD=1f676f1c2e804fc9&amp;sD=1f676f1c2e866e65"></iframe>
-                                        </div>
-
-                                        <ul
-                                            class="follow_option d-flex flex-wrap align-items-center list-unstyled mt-2">
-
-                                            <li>
-                                                <a class="facebook link" href="https://www.facebook.com/mokbstore/"
-                                                    target="_blank" title="Theo dõi Facebook CyBer Store">
-                                                    <img src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/facebook.png?1714292295296"
-                                                        width="32" height="32" alt="facebook">
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a class="zalo link" href="https://zalo.me/0888115511" target="_blank"
-                                                    title="Theo dõi zalo CyBer Store">
-                                                    <img src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/zalo.png?1714292295296"
-                                                        width="32" height="32" alt="zalo">
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a class="instgram link" href="https://www.instagram.com/mokb.store/"
-                                                    target="_blank" title="Theo dõi instgram CyBer Store">
-                                                    <img src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/instagram.png?1714292295296"
-                                                        width="32" height="32" alt="instgram">
-                                                </a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4">
-
-                                </div>
-                                <div class="col-lg-4">
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
     </div>
 
+    <header class="header">
 
+        <div class="container">
+            <div class="sidebar" id="sidebar">
+                <!-- <div class="user">
+
+                </div> -->
+
+                <div class="wrap-sidebar">
+                    <nav class="sidebar-nav">
+                        <ul class="sidebar-item">
+                            <li><a class="sidebar-link" href="HomePage.html">Trang chủ</a></li>
+                            <li><a class="sidebar-link" href="">Giới thiệu</a></li>
+                            <li><a class="sidebar-link" href="">Sản phẩm</a></li>
+                            <li><a class="sidebar-link" href="">Liên hệ</a></li>
+                            <li><a class="sidebar-link" href="">Đăng ký</a></li>
+                            <li><a class="sidebar-link" href="">Đăng nhập</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+            <div class="sidebar-overlay" id="sidebar-overlay" onclick="hideSidebar()"></div>
+
+
+            <nav class="header__navbar">
+
+                <div class="menu-bar">
+                    <a href="#" onclick="event.preventDefault(); ">
+                        <i class="fa-solid fa-bars large-icon" id="sidebar-toggle" onclick="opensidebar()"></i>
+                    </a>
+
+                </div>
+
+                <div class="header__navbar-left ">
+                    <a href="" id="logo"> <img src=".\\img\LogoCyBer1.png" alt="CyberStore.vn"></a>
+                    <h3 class="header__logo">CyBer<br>StoRe</h3>
+                    <!-- /* Đổi kiểu cho LOGO*/ -->
+                </div>
+
+                <div class="header__navbar-center ">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./HomePage.html">Trang chủ</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Group Buy</a>
+
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Instock <i class="fa-solid fa-angle-down"
+                                    style="margin-left: 10px;"></i></a>
+                            <ul class="sub-menu instock">
+                                <li><a href="">Bàn phím cơ</a></li>
+                                <li><a href="">Keycap</a></li>
+                                <li><a href="">Công tắc bàn phím cơ</a></li>
+                                <li><a href="">Thanh cân bằng - Stabilizers</a></li>
+                                <li>
+                                    <a href="">Phụ kiện bàn phím cơ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="header__navbar-right ">
+                    <ul class="nav ">
+                        <li class="nav-item">
+                            <div class="nav-link search" id="searchIcon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </li>
+                        <li class="nav-item user-cart">
+                            <a class="nav-link" href="#">
+                                <i class="fa-regular fa-user " style=" padding-top: 1px"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item shopping__cart">
+
+                            <a class="nav-link" href="Cart.html">
+                                <img src=".\\img\shopping.svg " alt="Giỏ hàng">
+                                <span class="shopping__cart-notice" id="num-products">3</span>
+                            </a>
+
+                            <div class="shopping__cart-list ">
+                                <div class="shopping__cart-list--no-cart">
+                                    <img src=".\\img\empty-cart.svg" alt="" class="shopping__cart-list--no-cart-img">
+                                    <p class="shopping__cart-list--no-cart-msg">Hổng cóa sản phẩm :<<< </p>
+                                </div>
+
+                                <h4 class="shopping__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="shopping__cart-list-item">
+                                    <li class="shopping__cart-item">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
+                                            alt="" class="shopping__cart-img">
+                                        <div class="shopping__cart-item-info">
+                                            <div class="shopping__cart-item-head">
+                                                <h5 class="shopping__cart-item-name">Mousepad siu cuti</h5>
+                                                <div class="shopping__cart-item-price-wrap">
+                                                    <span class="shopping__cart-item-price">500.000đ</span>
+                                                    <span class="shopping__cart-item-multiply">x</span>
+                                                    <span class="shopping__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="shopping__cart-item-body">
+                                                <span class="shopping__cart-item-description">
+                                                    Phân loại: Mousepad
+                                                </span>
+                                                <span class="shopping__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="shopping__cart-item">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
+                                            alt="" class="shopping__cart-img">
+                                        <div class="shopping__cart-item-info">
+                                            <div class="shopping__cart-item-head">
+                                                <h5 class="shopping__cart-item-name">Mousepad siu cuti</h5>
+                                                <div class="shopping__cart-item-price-wrap">
+                                                    <span class="shopping__cart-item-price">500.000đ</span>
+                                                    <span class="shopping__cart-item-multiply">x</span>
+                                                    <span class="shopping__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="shopping__cart-item-body">
+                                                <span class="shopping__cart-item-description">
+                                                    Phân loại: Mousepad
+                                                </span>
+                                                <span class="shopping__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="shopping__cart-item">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
+                                            alt="" class="shopping__cart-img">
+                                        <div class="shopping__cart-item-info">
+                                            <div class="shopping__cart-item-head">
+                                                <h5 class="shopping__cart-item-name">Mousepad siu cuti</h5>
+                                                <div class="shopping__cart-item-price-wrap">
+                                                    <span class="shopping__cart-item-price">500.000đ</span>
+                                                    <span class="shopping__cart-item-multiply">x</span>
+                                                    <span class="shopping__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="shopping__cart-item-body">
+                                                <span class="shopping__cart-item-description">
+                                                    Phân loại: Mousepad
+                                                </span>
+                                                <span class="shopping__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </nav>
+        </div>
+
+    </header>
+
+
+    <section class="bread-crumb mb-3">
+        <span class="crumb-border"></span>
+        <div class="container ">
+            <div class="row">
+                <div class="col-12 a-left">
+                    <ul class="breadcrumb m-0 px-0 py-2">
+                        <li class="home">
+                            <a href="/" class="link"><span>Trang chủ</span></a>
+                            <span class="mr_lr">&nbsp;/&nbsp;</span>
+                        </li>
+
+                        <li><strong><span>Giỏ hàng</span></strong></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cart-coupon my-4">
+        <div class="cart-coupon-header">
+            <span class="coupon-toggle-btn">
+                <i class="fa fa-arrow-left "> </i>
+            </span>
+            <span>Mã giảm giá</span>
+        </div>
+        <link rel="preload" as="style" type="text/css"
+            href="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/coupon.css?1714359361508">
+
+        <link rel="stylesheet" href="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/coupon.css?1714359361508">
+
+
+        <div class="section_coupons">
+            <div class="container">
+                <div class="row scroll justify-content-xl-center">
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cart-coupon-footer ">
+            <button class="btn btn-main btn-block rounded-sm coupon-toggle-btn">
+                Quay lại trang giỏ hàng
+            </button>
+        </div>
+    </div>
+
+    <div class="cart-coupon-overlay coupon-toggle-btn"></div>
+    <div id="tab-header"></div>
+
+    <section class="main-cart-page main-container col1-layout mobile-tab active" id="cart-tab" data-title="Giỏ hàng">
+        <div class="wrap_background_aside padding-top-15 margin-bottom-40 padding-left-0 padding-right-0 cartmbstyle">
+            <div class="cart-mobile container card border-0 py-2">
+                <form action="/cart" method="post" novalidate="" class="margin-bottom-0">
+                    <div class="header-cart">
+                    </div>
+
+
+                    <div class="header-cart-content"></div>
+                </form>
+            </div>
+            <div class="cart-empty container card border-0 py-2 ">
+                <div class="alert green-alert section" role="alert">
+                    <div class="title-cart text-center">
+                        <h1 class="d-none">Giỏ hàng</h1>
+                        <div>
+
+                            <img src="./img\empty-cart.svg" class="img-fluid" width="298" height="152">
+                        </div>
+                        <h3>
+                            “Hổng” có gì trong giỏ hết
+                        </h3>
+                        <p> Về trang cửa hàng để chọn mua sản phẩm bạn nhé!!</p>
+                        <a href=".\HomePage.html" title="Mua sắm ngay" class="btn btn-main">Mua sắm ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- KThen viết nè -->
+    <footer>
+        <div class="mid-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="footer-block footer-click">
+
+                            <a href="/" class="logo-wrapper mb-3 d-block ">
+                                <img src="img\LogoCyBer1.png"
+                                    alt="logo CyBer Store" width="" height="70">
+                            </a>
+                            <div class="single-contact">
+                                <i class="fa fa-map-marker-alt"></i>
+                                <div class="content">Địa chỉ:
+                                    <span><a class="link"
+                                            title="số 52, ngõ 121 Thái Hà, P. Trung Liệt, Q. Đống Đa, Hà Nội"
+                                            href="https://goo.gl/maps/QtUxzmiuw46MuMVL7" target="_blank">số 52, ngõ
+                                            121 Thái Hà, P. Trung Liệt, Q. Đống Đa, Hà Nội</a></span>
+                                </div>
+                            </div>
+
+                            <div class="single-contact">
+                                <i class="fa fa-mobile-alt"></i>
+                                <div class="content">
+                                    Số điện thoại: <a class="link" title="0888115511"
+                                        href="tel:0888115511">0888115511</a>
+                                </div>
+                            </div>
+                            <div class="single-contact">
+                                <i class="fa fa-envelope"></i>
+                                <div class="content">
+                                    Email: <a title="sales@mokbstore.com" class="link"
+                                        href="mailto:sales@mokbstore.com">sales@cyberstore.com</a>
+                                </div>
+                            </div>
+
+                            <div id="copyright" class="fot_copyright mt-3">
+                                <span class="wsp">
+                                    © Bản quyền thuộc về <a href="https://mokbstore.com" rel="nofollow"
+                                        target="_blank">CyBer Store</a>
+
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="footer-block footer-click">
+                                    <h3 class="footer-title title-menu clicked">
+                                        Hướng dẫn
+                                        <i class="fa fa-angle-down d-md-none d-inline-block"></i>
+                                    </h3>
+                                    <ul class="list-menu toggle-mn">
+
+                                        <li class="li_menu">
+                                            <a class="link" href="/huong-dan"
+                                                title="Hướng dẫn mua hàng và thanh toán">Hướng dẫn mua hàng và thanh
+                                                toán</a>
+                                        </li>
+
+                                        <li class="li_menu">
+                                            <a class="link" href="/huong-dan-su-dung" title="Hướng dẫn sử dụng">Hướng
+                                                dẫn sử dụng</a>
+                                        </li>
+
+                                        <li class="li_menu">
+                                            <a class="link" href="https://mokbstore.com/apps/kiem-tra-don-hang"
+                                                title="Kiểm tra đơn hàng">Kiểm tra đơn hàng</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="footer-block footer-click">
+                                    <h3 class="footer-title title-menu clicked">
+                                        Chính sách
+                                        <i class="fa fa-angle-down d-md-none d-inline-block"></i>
+                                    </h3>
+                                    <ul class="list-menu toggle-mn">
+
+                                        <li class="li_menu">
+                                            <a class="link" href="/chinh-sach-group-buy"
+                                                title="Chính sách Group Buy">Chính sách Group Buy</a>
+                                        </li>
+
+                                        <li class="li_menu">
+                                            <a class="link" href="/chinh-sach-bao-hanh"
+                                                title="Chính sách bảo hành">Chính sách bảo hành</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="footer-block footer-click">
+
+                                    <h3 class="footer-title title-menu">ĐĂNG KÝ NHẬN TIN</h3>
+                                    <p class="mailchimp-title">
+                                        Bạn muốn nhận khuyến mãi đặc biệt? Đăng ký ngay. </p>
+                                    <div class="form_register ">
+                                        <script type="text/javascript"
+                                            src="https://campaigns.zoho.com/js/zc.iframe.js"></script>
+                                        <iframe frameborder="0" id="iframewin" width="100%" height="100%"
+                                            src="https://zcvrp-zgvfh.maillist-manage.com/ua/Optin?od=11287ecc4a1546&amp;zx=12f9973b8&amp;tD=1f676f1c2e804fc9&amp;sD=1f676f1c2e866e65"></iframe>
+                                    </div>
+
+                                    <ul class="follow_option d-flex flex-wrap align-items-center list-unstyled mt-2">
+
+                                        <li>
+                                            <a class="facebook link" href="https://www.facebook.com/mokbstore/"
+                                                target="_blank" title="Theo dõi Facebook CyBer Store">
+                                                <img src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/facebook.png?1714292295296"
+                                                    width="32" height="32" alt="facebook">
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="zalo link" href="https://zalo.me/0888115511" target="_blank"
+                                                title="Theo dõi zalo CyBer Store">
+                                                <img src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/zalo.png?1714292295296"
+                                                    width="32" height="32" alt="zalo">
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="instgram link" href="https://www.instagram.com/mokb.store/"
+                                                target="_blank" title="Theo dõi instgram CyBer Store">
+                                                <img src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/instagram.png?1714292295296"
+                                                    width="32" height="32" alt="instgram">
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+
+                            </div>
+                            <div class="col-lg-4">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- THANH SEARCH -->
+    <header class="ega-header header header_sticky">
+        <div class="container">
+            <div class="header-wrap">
+                <div id="logo">
+                    <a href="/" class="logo-wrapper ">
+                        <img class="img-fluid"
+                            src="img\LogoCyBer1.png"
+                            alt="logo CyBer Store" width="300" height="100">
+                    </a>
+                </div>
+
+                <div class="ega-form-search">
+                    <form action="/search" method="get" class="input-group search-bar custom-input-group "
+                        role="search">
+                        <input type="text" name="query" value="" autocomplete="off"
+                            class="input-group-field auto-search form-control " required=""
+                            data-placeholder="Nhập tên sản phầm cần tìm..." placeholder="Nhập tên sản phầm cần ">
+                        <input type="hidden" name="type" value="product">
+                        <span class="input-group-btn btn-action">
+                            <button type="submit" aria-label="search" class="btn text-white icon-fallback-text h-100">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </span>
+                    </form>
+
+                    <div class="search-dropdow">
+                        <ul class="search__list pl-0 d-flex list-unstyled mb-0 flex-wrap">
+                            <li class="mr-2">
+                                <a id="filter-search-owlab-neon"
+                                    href="/search?query=(Owlab+Neon)&amp;type=product">Owlab Neon</a>
+                            </li>
+                            <li class="mr-2">
+                                <a id="filter-search-stab" href="/search?query=(+Stab)&amp;type=product"> Stab</a>
+                            </li>
+                            <li class="mr-2">
+                                <a id="filter-search-switch" href="/search?query=(+Switch)&amp;type=product"> Switch</a>
+                            </li>
+                            <li class="mr-2">
+                                <a id="filter-search-lo-xo" href="/search?query=(+L%C3%B2+xo)&amp;type=product"> Lò
+                                    xo</a>
+                            </li>
+                            <li class="mr-2">
+                                <a id="filter-search-keycap" href="/search?query=(+Keycap)&amp;type=product"> Keycap</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ega-header-layer"></div>
+
+        </div>
+
+    </header>
+
+
+    <!--script -->
     <script src=".\asset\js\stast.js"></script>
-    <script src=".\asset\js\scrip.js"></script>
-    <script src=".\asset\js\product.js"></script>
-    <script src=".\asset\js\index.js"></script>
+    <script src=".asset\js\sidebar.js"></script>
     <script src=".\asset\js\api-jquery-custom.js"></script>
     <script src=".\asset\js\ega-gateway-min.js"></script>
     <script src=".\asset\js\cart.js"></script>
     <script src=".\asset\js\main.js"></script>
+    <script src=".\asset\js\slick.min.js"></script>
+    <script src=".\asset\js\quickview.js"></script>
+    <script src="\asset\js\vendors.js"></script>
+
+
+    <!-- ko biết có ảnh hưởng sau này ko -->
+    <script src=".\asset\js\fp.v3.3.0.min.js"></script>
+    <script src="asset/js/script.v2.js"></script>
 </body>
 
 </html>

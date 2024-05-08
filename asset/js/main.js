@@ -90,71 +90,10 @@ function awe_tab() {
 /********************************************************
 # MENU MOBILE
 ********************************************************/
-function awe_menumobile(){
-	$('.menu-bar').click(function(e){
-		e.preventDefault();
-		$('#nav').toggleClass('open');
-	});
-	$('#nav .fa').click(function(e){		
-		e.preventDefault();
-		$(this).parent().parent().toggleClass('open');
-	});
-} window.awe_menumobile=awe_menumobile;
+// 
 /*Double click go to link menu*/
-;(function ($, window, document, undefined) {
-	$.fn.doubleTapToGo = function (params) {
-		if (!('ontouchstart' in window) &&
-			!navigator.msMaxTouchPoints &&
-			!navigator.userAgent.toLowerCase().match(/windows phone os 7/i)) return false;
+// 
 
-		this.each(function () {
-			var curItem = false;
-
-			$(this).on('click', function (e) {
-				var item = $(this);
-				if (item[0] != curItem[0]) {
-					e.preventDefault();
-					curItem = item;
-				}
-			});
-
-			$(document).on('click touchstart MSPointerDown', function (e) {
-				var resetItem = true,
-					parents = $(e.target).parents();
-
-				for (var i = 0; i < parents.length; i++)
-					if (parents[i] == curItem[0])
-						resetItem = false;
-
-				if (resetItem)
-					curItem = false;
-			});
-		});
-		return this;
-	};
-})(jQuery, window, document);
-function initNavigation(){
-	$('body').append($('[data-template="stickyHeader"]').html())
-	$('.navigation-wrapper').html($('[data-template="navigation"]').html())
-	$('body').append($('[data-template="menuMobile"]').html())
-	initStickyHeader()
-	$(window).scroll(initStickyHeader)
-	$('.header_sticky .mini-cart').html($('.header_menu .mini-cart').html())
-	$(document).on("paste keyup",'.auto-search', function(){
-		$('.auto-search').val( $( this ).val() )
-	} )
-	$(".toggle_form_search, .ega-header-layer").click(function(){
-		$(".header_sticky").toggleClass("active");
-	})
-	var head = document.getElementsByTagName('head').item(0);
-	var script = document.createElement('script');
-	script.setAttribute('src', 'https://mixcdn.egany.com/themes/smartsearch-builtin/smartsearch-v2.min.js');
-	head.appendChild(script);
-	if(window.matchMedia('(min-width: 992px)').matches){
-		horizontalNav().init()
-	}
-
-}
 function prefetchUrl (url){
 	window.prefetchUrlArr= window.prefetchUrlArr || []
 	if(!window.prefetchUrlArr.includes(url) && url && url.includes('/')){
@@ -206,16 +145,32 @@ function horizontalNav () {
 		}
 	}	
 }
-function initStickyHeader(){
-	const stickyHeader = $('.ega-header:not(.header_sticky)')
-	const sticky = $(window).height()/2
 
-	if (window.pageYOffset > sticky) {
-		stickyHeader.addClass("active");
-	} else {
-		stickyHeader.removeClass("active")
-	}
-}
+const searchIcon = document.getElementById('searchIcon');
+const header = document.querySelector('.ega-header');
+const headerLayer = document.querySelector('.ega-header-layer');
+
+// Add event listener to the search icon
+searchIcon.addEventListener('click', function(event) {
+    // Toggle the visibility of the header
+    header.classList.toggle('active');
+    // Prevent the click event from propagating to the document
+    event.stopPropagation();
+});
+
+// Add event listener to close the header when clicking outside of it
+document.addEventListener('click', function(event) {
+    if (!header.contains(event.target) && event.target !== searchIcon) {
+        // Hide the header
+        header.classList.remove('active');
+    }
+});
+
+// Add event listener to close the header when clicking on the header layer
+headerLayer.addEventListener('click', function() {
+    // Hide the header
+    header.classList.remove('active');
+});
 var is_renderd = 0
 
 function renderLayout(){
