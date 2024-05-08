@@ -505,7 +505,6 @@ button.shopping__cart-item-remove {
 .dropdown{
     position: relative;
     display: inline-block;
-
 }
 
 
@@ -637,6 +636,64 @@ button.shopping__cart-item-remove {
 }
 
 
+/* USER */
+
+.nav-item.user-cart .account-action {
+    position: absolute;
+    background: #333;
+    border-radius: 5px;
+    color: #fff;
+    transition-duration: .3s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    text-align: left;
+    left: 45%;
+    transform: translateX(-50%);
+    top: calc(100% + 2px);
+    width: 150px;
+    height: 76px;
+
+}
+
+.nav-item.user-cart:hover .account-action {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-item.user-cart .account-action a {
+    display: block;
+    padding: 7px 8px;
+    color: #fff; 
+    text-decoration: none; 
+}
+
+.nav-item.user-cart .account-action a:hover {
+    background: #6666;
+}
+
+.nav-item.user-cart .account-action::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    border: solid #333;
+    border-top-color: #333;
+    transform: translateX(-50%);
+    
+}
+
+.nav-item.user-cart .account-action::after {
+    content: '';
+    position: relative;
+    border-top-color: #333;
+    transform: translateX(-50%);
+    top: -112px;
+    left: 52px;
+    border-width: 16px 23px;
+    border-style: solid;
+    border-color: transparent transparent #333 transparent;
+}
 
 /** Thanh search **/
 /** ega-header **/
