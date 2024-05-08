@@ -21,8 +21,11 @@
                 <th>#</th>
                 <th>Image</th>
                 <th>Name</th>
+                <th>Manufacturer</th>
+                <th>Description</th>
+                <th>Color</th>
                 <th>Price</th>
-                <th>Sale</th>
+                <th>Quantity</th>
                 <th>Action</th>
             </tr>
             @foreach($products as $item)
@@ -30,9 +33,11 @@
                 <td>{{ $item->id }}</td>
                 <td><img src="{{$item->images->count()>0 ? asset('upload/' . $item->images->first()->url) : 'upload/default.png'}}" width="200px" height="200px" alt=""></td>
                 <td>{{ $item->name }}</td>
+                <td>{{ $item->manufacturer }}</td>
+                <td>{{ $item->description }}</td>
+                <td>{{ $item->color }}</td>
                 <td>{{ $item->price }}</td>
-
-                <td>{{ $item->sale }}</td>
+                <td>{{ $item->quantity }}</td>
                 <td>
                     <a href="{{ route('products.edit', $item->id) }}" class="btn btn-warning">Edit</a>
                     <form action="{{ route('products.destroy', $item->id) }}" id="form-delete{{$item->id}}" method="POST">
@@ -46,7 +51,7 @@
             </tr>
             @endforeach
         </table>
-        {{$products->links()}}
+        {{ $products->links() }}
     </div>
 </div>
 @endsection

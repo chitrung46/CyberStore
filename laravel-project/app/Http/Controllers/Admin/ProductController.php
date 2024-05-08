@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Product;
+use App\Http\Requests\Products\CreateProductRequest;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -38,9 +39,19 @@ class ProductController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(CreateProductRequest $request)
     {
-        //
+        $dataCreate = $request;
+        $product = Product::create($dataCreate);
+        $dataCreate['image'] = $this->product->saveImage($request);
+        $product = $this->product->create($dataCreate);
+        $product->images()->create(['url' => $dataCreate['image']]);
+        // $product->categories()->attach($dataCreate['category_ids']);
+        // foreach($categories as $category)
+        // {
+        //     $sizeArray[] = ['category' => $category->category ]
+        // }
+    
     }
 
     /**

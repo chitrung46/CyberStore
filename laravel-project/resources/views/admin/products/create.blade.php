@@ -1,11 +1,11 @@
 @extends('admin.layouts.app')
-@section('title', 'Create User')
+@section('title', 'Create Product')
 @section('content')
     <div class="card">
-        <h1>Create User</h1>
+        <h1>Create Product</h1>
 
         <div>
-            <form action="{{ route('users.store') }}" method="post" enctype="multipart/form-data">
+            <form action="{{ route('products.store') }}" method="post" id="createForm" enctype="multipart/form-data">
                 @csrf
 
                 <div class="row">
@@ -18,7 +18,7 @@
                         @enderror
                     </div>
                     <div class="col-5">
-                        <img src="" id="show-image" alt="">
+                        <img src="" id="show-image" alt="" width="300px">
                     </div>
                 </div>
 
@@ -32,71 +32,59 @@
                 </div>
 
                 <div class="input-group input-group-static mb-4">
-                    <label>Email</label>
-                    <input type="email" value="{{ old('email') }}" name="email" class="form-control">
-                    @error('email')
-                        <span class="text-danger"> {{ $message }}</span>
-                    @enderror
-                </div>
-
-                <div class="input-group input-group-static mb-4">
-                    <label>Phone</label>
-                    <input type="text" value="{{ old('phone') }}" name="phone" class="form-control">
-                    @error('phone')
-                        <span class="text-danger"> {{ $message }}</span>
-                    @enderror
-                </div>
-
-                <div class="input-group input-group-static mb-4">
-                    <label name="group" class="ms-0">Gender</label>
-                    <select name="gender" class="form-control">
-                        <option value="male">Male</option>
-                        <option value="fe-male">FeMale</option>
-
-                    </select>
-
-                    @error('gender')
-                        <span class="text-danger"> {{ $message }}</span>
-                    @enderror
-                </div>
-
-                <div class="input-group input-group-static mb-4">
-                    <label>Address</label>
-                    <textarea name="address" class="form-control">{{ old('address') }} </textarea>
-                    @error('address')
-                        <span class="text-danger"> {{ $message }}</span>
-                    @enderror
-                </div>
-
-
-                <div class="input-group input-group-static mb-4">
-                    <label>Password</label>
-                    <input type="password" name="password" class="form-control">
-                    @error('password')
+                    <label>Manufacturer</label>
+                    <input type="text" value="{{ old('manufacturer') }}" name="manufacturer" class="form-control">
+                    @error('manufacturer')
                         <span class="text-danger"> {{ $message }}</span>
                     @enderror
                 </div>
 
                 <div class="form-group">
-                    <label for="">Roles</label>
-                    <div class="row">
-                        @foreach ($roles as $groupName => $role)
-                            <div class="col-5">
-                                <h4>{{ $groupName }}</h4>
-
-                                <div>
-                                    @foreach ($role as $item)
-                                        <div class="form-check">
-                                            <input class="form-check-input" name="role_ids[]" type="checkbox"
-                                                value="{{ $item->id }}">
-                                            <label class="custom-control-label"
-                                                for="customCheck1">{{ $item->display_name }}</label>
-                                        </div>
-                                    @endforeach
-                                </div>
-                            </div>
-                        @endforeach
+                    <label>Description</label>
+                    <div class="row w-100 h-100">
+                        <textarea name="description" id="description" class="form-control" cols="4" rows="5"
+                            style="width: 100%">{{ old('description') }} </textarea>
                     </div>
+                    @error('description')
+                        <span class="text-danger"> {{ $message }}</span>
+                    @enderror
+                </div>
+
+                <div class="input-group input-group-static mb-4">
+                    <label>Color</label>
+                    <input type="text" value="{{ old('color') }}" name="color" class="form-control">
+                    @error('color')
+                        <span class="text-danger"> {{ $message }}</span>
+                    @enderror
+                </div>
+
+                <div class="input-group input-group-static mb-4">
+                    <label>Price</label>
+                    <input type="text" value="{{ old('price') }}" name="price" class="form-control">
+                    @error('price')
+                        <span class="text-danger"> {{ $message }}</span>
+                    @enderror
+                </div>
+
+                <div class="input-group input-group-static mb-4">
+                    <label>Quantity</label>
+                    <input type="text" value="{{ old('quantity') }}" name="quantity" class="form-control">
+                    @error('quantity')
+                        <span class="text-danger"> {{ $message }}</span>
+                    @enderror
+                </div>
+
+                <div class="input-group input-group-static mb-4">
+                    <label name="group" class="ms-0">Category</label>
+                    <select name="categoryIds[]" class="form-control">
+                        @foreach ($categories as $item)
+                            <option value="{{ $item->id }}">{{$item->name}}</option>
+                        @endforeach
+                    </select>
+
+                    @error('categoryIds')
+                        <span class="text-danger"> {{ $message }}</span>
+                    @enderror
                 </div>
 
                 <button type="submit" class="btn btn-submit btn-primary">Submit</button>
@@ -106,27 +94,34 @@
 @endsection
 
 
-@yield('script')
+@section('style')
+    <style>
+        .w-40 {
+            width: 40%;
+        }
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-        crossorigin="anonymous"></script>
-    <script>
-        $(() => {
-            function readURL(input) {
-                if (input.files && input.files[0]) {
-                    var reader = new FileReader();
-                    reader.onload = function(e) {
-                        $('#show-image').attr('src', e.target.result);
-                    };
-                    reader.readAsDataURL(input.files[0]);
-                }
-            }
+        .w-20 {
+            width: 20%;
+        }
 
-            $("#image-input").change(function() {
-                readURL(this);
-            });
+        .row {
+            justify-content: center;
+            align-items: center
+        }
 
+        .ck.ck-editor {
+            width: 100%;
+            height: 100%;
+        }
 
+    </style>
+@endsection
 
-        });
-    </script>
+@section('script')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+        integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{{ asset('plugin/ckeditor5-build-classic/ckeditor.js') }}"></script>
+
+    <script src="{{ asset('admin/assets/js/product/product.js') }}"></script>
+@endsection
