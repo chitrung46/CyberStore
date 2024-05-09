@@ -1293,7 +1293,7 @@ footer {
 }
 
 .mid-footer {
-	color: rgb(232, 225, 225);
+	color: rgb(51, 154, 136);
 	font-size: 15px;
 	padding-bottom: 30px;
 }
@@ -1319,7 +1319,7 @@ footer {
 }
 
 .mid-footer .link {
-	color: rgb(62, 197, 195)
+	color: rgb(232, 225, 225)
 }
 
 .mid-footer .link .fa {
@@ -1327,7 +1327,7 @@ footer {
 }
 
 .mid-footer .link:hover {
-	filter: brightness(1.2)
+	color: rgb(62, 197, 195)
 }
 
 .mid-footer .list-menu {
