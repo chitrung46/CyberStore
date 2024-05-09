@@ -44,7 +44,7 @@
 }
 .details-product .details-pro .product-price {
 	font-size: 20px;
-	color: var(--price-color);
+	color:  rgb(55, 158, 141);
 	line-height: 24px;
 	font-family: inherit;
 	font-weight: 700;
@@ -96,9 +96,9 @@
 }
 .button_actions .btn-cart, .btn-installment, .quick-view-product .button_actions .btn-cart {
 	width: calc(50% - 5px);
-	border-color: var(--addtocart-text-color);
-	color: var(--addtocart-text-color);
-	background-color: var(--addtocart-bg);
+	border:  solid rgb(51, 147, 131);
+	color: rgb(38, 117, 104);
+	background-color: rgb(255, 255, 255);
 }
 .button_actions .btn-cart:hover, .btn-installment:hover, .quick-view-product .button_actions .btn-cart:hover {
 	opacity: .8;

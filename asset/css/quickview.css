@@ -124,7 +124,7 @@
 	bottom: 0 !important;
 	left: 0;
 	overflow-x: auto;
-	overflow-y: auto;
+	overflow-y: hidden;
 	position: fixed;
 	right: 0;
 	top: 0 !important;
@@ -172,10 +172,10 @@
 	margin-top: 20px;
 	margin-bottom: 0px;
 	padding: 0px;
- *.item.slick-slide.slick-current.slick-active{
-		border-color: var(--primary-color);
- }
- *
+	*.item.slick-slide.slick-current.slick-active{
+			border-color: var(--primary-color);
+	}
+	*
 }
 
 #thumblist_quickview:not(.slick-slider) {

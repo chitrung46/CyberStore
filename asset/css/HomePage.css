@@ -646,19 +646,18 @@ button.shopping__cart-item-remove {
     transition-duration: .3s;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    opacity: 0;
+    display: none;
     text-align: left;
     left: 45%;
     transform: translateX(-50%);
     top: calc(100% + 2px);
     width: 150px;
     height: 76px;
-
+    
 }
 
 .nav-item.user-cart:hover .account-action {
-    opacity: 1;
-    visibility: visible;
+    display: block;
 }
 
 .nav-item.user-cart .account-action a {
@@ -666,6 +665,11 @@ button.shopping__cart-item-remove {
     padding: 7px 8px;
     color: #fff; 
     text-decoration: none; 
+}
+
+.nav-item.user-cart .account-action:hover {
+    background: #333;
+    cursor: pointer;
 }
 
 .nav-item.user-cart .account-action a:hover {
@@ -685,11 +689,11 @@ button.shopping__cart-item-remove {
 
 .nav-item.user-cart .account-action::after {
     content: '';
-    position: relative;
+    position: absolute;
     border-top-color: #333;
     transform: translateX(-50%);
-    top: -112px;
-    left: 52px;
+    top: -30px; /* Adjusted top position */
+    left: 50%;
     border-width: 16px 23px;
     border-style: solid;
     border-color: transparent transparent #333 transparent;

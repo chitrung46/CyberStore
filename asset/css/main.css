@@ -2776,3 +2776,9 @@ opacity: 1;
 		right: auto;
 	}
 }
+
+/* SAP XEP */
+.coll-head{
+	display: flex;
+	justify-content: space-between;
+}

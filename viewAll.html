@@ -1584,7 +1584,7 @@
                                     <label class="left">
                                         <span class="">Sắp xếp: </span>
                                     </label>
-                                    <select class="content_ul" onchange="sortby(this)">
+                                    <select class="content_ul" onchange="sortby(this)" style="border: 2px solid rgb(50, 173, 161)">
                                         <option data-sort="name:asc" value="alpha-asc">Tên A → Z</option>
                                         <option data-sort="name:desc" value="alpha-desc">Tên Z → A</option>
                                         <option data-sort="price_min:asc" value="price-asc">Giá tăng dần</option>
@@ -1594,10 +1594,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="open-filters" class="btn open-filters d-lg-none d-block p-0">
+                        <!-- <div id="open-filters" class="btn open-filters d-lg-none d-block p-0">
                             <i class="fa fa-filter"></i>
                             <span>Lọc</span>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="row">
@@ -4419,6 +4419,140 @@
         </div>
     </footer>
 
+    <!-- XEM NHANH -->
+    <div id="quick-view-product" class="quickview-product">
+        <div class="quickview-overlay fancybox-overlay fancybox-overlay-fixed"></div>
+        <div class="quick-view-product align-verticle">
+            <div class="block-quickview primary_block details-product">
+                <div class="row">
+                    <div class="product-left-column product-images col-xs-12 col-sm-4 col-md-4 col-lg-5 col-xl-6">
+                        <div class="image-block large-image col_large_default">
+                            <span class="view_full_size">
+                                <a class="img-product d-block  pos-relative embed-responsive embed-responsive-1by1"
+                                    title="" href="javascript:;">
+                                    <img src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg"
+                                        id="product-featured-image-quickview"
+                                        class="img-responsive product-featured-image-quickview" alt="quickview"
+                                        style="--image-scale: 1;">
+                                </a>
+                            </span>
+                            <div class="loading-imgquickview" style="display:none;"></div>
+                        </div>
+                        <div class="more-view-wrapper clearfix">
+                            <div class="thumbs_quickview owl_nav_custome1 thumbs_list_quickview"
+                                id="thumbs_list_quickview">
+                                <ul class="product-photo-thumbs quickview-more-views-owlslider not-thuongdq slick-initialized slick-slider"
+                                    id="thumblist_quickview" style="visibility: visible;">
+                                    <div aria-live="polite" class="slick-list draggable">
+                                        <div class="slick-track"
+                                            style="opacity: 1; width: 220px; transform: translate3d(0px, 0px, 0px);"
+                                            role="listbox">
+                                            <li class="slick-slide slick-current slick-active" data-slick-index="0"
+                                                aria-hidden="false" style="width: 100px;" tabindex="-1" role="option"
+                                                aria-describedby="slick-slide10"><a href="javascript:void(0)"
+                                                    data-imageid="34508041" "="" data-zoom-image="
+                                                    https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg"
+                                                    title="title" tabindex="0"><img
+                                                        src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg"
+                                                        alt="Office World"></a></li>
+                                            <li class="slick-slide slick-active" data-slick-index="1"
+                                                aria-hidden="false" style="width: 100px;" tabindex="-1" role="option"
+                                                aria-describedby="slick-slide11"><a href="javascript:void(0)"
+                                                    data-imageid="34508041" "="" data-zoom-image="
+                                                    https://bizweb.dktcdn.net/thumb/large/100/484/752/products/anya-mousepad-short-copyright-1707405987103.jpg"
+                                                    title="title" tabindex="0"><img
+                                                        src="https://bizweb.dktcdn.net/thumb/large/100/484/752/products/anya-mousepad-short-copyright-1707405987103.jpg"
+                                                        alt="Office World"></a></li>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-center-column product-info product-item col-xs-12 col-sm-6 col-md-8 col-lg-7 col-xl-6 details-pro style_product style_border"
+                        id="product-34508041">
+                        <div class="head-qv group-status">
+                            <h3 class="qwp-name title-product"><a class="text2line"
+                                    href="/order-mousepad-spy-x-family-anya-edition"
+                                    title="[Order] Mousepad - Spy x Family (Anya Edition)">[Order] Mousepad - Spy x
+                                    Family (Anya Edition)</a></h3>
+                            <div class="vend-qv group-status">
+                                <div class="left_vend">
+                                    <div class="first_status top_vendor d-inline-block">Thương hiệu:
+                                        <span class="vendor_ status_name">MONOKEI</span>
+                                    </div>
+                                    <span class="line_tt">|</span>
+                                    <div class="top_sku first_status d-inline-block">Mã sản phẩm:
+                                        <span class="sku_ status_name">Đang cập nhật</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" id="qv-product-tags"
+                            value="[&quot;Accessories&quot;,&quot;MONOKEI&quot;,&quot;Deskmat&quot;,&quot;Live&quot;]">
+
+                        <div class="quickview-info clearfix">
+                            <span class="prices price-box">
+                                <span class="price product-price sale-price">540.000₫</span>
+                                <del class="old-price">620.000₫</del>
+                                <span class="label_product">-13%</span>
+                            </span>
+                        </div>
+
+                        <div class="product-description product-summary">
+                            <div class="rte">
+
+                            </div>
+                        </div>
+
+                        <form action="/cart/add" method="post" enctype="multipart/form-data"
+                            class="quick_option variants form-ajaxtocart form-product" id="product-actions-34508041">
+                            <span class="price-product-detail hidden" style="opacity: 0;">
+                                <span class=""></span>
+                            </span>
+
+                            <div class="form-group form_product_content">
+                                <div class="count_btn_style quantity_wanted_p">
+                                    <div class="custom input_number_product soluong1">
+                                        <button class="btn_num btn num_1 button button_qty"
+                                            onclick="var result = document.getElementById('quantity-detail'); var qtyqv = result.value; if( !isNaN( qtyqv ) &amp;&amp; qtyqv > 1 ) result.value--;return false;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                style="width: 11.2px;">
+                                                <path fill="#b0b0b0"
+                                                    d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
+                                            </svg>
+                                        </button>
+                                        <input type="text" id="quantity-detail" name="quantity" value="1" maxlength="2"
+                                            class="form-control prd_quantity"
+                                            onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;"
+                                            onchange="if(this.value == 0)this.value=1;">
+                                        <button class="btn_num  btn num_2 button button_qty"
+                                            onclick="var result = document.getElementById('quantity-detail'); var qtyqv = result.value; if( !isNaN( qtyqv )) result.value++;return false;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                style="width: 11.2px;">
+                                                <path fill="#b0b0b0"
+                                                    d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="button_actions clearfix mb-0">
+                                        <button type="submit"
+                                            class="btn_cool btn fix_add_to_cart ajax_addtocart btn_add_cart btn-cart add_to_cart_detail">
+                                            THÊM VÀO GIỎ
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="id" value="34508041"><input type="hidden" name="variantId"
+                                value="109510972">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <a title="Close" class="quickview-close close-window" href="javascript:;"><i class="fas fa-times"></i></a>
+        </div>
+    </div>
 
     <header class="ega-header header header_sticky ">
         <div class="container">
