@@ -20,3 +20,8 @@ php artisan route:clear
 ```
 php artisan optimize:clear
 ```
+
+# Giới hạn Permission
+```
+php artisan db:seed --class=RoleDatabaseSeeder
+```
