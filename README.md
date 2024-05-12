@@ -4,6 +4,9 @@ Là khung hình giúp viết nội dung description
 ```
 npm install --save @ckeditor/ckeditor5-build-classic
 ```
+Thư viện paginator để phân trang
+'''
+'''
 
 ## Một số lỗi thường gặp
 SQLSTATE[42S02]: Base table or view not found: 1146 Table 'laravel.sessions' doesn't exist
