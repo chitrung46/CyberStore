@@ -3,13 +3,21 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\User\CreateUserRequest;
 use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends Controller
 {
+
+    protected $user;
+    protected $role;
+
+   
     /*
     |--------------------------------------------------------------------------
     | Register Controller
@@ -35,8 +43,10 @@ class RegisterController extends Controller
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(User $user)
     {
+        $this->user = $user;
+
         $this->middleware('guest');
     }
 
@@ -51,7 +61,12 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'password' => ['required', 'string', 'min:6', 'confirmed'],
+            'gender' => ['required'],
+            'address' => ['required'],
+            'phone' => ['required'],
+            'googleId'=>['nullable'],
+            'facebookId'=>['nullable'],
         ]);
     }
 
@@ -67,6 +82,22 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'gender' => $data['gender'],
+            'phone' => $data['phone'],
+            'address' => $data['address'],
+            'googleId'=>['nullable'],
+            'facebookId'=>['nullable'],
         ]);
     }
+    public function store(CreateUserRequest $request)
+    {
+        
+        $dataCreate = $request->all();
+        $dataCreate['password'] = Hash::make($request->password);
+        $dataCreate['image'] = $this->user->saveImage($request);
+        $user = $this->user->create($dataCreate);
+        $user->images()->create(['url' => $dataCreate['image']]);
+        return to_route('login')->with(['message'=>'create success']);
+    }
+   
 }

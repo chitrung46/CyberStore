@@ -1,11 +1,8 @@
 <div class="sidebar" id="sidebar">
-    <!-- <div class="user">
-    </div> -->
-    
     <div class="wrap-sidebar">
         <nav class="sidebar-nav">
             <ul class="sidebar-item">
-                <li><a class="sidebar-link" href="HomePage.html">Trang chủ</a></li>
+                <li><a class="sidebar-link" href="{{ route('home.index') }}">Trang chủ</a></li>
                 <li><a class="sidebar-link" href="">Giới thiệu</a></li>
                 <li><a class="sidebar-link" href="">Sản phẩm</a></li>
                 <li><a class="sidebar-link" href="">Liên hệ</a></li>

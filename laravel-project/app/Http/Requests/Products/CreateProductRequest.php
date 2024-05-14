@@ -23,11 +23,10 @@ class CreateProductRequest extends FormRequest
     {
         return [
             'name' => 'required',
+            'image'=> 'nullable|required|image|mimes:png,jpg,PNG,jpec',
             'manufacturer' => 'required',
             'description' => 'required',
-            'color' => 'required',
             'price' => 'required',
-            'quantity' => 'required',
             'categoryIds' => 'required',
         ];
     }

@@ -1,13 +1,14 @@
 @extends('admin.layouts.app')
-@section('title', 'Edit user'.$user->name)
+@section('title', 'Edit user ' . $user->image)
+@section('title1', 'User')
 @section('content')
     <div class="card">
-        <h1>Create User</h1>
+        <h1>Update User</h1>
 
         <div>
-            <form action="{{ route('users.update',$user->id) }}" method="post" enctype="multipart/form-data">
+            <form action="{{ route('users.update', $user->id) }}" method="post" enctype="multipart/form-data">
                 @csrf
-                @method('PUT')
+                @method('put')
                 <div class="row">
                     <div class=" input-group-static col-5 mb-4">
                         <label>Image</label>
@@ -18,13 +19,13 @@
                         @enderror
                     </div>
                     <div class="col-5">
-                        <img src="{{$user->images ? asset('upload/users/' . $user->images->first()->url) : 'upload/users/default.png'}}" id="show-image" alt="">
+                    <img src="{{$user->images->count()>0 ? asset('upload/' . $user->images->first()->url) : 'upload/default.png'}}" >
                     </div>
                 </div>
 
                 <div class="input-group input-group-static mb-4">
                     <label>Name</label>
-                    <input type="text" value="{{ old('name') ?? $user->name}}" name="name" class="form-control">
+                    <input type="text" value="{{ old('name') ?? $user->name }}" name="name" class="form-control">
 
                     @error('name')
                         <span class="text-danger"> {{ $message }}</span>
@@ -33,7 +34,7 @@
 
                 <div class="input-group input-group-static mb-4">
                     <label>Email</label>
-                    <input type="email" value="{{ old('email') ?? $user->email}}" name="email" class="form-control">
+                    <input type="email" value="{{ old('email') ?? $user->email }}" name="email" class="form-control">
                     @error('email')
                         <span class="text-danger"> {{ $message }}</span>
                     @enderror
@@ -41,7 +42,7 @@
 
                 <div class="input-group input-group-static mb-4">
                     <label>Phone</label>
-                    <input type="text" value="{{ old('phone') ?? $user->phone}}" name="phone" class="form-control">
+                    <input type="text" value="{{ old('phone') ?? $user->phone }}" name="phone" class="form-control">
                     @error('phone')
                         <span class="text-danger"> {{ $message }}</span>
                     @enderror
@@ -49,7 +50,7 @@
 
                 <div class="input-group input-group-static mb-4">
                     <label name="group" class="ms-0">Gender</label>
-                    <select name="gender" class="form-control" value= {{ $user->gender}}>
+                    <select name="gender" class="form-control" value={{ $user->gender }}>
                         <option value="male">Male</option>
                         <option value="fe-male">FeMale</option>
 
@@ -87,10 +88,11 @@
                                 <div>
                                     @foreach ($role as $item)
                                         <div class="form-check">
-                                            <input class="form-check-input" name="role_ids[]"{{ $user->roles->contains('id',$item->id)? 'checked' :''}}type="checkbox"
-                                                value="{{ $item->id }}">
+                                            <input class="form-check-input" name="role_ids[]"
+                                                {{ $user->roles->contains('id', $item->id) ? 'checked' : '' }}
+                                                type="checkbox" value="{{ $item->id }}">
                                             <label class="custom-control-label"
-                                                for="customCheck1">{{ $item->display_name }}</label>
+                                                for="customCheck1">{{ $item->name }}</label>
                                         </div>
                                     @endforeach
                                 </div>
@@ -99,14 +101,14 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-submit btn-primary">Submit</button>
+                <button type="submit" class="btn btn-submit btn-primary">Update</button>
             </form>
         </div>
     </div>
 @endsection
 
 
-@yield('script')
+@section('script')
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
         crossorigin="anonymous"></script>
@@ -130,3 +132,4 @@
 
         });
     </script>
+@endsection

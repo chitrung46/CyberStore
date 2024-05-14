@@ -1,5 +1,6 @@
 @extends('admin.layouts.app')
 @section('title', 'Create User')
+@section('title1', 'User')
 @section('content')
     <div class="card">
         <h1>Create User</h1>
@@ -18,7 +19,7 @@
                         @enderror
                     </div>
                     <div class="col-5">
-                        <img src="" id="show-image" alt="">
+                        <img src="" id="show-image" alt="" width='300px'>
                     </div>
                 </div>
 
@@ -27,6 +28,14 @@
                     <input type="text" value="{{ old('name') }}" name="name" class="form-control">
 
                     @error('name')
+                        <span class="text-danger"> {{ $message }}</span>
+                    @enderror
+                </div>
+                <div class="input-group input-group-static mb-4">
+                    <label>User Name</label>
+                    <input type="text" value="{{ old('username') }}" name="username" class="form-control">
+
+                    @error('username')
                         <span class="text-danger"> {{ $message }}</span>
                     @enderror
                 </div>
@@ -90,7 +99,7 @@
                                             <input class="form-check-input" name="role_ids[]" type="checkbox"
                                                 value="{{ $item->id }}">
                                             <label class="custom-control-label"
-                                                for="customCheck1">{{ $item->display_name }}</label>
+                                                for="customCheck1">{{ $item->displayName }}</label>
                                         </div>
                                     @endforeach
                                 </div>

@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Client;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Cart;
+use App\Models\Product;
+use App\Models\Category;
 
 class HomeController extends Controller
 {
@@ -12,9 +15,14 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
+    protected $category;
+    protected $product;
+
+
+    public function __construct(Product $product, Category $category)
     {
-        $this->middleware('auth');
+        $this->product = $product;
+        $this->category = $category;
     }
 
     /**
@@ -24,6 +32,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('client.home.index');
+        $products = $this->product->latest('id')->paginate(3);
+        return view('client.home.index', compact('products'));
+    }
+
+    public function detail()
+    {
+        return view('client.home.detail');
     }
 }

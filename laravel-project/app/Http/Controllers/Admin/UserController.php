@@ -55,6 +55,10 @@ class UserController extends Controller
         return to_route('users.index')->with(['message'=>'create success']);
     }
 
+  
+
+    
+
     /**
      * Display the specified resource.
      */
@@ -71,7 +75,10 @@ class UserController extends Controller
         $roles = $this->role->all()->groupBy('group');
 
         $user =$this->user->findOrFail($id)->load('roles');
+        // Co role nhung tam thoi bo qua
         return view('admin.users.edit',compact('user','roles') );
+
+        // return view('admin.users.edit',compact('user','roles') );
     }
 
     /**

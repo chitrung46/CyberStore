@@ -1,5 +1,6 @@
 @extends('admin.layouts.app')
 @section('title', 'Create Roles')
+@section('title1', 'Role')
 @section('content')
 
 <div class="card">
@@ -18,8 +19,8 @@
             </div>
             <div class="input-group input-group-static mb-4">
                 <label>Display Name</label>
-                <input type="text" value="{{old('display_name')}}" class="form-control" name="display_name">
-                @error('display_name')
+                <input type="text" value="{{old('displayName')}}" class="form-control" name="displayName">
+                @error('displayName')
                 <span class="text-danger">{{$message}}</span>
                 @enderror
             </div>
@@ -47,7 +48,7 @@
                             @foreach($permission as $item)
                             <div class="form-check">
                                 <input class="form-check-input" name="permission_ids[]" type="checkbox" value="{{$item->id}} ">
-                                <label class="custom-control-label" for="customCheck1">{{$item->display_name}}</label>
+                                <label class="custom-control-label" for="customCheck1">{{$item->displayName}}</label>
 
                             </div>
                             @endforeach

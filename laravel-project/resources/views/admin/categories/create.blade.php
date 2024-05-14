@@ -1,5 +1,6 @@
 @extends('admin.layouts.app')
 @section('title', 'Create Category')
+@section('title1', 'Category')
 @section('content')
 
 <div class="card">
@@ -19,11 +20,11 @@
 
             <div class="input-group input-group-static mb-4">
                 <label name="group" class="ms-0">Parent Category</label>
-                <select name="parent_id" class="form-control"  >
+                <select name="parentId" class="form-control"  >
                 <option value="">Select Parent category</option>
 
                 @foreach($parentCategories as $item)
-                        <option value="{{$item->id}}" {{old('parent_id')==$item->id ?'selected':''}} > {{$item->name}} </option>
+                        <option value="{{$item->id}}" {{old('parentId')==$item->id ?'selected':''}} > {{$item->name}} </option>
                     
                     @endforeach
 

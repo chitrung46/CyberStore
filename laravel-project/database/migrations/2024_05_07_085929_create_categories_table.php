@@ -20,7 +20,7 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        Schema::create('products_categories', function (Blueprint $table) {
+        Schema::create('category_product', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(Product::class)->constrainted()->cascadeOnDelete();
             $table->foreignIdFor(Category::class)->constrainted()->cascadeOnDelete();

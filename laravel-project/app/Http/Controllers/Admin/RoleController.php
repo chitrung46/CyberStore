@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Roles\CreateRoleRequest;
 use App\Http\Requests\Roles\UpdateRoleRequest;
-use App\Models\Permisson;
+use App\Models\Permission;
 use App\Models\Role;
 use Illuminate\Http\Request;
 
@@ -25,7 +25,7 @@ class RoleController extends Controller
      */
     public function create()
     {
-        $permissions= Permisson::all()->groupBy('group');
+        $permissions= Permission::all()->groupBy('group');
         return view('admin.roles.create', compact('permissions'));
     }
 
@@ -34,6 +34,7 @@ class RoleController extends Controller
      */
     public function store(CreateRoleRequest $request)
     {
+        
         $dataCreate =$request->all();
         $role= Role::create($dataCreate);
         $role->permissions()->attach($dataCreate['permission_ids']);
@@ -55,7 +56,7 @@ class RoleController extends Controller
     public function edit(string $id)
     {
         $role= Role::with('permissions')->findOrFail($id);
-        $permissions= Permisson::all()->groupBy('group');
+        $permissions= Permission::all()->groupBy('group');
         return view('admin.roles.edit',compact('role','permissions'));
     }
 

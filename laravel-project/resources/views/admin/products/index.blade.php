@@ -1,5 +1,6 @@
 @extends('admin.layouts.app')
 @section('title', 'Products')
+@section('title1', 'Product')
 @section('content')
 <div class="card">
     @if(session('message'))
@@ -23,9 +24,7 @@
                 <th>Name</th>
                 <th>Manufacturer</th>
                 <th>Description</th>
-                <th>Color</th>
                 <th>Price</th>
-                <th>Quantity</th>
                 <th>Action</th>
             </tr>
             @foreach($products as $item)
@@ -35,9 +34,7 @@
                 <td>{{ $item->name }}</td>
                 <td>{{ $item->manufacturer }}</td>
                 <td>{{ $item->description }}</td>
-                <td>{{ $item->color }}</td>
                 <td>{{ $item->price }}</td>
-                <td>{{ $item->quantity }}</td>
                 <td>
                     <a href="{{ route('products.edit', $item->id) }}" class="btn btn-warning">Edit</a>
                     <form action="{{ route('products.destroy', $item->id) }}" id="form-delete{{$item->id}}" method="POST">
@@ -54,4 +51,7 @@
         {{ $products->links() }}
     </div>
 </div>
+@endsection
+
+@section('script')
 @endsection

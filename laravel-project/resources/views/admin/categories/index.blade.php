@@ -1,5 +1,6 @@
 @extends('admin.layouts.app')
 @section('title', 'Category')
+@section('title1', 'Category')
 @section('content')
 <div class="card">
     @if(session('message'))

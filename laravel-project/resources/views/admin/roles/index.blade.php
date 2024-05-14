@@ -1,5 +1,6 @@
 @extends('admin.layouts.app')
 @section('title', 'Roles')
+@section('title1', 'Role')
 @section('content')
 <div class="card">
     @if(session('message'))
@@ -27,7 +28,7 @@
             <tr>
                 <td>{{ $role->id }}</td>
                 <td>{{ $role->name }}</td>
-                <td>{{ $role->display_name }}</td>
+                <td>{{ $role->displayName }}</td>
                 <td>
                     <a href="{{ route('roles.edit', $role->id) }}" class="btn btn-warning">Edit</a>
                     <form action="{{ route('roles.destroy', $role->id) }}" id="form-delete{{$role->id}}" method="POST">

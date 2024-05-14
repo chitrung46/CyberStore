@@ -1,10 +1,11 @@
 @extends('admin.layouts.app')
-@section('title', 'Edit Roles'.$role->name)
+@section('title', 'Update Roles'.$role->name)
+@section('title1', 'Role')
 @section('content')
 
 <div class="card">
     <h1>
-        Create Role
+        Update Role
     </h1>
     <div>
         <form action="{{route ('roles.update',$role->id)}}" method="post">
@@ -19,8 +20,8 @@
             </div>
             <div class="input-group input-group-static mb-4">
                 <label>Display Name</label>
-                <input type="text" value="{{old('display_name')?? $role->display_name}}" class="form-control" name="display_name">
-                @error('display_name')
+                <input type="text" value="{{old('displayName')?? $role->displayName}}" class="form-control" name="displayName">
+                @error('displayName')
                 <span class="text-danger">{{$message}}</span>
                 @enderror
             </div>
@@ -49,7 +50,7 @@
                             <div class="form-check">
                                 <input class="form-check-input" name="permission_ids[]" {{$role->permissions->contains('name',$item->name) ? 'checked' : ''}} type="checkbox" value="{{$item->id}} ">
                                
-                                <label class="custom-control-label" for="customCheck1">{{$item->display_name}}</label>
+                                <label class="custom-control-label" for="customCheck1">{{$item->displayName}}</label>
 
                             </div>
                             @endforeach

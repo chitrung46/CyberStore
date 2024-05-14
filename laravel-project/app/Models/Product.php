@@ -14,9 +14,7 @@ class Product extends Model
         'name',
         'manufacturer',
         'description',
-        'color',
         'price',
-        'quantity'
     ];
 
     public function images()
@@ -24,10 +22,25 @@ class Product extends Model
         return $this->morphMany(Image::class, 'imageable');
     }
 
+    public function details() 
+    {
+        return $this->hasMany(ProductDetail::class);
+    }
+
     public function categories()
     {
         return $this->belongsToMany(Category::class);
     }
+
+    public function assignCategory($categoryIds)
+    {
+        return $this->categories()->sync($categoryIds);
+    }
+
+    // public function assignDetail($details)
+    // {
+    //     return $this->de()->sync($details);
+    // }
 };
 
 

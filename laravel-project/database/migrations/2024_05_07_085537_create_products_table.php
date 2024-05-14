@@ -16,9 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('manufacturer');
             $table->text('description');
-            $table->string('color');
             $table->double('price');
-            $table->smallInteger('quantity');
             $table->timestamps();
         });
     }

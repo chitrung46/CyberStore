@@ -1,5 +1,6 @@
 @extends('admin.layouts.app')
 @section('title', 'Create Product')
+@section('title1', 'Product')
 @section('content')
     <div class="card">
         <h1>Create Product</h1>
@@ -50,12 +51,30 @@
                     @enderror
                 </div>
 
-                <div class="input-group input-group-static mb-4">
-                    <label>Color</label>
-                    <input type="text" value="{{ old('color') }}" name="color" class="form-control">
-                    @error('color')
-                        <span class="text-danger"> {{ $message }}</span>
-                    @enderror
+                <input type="hidden" id="inputColor" name='colors'>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AddColorModal">
+                    Add color
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="AddColorModal" tabindex="-1" aria-labelledby="AddColorModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="AddColorModalLabel">Add color</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body" id="AddColorModalBody">
+
+                            </div>
+                            <div class="mt-3">
+                                <button type="button" class="btn  btn-primary btn-add-color m-3">Add</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="input-group input-group-static mb-4">
@@ -67,16 +86,8 @@
                 </div>
 
                 <div class="input-group input-group-static mb-4">
-                    <label>Quantity</label>
-                    <input type="text" value="{{ old('quantity') }}" name="quantity" class="form-control">
-                    @error('quantity')
-                        <span class="text-danger"> {{ $message }}</span>
-                    @enderror
-                </div>
-
-                <div class="input-group input-group-static mb-4">
                     <label name="group" class="ms-0">Category</label>
-                    <select name="categoryIds[]" class="form-control">
+                    <select name="categoryIds[]" class="form-control" multiple>
                         @foreach ($categories as $item)
                             <option value="{{ $item->id }}">{{$item->name}}</option>
                         @endforeach
@@ -92,8 +103,136 @@
         </div>
     </div>
 @endsection
+@section('script')
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.3.1/classic/ckeditor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+        integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let colors = [{
+            id: Date.now(),
+            color: 'Black',
+            quantity: 1
+        }];
+    </script>
+    <script>
+    $(document).ready(function() {
+    ClassicEditor.create(document.querySelector("#description"), {
+        // toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+    })
+        .then((editor) => {
+            window.editor = editor;
+        })
+        .catch((err) => {
+            console.error(err.stack);
+        });
 
+    renderColors(colors);
+    appendColorsToForm();
 
+    function renderColors(colors) {
+        for (let color of colors) {
+            renderColor(color);
+        }
+    }
+
+    function getColorIndex(colors, id) {
+        let index = _.findIndex(colors, function (o) {
+            return o.id == id;
+        });
+
+        return index;
+    }
+
+    function removeColor(colors, id) {
+        let index = getColorIndex(colors, id);
+        if (index >= 0) {
+            $(`#product-color${colors[index].id}`).remove();
+            colors.splice(index, 1);
+        }
+    }
+
+    function addColor() {
+        let color = {
+            id: Date.now(),
+            color: "Black",
+            quantity: 1,
+        };
+        colors = [...colors, color];
+        renderColor(color);
+    }
+
+    function appendColorsToForm() {
+        $("#inputColor").val(JSON.stringify(colors));
+    }
+
+    $(document).on("click", ".btn-remove-color", function () {
+        let id = $(this).data("id");
+        removeColor(colors, id);
+        appendColorsToForm();
+    });
+
+    $(document).on("click", ".btn-add-color", function () {
+        addColor();
+        appendColorsToForm();
+    });
+
+    $(document).on("keyup", ".input-color", function () {
+        let id = $(this).data("id");
+        let color = $(this).val();
+        let index = getColorIndex(colors, id);
+        if (index >= 0) {
+            colors[index].color = color;
+        }
+        appendColorsToForm();
+    });
+
+    function renderColor(color) {
+        let html = `<div class="product-item-color" id="product-color${color.id}">
+                            <div class="row ">
+                                <div class="input-group input-group-static col-5 w-40">
+                                    <label>Color</label>
+                                    <input value="${color.color}" type="text" class="form-control input-color" data-id="${color.id}">
+                                </div>
+
+                                <div class="input-group input-group-static col-5 w-40">
+                                    <label>Quantity</label>
+                                    <input type="number" value="${color.quantity}" class="form-control input-quantity" data-id="${color.id}">
+                                </div>
+                                <div class="w-20">
+                                    <button type="button" class="btn btn-danger btn-remove-color" data-id="${color.id}">X</button>
+                                </div>
+                            </div>`;
+        $("#AddColorModalBody").append(html);
+    }
+
+    $(document).on("keyup", ".input-quantity", function () {
+        let id = $(this).data("id");
+        let quantity = $(this).val();
+        let index = getColorIndex(colors, id);
+
+        if (index >= 0) {
+            colors[index].quantity = quantity;
+        }
+        appendColorsToForm();
+    });
+
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $("#show-image").attr("src", e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#image-input").change(function () {
+        readURL(this);
+    });
+})
+    </script>
+@endsection
 @section('style')
     <style>
         .w-40 {
@@ -115,13 +254,4 @@
         }
 
     </style>
-@endsection
-
-@section('script')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
-        integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="{{ asset('plugin/ckeditor5-build-classic/ckeditor.js') }}"></script>
-
-    <script src="{{ asset('admin/assets/js/product/product.js') }}"></script>
 @endsection
