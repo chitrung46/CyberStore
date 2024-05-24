@@ -79,7 +79,7 @@
 
                     <ul class="tabs tabs-title list-unstyled  m-0 mt-2 tabs-group d-flex align-items-center">
 
-                        <li class="ega-small tab-link link current" data-tab="product_top_1-tab-1">
+                        <li class="ega-small tab-link link  current" data-tab="product_top_1-tab-1">
                             Bàn phím cơ
                         </li>
 
@@ -102,18 +102,18 @@
                                             data-id='{{$item->id}}' enctype="multipart/form-data">
                                             <div class="product-thumbnail pos-relative">
                                                 <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1"
-                                                    href="#" title="[In stock] {{$item->name}}">
+                                                    href="{{ route('client.product.show', $item->id) }}" title="{{$item->name}}">
 
                                                     <img loading="lazy" class="img-fetured" width="480" height="480"
                                                         style="--image-scale: 1;"
                                                         src="{{$item->images->count()>0 ? asset('upload/' . $item->images->first()->url) : 'upload/default.png'}}"
-                                                        alt="[In stock] {{$item->name}}">
+                                                        alt="{{$item->name}}">
 
                                                 </a>
                                                 <input type="hidden" name="variantId" value="111664258">
                                                 <div class="action-bar">
                                                     <a href="#"
-                                                        class="action-child btn-circle btn-views btn_view btn right-to m-0">
+                                                        class="action-child xem_nhanh btn-circle btn-views btn_view btn right-to m-0 quick-view">
                                                         <img width="20" height="20" class="icon-option"
                                                             src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-options.png?1714292295296"
                                                             alt="icon-option">
@@ -131,7 +131,7 @@
                                             <div class="product-info">
 
                                                 <span class="product-vendor">{{ $item->manufacturer }}</span>
-                                                <span class="product-name "><a class="link" href="#"
+                                                <span class="product-name "><a class="link" href="{{ route('client.product.show', $item->id) }}"
                                                         title="{{$item->name}}">{{$item->name}}</a></span>
                                                 <div class="product-item-cta position-relative">
                                                     <div class="price-box">                                                     
@@ -140,31 +140,6 @@
                                                 </div>
 
                                                 <div class="item-color-chosen">
-                                                </div>
-
-                                                <div class="product-promotion hidden">
-                                                    <span
-                                                        class="product-promotion__heading rounded-sm d-inline-flex align-items-center">
-                                                        <img alt="Lưu ý"
-                                                            src="//bizweb.dktcdn.net/100/484/752/themes/920128/assets/icon-product-promotion.png?1714292295296"
-                                                            width="16" height="16" class="mr-2">
-                                                        Lưu ý
-                                                    </span>
-
-                                                    <ul>
-                                                        <li><span style="color:#c0392b;"><strong>Để có kit hoàn chỉnh
-                                                                    bạn vui lòng chọn toàn bộ tuỳ chọn ở trong phần
-                                                                    "Neo80 full kit (in stock)", các đơn hàng không mua
-                                                                    đầy đủ kit sẽ bị huỷ.</strong></span></li>
-                                                        <li><span style="color:#c0392b;"><strong>Do sản phẩm có nhiều
-                                                                    màu sắc tuỳ chọn bạn vui lòng tham khảo phối màu <a
-                                                                        href="https://www.qwertykeys.com/collections/live-sales/products/neo80"
-                                                                        target="_blank">tại đây</a></strong></span></li>
-                                                        <li><strong><span style="color:#c0392b;">Tiêu chuẩn QC Neo80 vui
-                                                                    lòng tham khảo</span> <a
-                                                                    href="https://qwertykeys.notion.site/Acceptable-Quality-Standard-90e3f81eea8140b3bb8f1f32114007be"
-                                                                    target="_blank">tại đây</a></strong></li>
-                                                    </ul>
                                                 </div>
                                             </div>
                                         </form>
@@ -1684,11 +1659,11 @@
 
                     <ul class="tabs tabs-title list-unstyled  m-0 mt-2 tabs-group d-flex align-items-center">
 
-                        <li class="ega-small tab-link link   current" data-tab="product_top_1-tab-1">
+                        <li class="ega-small tab-link link ml-4 current" data-tab="product_top_1-tab-1">
                             Bàn phím cơ
                         </li>
 
-                        <li class="ega-small tab-link link ml-4  " data-tab="product_top_1-tab-2">
+                        <li class="ega-small tab-link link ml-4" data-tab="product_top_1-tab-2">
                             Sản phẩm hot
                         </li>
 
@@ -1698,7 +1673,7 @@
                     </ul>
                 </div>
                 <div class="e-tabs">
-                    <div id="product_top_1-tab-1" class="tab-content content_extabcurrent current">
+                    <div id="product_top_1-tab-1" class="tab-content content_extab current">
                         <div class="row mt-3" data-section="tab-section">
 
                             <div class="col-12 col-xl-15 product-col">
@@ -6421,154 +6396,6 @@
 
     </section>
 
-    <!-- KHI THEM SP VAO GIO HANG -->
-    <!-- <div id="popup-cart" class="popcart opencart">
-        <div id="popup-cart-desktop" class="clearfix">
-            <div class="title-popup-cart">
-            </div>
-            <div class="wrap_popup">
-                <div class="title-quantity-popup">
-                    <span class="cart_status" onclick="window.location.href='/cart';">
-                        Giỏ hàng của bạn có <span class="cart-popup-count">1</span> sản phẩm
-                    </span>
-                </div>
-                <div class="content-popup-cart">
-
-                    <div class="tbody-popup scrollbar-dynamic">
-                        <div class="item-popup productid-109510972">
-                            <div style="width: 13%;" class="height image_ text-left">
-                                <div class="item-image">
-                                    <a class="product-image" href="/order-mousepad-spy-x-family-anya-edition"
-                                        title="[Order] Mousepad - Spy x Family (Anya Edition)">
-                                        <img loading="lazy" alt="[Order] Mousepad - Spy x Family (Anya Edition)"
-                                            src="https://bizweb.dktcdn.net/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg?v=1707409571893"
-                                            width="'+ '90' +'" \="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div style="width:40%;" class="height text-left fix_info">
-                                <div class="item-info">
-                                    <p class="item-name">
-                                        <a class="text2line textlinefix link"
-                                            href="/order-mousepad-spy-x-family-anya-edition"
-                                            title="[Order] Mousepad - Spy x Family (Anya Edition)">[Order] Mousepad -
-                                            Spy x
-                                            Family (Anya Edition)</a>
-                                    </p>
-                                    <span class="variant-title-popup"></span>
-                                    <a href="javascript:;" class="remove-item-cart" title="Xóa" data-id="109510972">
-                                        <i class="fa fa-times"></i>&nbsp;&nbsp;Bỏ sản phẩm
-                                    </a>
-                                    <p class="addpass" style="color:#fff;margin:0px;">109510972</p>
-                                </div>
-                            </div>
-                            <div style="width: 15%;" class="height text-center">
-                                <div class="item-price">
-                                    <span class="price">540.000₫</span>
-                                </div>
-                            </div>
-                            <div style="width: 15%;" class="height text-center">
-                                <div class="qty_h check_">
-                                    <input class="variantID" type="hidden" name="variantId" value="109510972">
-                                    <button
-                                        onclick="var result = document.getElementById('qtyItemP109510972'); var qtyItemP109510972 = result.value; if( !isNaN( qtyItemP109510972 ) &amp;&amp; qtyItemP109510972 > 1 ) result.value--;return false;"
-                                        class="num1 reduced items-count btn-minus" type="button">-</button>
-                                    <input type="text" maxlength="3" min="0" readonly=""
-                                        class="input-text number-sidebar qtyItemP109510972" id="qtyItemP109510972"
-                                        name="Lines" size="4" value="1">
-                                    <button
-                                        onclick="var result = document.getElementById('qtyItemP109510972'); var qtyItemP109510972 = result.value; if( !isNaN( qtyItemP109510972 )) result.value++;return false;"
-                                        class="num2 increase items-count btn-plus" type="button">+</button>
-                                </div>
-                            </div>
-                            <div style="width: 17%;" class="height text-center">
-                                <span class="cart-price">
-                                    <span class="price">540.000₫</span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tfoot-popup">
-                        <div class="tfoot-popup-1 clearfix">
-                            <div class="popup-ship">
-                            </div>
-                            <span class="total-p popup-total">Tổng tiền thanh toán: <span
-                                    class="total-price">540.000₫</span></span>
-                        </div>
-                        <div class="tfoot-popup-2 clearfix">
-                            <a class="button btn-continue close-pop" title="Tiếp tục mua hàng" href="javascript:;"
-                                onclick="$('#popup-cart').modal('hide');"><span><span>Tiếp tục mua
-                                        hàng</span></span></a>
-                            <a class="button checkout_ btn-proceed-checkout" title="Thực hiện thanh toán"
-                                href="/checkout"><span>Thực hiện thanh toán</span></a>
-                        </div>
-                    </div>
-                </div>
-                <a title="Close" class="close-modal quickview-close close-pop" href="javascript:;"
-                    onclick="$('#popup-cart').modal('hide');"><i class="fa fa-close"></i></a>
-            </div>
-        </div>
-
-    </div>
-
-    <div id="popupCartModal" class="modal fade" role="dialog" aria-hidden="true" style="display: none;">
-        <div class="modal-dialog align-vertical">
-            <div class="modal-content "><button type="button" class="close" data-dismiss="modal" data-backdrop="false"
-                    aria-label="Close" style="z-index: 9;"><span aria-hidden="true">×</span></button>
-                <div class="row row-noGutter">
-                    <div class="modal-left col-sm-12 col-lg-12 col-md-12">
-                        <h3 class="modal-title"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M8.00006 15.3803C12.0761 15.3803 15.3804 12.076 15.3804 7.99995C15.3804 3.92391 12.0761 0.619629 8.00006 0.619629C3.92403 0.619629 0.619751 3.92391 0.619751 7.99995C0.619751 12.076 3.92403 15.3803 8.00006 15.3803Z"
-                                    fill="#2EB346"></path>
-                                <path
-                                    d="M8 16C3.58916 16 0 12.4115 0 8C0 3.58916 3.58916 0 8 0C12.4115 0 16 3.58916 16 8C16 12.4115 12.4115 16 8 16ZM8 1.23934C4.27203 1.23934 1.23934 4.27203 1.23934 8C1.23934 11.728 4.27203 14.7607 8 14.7607C11.728 14.7607 14.7607 11.7273 14.7607 8C14.7607 4.27203 11.728 1.23934 8 1.23934Z"
-                                    fill="#2EB346"></path>
-                                <path
-                                    d="M7.03336 10.9434C6.8673 10.9434 6.70865 10.8771 6.59152 10.7582L4.30493 8.43438C4.06511 8.19023 4.06821 7.7986 4.31236 7.55816C4.55652 7.31898 4.94877 7.32145 5.18858 7.5656L7.0154 9.42213L10.7948 5.25979C11.0259 5.00635 11.4176 4.98838 11.6698 5.21766C11.9232 5.44757 11.9418 5.8392 11.7119 6.09326L7.49193 10.7408C7.3773 10.8672 7.21618 10.9403 7.04577 10.944C7.04143 10.9434 7.03771 10.9434 7.03336 10.9434Z"
-                                    fill="white"></path>
-                            </svg>
-                            <span>Thêm vào giỏ hàng thành công</span>
-                        </h3>
-                        <div class="modal-body">
-                            <div class="media">
-                                <div class="media-left thumb_img">
-                                    <div class="thumb-1x1"><img loading="lazy"
-                                            src="https://bizweb.dktcdn.net/thumb/small/100/484/752/products/mousepad-spy-x-family-anya-edition.jpg"
-                                            alt="[Order] Mousepad - Spy x Family (Anya Edition)"></div>
-                                </div>
-                                <div class="media-body body_content">
-                                    <div class="product-title">[Order] Mousepad - Spy x Family (Anya Edition)</div>
-                                    <div class="variant_title font-weight-light"><span></span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-right margin-top-10 col-sm-12 col-lg-12 col-md-12">
-                        <div class="title right_title d-flex justify-content-between"><a href="/cart"> Giỏ hàng hiện có
-                            </a>
-                            <div class="text-right">
-                                <span class="price">1.080.000₫</span>
-                                <div class="count font-weight-light">
-                                    (<span class="cart-popup-count">0</span>) sản phẩm
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                        <div class="cart-action">
-
-                            <a href="/checkout" class="btn btn-main btn-full">Thanh toán</a>
-                            <a href=".\Cart.html" class="btn btn-main checkout_button btn-full">Xem giỏ hàng</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
     <!-- XEM NHANH -->
 
     <div id="quick-view-product" class="quickview-product">
@@ -6722,8 +6549,6 @@
             <a title="Close" class="quickview-close close-window" href="javascript:;"><i class="fas fa-times"></i></a>
         </div>
     </div>
-
-
 @endsection
 
 @section('script')

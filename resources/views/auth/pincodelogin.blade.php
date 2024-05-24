@@ -168,13 +168,13 @@
         <form method="POST" action="{{ route('pincode-login') }}">
             @csrf
 
-            <div>
+            <!-- <div>
                 <label for="email"></label>
                 <input type="email" id="email" name="email" placeholder="Email" value="{{ old('email') }}" class="form-control" required autofocus>
                 @error('email')
                 <span class="text-danger"> {{ $message }} </span>
                 @enderror
-            </div>
+            </div> -->
             <div>
                 <input type="password" id="pincode" name="pincode" placeholder="Pincode" class="form-control" required>
                 @error('password')

@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Password;
+use Illuminate\Support\Facades\Session;
 use PHPMailer\PHPMailer\PHPMailer;
 use Symfony\Component\Mime\Email;
 
@@ -22,36 +23,51 @@ class QuenMatKhauController extends Controller
     }
     public function showLinkRequestForm()
     {
+
         return view('auth.forgetpassword');
     }
+
     public function showLoginPincodeForm()
     {
         return view('auth.pincodelogin');
     }
-    public function update(Request $request)
+
+    public function showChangePasswordForm()
+    {
+        return view('auth.changepassword');
+    }
+    public function capNhatMatKhau(Request $request)
     {
         $dataUpdate = $request->all();
-        $user = $this->user->findOrFail($request->email);
-        $dataUpdate['password'] = Hash::make($request->password);
+
+        if ($request->new_password != $request->confirm_password) {
+            return redirect()->back()->withErrors(['new_password' => 'Mật khẩu không trùng khớp']);
+        }
+        $email=session('email');
+        $user = $this->user->findOrFail($email);
+        $dataUpdate['password'] = Hash::make($request->new_password);
         $user->update($dataUpdate);
-        return view('auth.login');
+        session()->forget($email);
+        return redirect()->route('dangnhap');
     }
 
     public function checkPinCode(Request $request)
     {
 
+        $email = session('email');
 
-$user= User::where('email', $request->email)->first();
-$carbonDate = Carbon::createFromFormat('Y-m-d H:i:s',$user->pin_code_expires_at);
-        if ($user->pin_code == $request->pincode) 
-        {
-            if ($carbonDate->diffInMinutes(Carbon::now())<2) {
+        $user = User::where('email', $email)->first();
+        $carbonDate = Carbon::createFromFormat('Y-m-d H:i:s', $user->pin_code_expires_at);
+        if ($user->pin_code == $request->pincode) {
+            if ($carbonDate->diffInMinutes(Carbon::now()) < 2) {
 
-                return redirect()->intended('home');
+                return redirect()->route('change_password.request');
             } else {
-                return view('auth.login');            }
+                return view('auth.login');
+            }
         } else {
-            return view('auth.login');        }
+            return view('auth.login');
+        }
     }
 
     /**
@@ -103,8 +119,8 @@ $carbonDate = Carbon::createFromFormat('Y-m-d H:i:s',$user->pin_code_expires_at)
 
                 // Send email
                 $mail->send();
-
-                return redirect('pincode-login')->with('status', 'Reset pin_code sent to your email.');
+                Session::put('email', $to);
+                return redirect()->route('pincode-login');
             } catch (Exception $e) {
                 return redirect('/forgot-password')->withErrors(['email' => 'Unable to send reset pin_code. Please try again later.']);
             }

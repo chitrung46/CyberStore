@@ -16,14 +16,32 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('home.index') }}">Trang chủ</a>
             </li>
+            @foreach ($categories as $item)
+                @if ($item->childrens->count() > 0)
+                    <li class="nav-item dropdown"> 
+                        <a class="nav-link" href="#"> {{$item->name}} <i class="fa-solid fa-angle-down"
+                                style="margin-left: 10px;"></i></a>
+                        <ul class="sub-menu instock">
+                            @foreach ($item->childrens as $childCategory)
+                                <li><a href="{{ route ('client.product.index', ['category_id' =>$childCategory->id]) }}">{{ $childCategory->name }}</a></li>
+                            @endforeach
+                        </ul>
+                    </li>
+                @else
+                <li class="nav-item dropdown"> 
+                        <a class="nav-link" href="{{ route ('client.product.index', ['category_id' =>$item->id]) }}"> {{$item->name}} </a>
+                    </li>
+                @endif
+            @endforeach
 
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
                 <a class="nav-link" href="#">Group Buy</a>
 
             </li>
 
             <li class="nav-item dropdown">
-                <a class="nav-link" href="#">Instock <i class="fa-solid fa-angle-down" style="margin-left: 10px;"></i></a>
+                <a class="nav-link" href="#">Instock <i class="fa-solid fa-angle-down"
+                        style="margin-left: 10px;"></i></a>
                 <ul class="sub-menu instock">
                     <li><a href="">Bàn phím cơ</a></li>
                     <li><a href="">Keycap</a></li>
@@ -33,7 +51,7 @@
                         <a href="">Phụ kiện bàn phím cơ</a>
                     </li>
                 </ul>
-            </li>
+            </li> -->
 
             <li class="nav-item">
                 <a class="nav-link" href="#">Liên hệ</a>

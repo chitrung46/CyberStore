@@ -12,7 +12,7 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\SessionController;
 use App\Http\Controllers\Client\HomeController;
 use App\Http\Controllers\Client\CartController;
-
+use App\Http\Controllers\Client\ProductController as ClientProductController;
 use Illuminate\Support\Facades\Route;
 Route :: resource('register',RegisterController::class);
 
@@ -29,15 +29,21 @@ Route::post('/logout', [DangNhapController::class, 'logout'])->name('dangxuat');
 Route::get('/register', [DangKyController::class, 'showRegistrationForm'])->name('dangky');
 Route::post('/register', [DangKyController::class, 'store']);
 
-//Quen Mật khẩu route
+//Quen Mat khau route
 Route::get('forgot-password', [QuenMatKhauController::class, 'showLinkRequestForm'])->name('password.request');
 Route::post('forgot-password', [QuenMatKhauController::class, 'sendResetLinkEmail'])->name('password.email');
 Route::get('pincode-login', [QuenMatKhauController::class, 'showLoginPincodeForm'])->name('pincodelogin.request');
 Route::post('/pincode-login', [QuenMatKhauController::class, 'checkPinCode'])->name('pincode-login');
+// Doi mat khau
+Route::get('change_password',[QuenMatKhauController::class,'showChangePasswordForm'])->name('change_password.request');
+Route::post('/change_password',[QuenMatKhauController::class,'capNhatMatKhau'])->name('change_password.update');
 Route :: resource('home',HomeController::class);
 
 // Auth::routes();
 
+// Hien thi san pham theo loai
+Route::get('product/{category_id}', [ClientProductController::class, 'index'])->name('client.product.index');
+Route::get('product-detail/{id}', [ClientProductController::class, 'show'])->name('client.product.show');
 
 Route :: resource('cart',CartController::class);
 

@@ -56,6 +56,6 @@ class DangNhapController extends Controller
         $request->session()->regenerateToken();
 
         // Redirect to the desired page
-        return redirect('/login');
+        return redirect('home');
     }
 }

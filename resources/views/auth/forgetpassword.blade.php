@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" media="all">
-    
+
     <style>
         body {
             font-family: sans-serif;
@@ -77,13 +78,14 @@
             margin: 10px 0;
             border: none;
             border-radius: 5px;
-            background-color: #267871; 
+            background-color: #267871;
             color: white;
             cursor: pointer;
             font-size: 16px;
         }
 
-        button:hover, a {
+        button:hover,
+        a {
             opacity: 0.9;
         }
 
@@ -117,11 +119,11 @@
         }
 
         .fa-google {
-        background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        -webkit-text-fill-color: transparent;
+            background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
         }
 
         .word-line {
@@ -145,33 +147,32 @@
         .word-line::after {
             left: 110%;
         }
+
         .text-danger {
             color: #B92626;
         }
-
     </style>
 </head>
+
 <body>
     <div class="container">
-    <h2>Forgot Password </h2>
-    <div class="welcome">
-        Welcome to Cyber Store, the world of Keyboard
-    </div>
-    
-    <form method="POST" action = "{{ route('password.email') }}">
-        @csrf
-
-        <div>
-            <label for="email"></label>
-            <input type="email" id="email" name="email" placeholder="Email" value="{{ old('email') }}" 
-            class="form-control" required autofocus>
-            @error('email')
-            <span class="text-danger"> {{ $message }} </span>
-            @enderror
+        <h2>Forgot Password </h2>
+        <div class="welcome">
+            Welcome to Cyber Store, the world of Keyboard
         </div>
-        <button type="submit">Login</button>
 
-        
-</div>
+        <form method="POST" action="{{ route('password.email')}}">
+            @csrf
+            <div>
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email" value="{{ old('email') }}" class="form-control" required autofocus>
+                @error('email')
+                <span class="text-danger"> {{ $message }} </span>
+                @enderror
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
 </body>
+
 </html>

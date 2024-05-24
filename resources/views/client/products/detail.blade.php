@@ -1,5 +1,12 @@
 @extends('client.layouts.app')
 @section('title', 'Detail')
+@section('style')
+    <link rel="stylesheet" href="{{ asset('client/asset/css/HomePage.css') }}">
+    <link rel="stylesheet" href="{{ asset('client/asset/css/Product-style.css') }}">
+    <link rel="stylesheet" href="{{ asset('client/asset/css/ProductInfo-style.css') }}">
+    <link rel="stylesheet" href="{{ asset('client/asset/css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('client/asset/css/index.css') }}">
+@endsection
 @section('content')
     <section class="bread-crumb mb-3">
         <span class="crumb-border"></span>
@@ -75,11 +82,7 @@
                             </div>
 
                             <div class="pt-0 col_large_default large-image">
-                                <div id="gallery_1" class="slider-for slick-initialized slick-slider"><button
-                                        type="button" data-role="none" class="slick-prev slick-arrow slick-disabled"
-                                        aria-label="Previous" role="button" aria-disabled="true"
-                                        style="display: inline-block;">Previous</button>
-
+                                <div id="gallery_1" class="slider-for slick-initialized slick-slider">
                                     <div aria-live="polite" class="slick-list draggable">
                                         <div class="slick-track" style="opacity: 1; width: 940px;" role="listbox">
                                             <div class="item slick-slide slick-current slick-active"
@@ -108,44 +111,16 @@
                                                     </picture>
                                                 </a>
                                             </div>
-                                            <div class="item slick-slide"
-                                                data-src="https://bizweb.dktcdn.net/100/484/752/products/anya-mousepad-short-copyright-1707405987103.jpg?v=1707409571893"
-                                                data-img="https://bizweb.dktcdn.net/100/484/752/products/anya-mousepad-short-copyright-1707405987103.jpg?v=1707409571893"
-                                                data-slick-index="1" aria-hidden="true"
-                                                style="width: 470px; position: relative; left: -470px; top: 0px; z-index: 998; opacity: 0;"
-                                                tabindex="-1" role="option" aria-describedby="slick-slide11">
-                                                <a class="d-block pos-relative embed-responsive  embed-responsive-1by1"
-                                                    href="https://bizweb.dktcdn.net/100/484/752/products/anya-mousepad-short-copyright-1707405987103.jpg?v=1707409571893"
-                                                    title="[Order] Mousepad - Spy x Family (Anya Edition)"
-                                                    data-image="https://bizweb.dktcdn.net/100/484/752/products/anya-mousepad-short-copyright-1707405987103.jpg?v=1707409571893"
-                                                    data-zoom-image="https://bizweb.dktcdn.net/100/484/752/products/anya-mousepad-short-copyright-1707405987103.jpg?v=1707409571893"
-                                                    data-rel="prettyPhoto[product-gallery]" tabindex="-1">
-
-                                                    <picture>
-                                                        <source media="(max-width: 991px)"
-                                                            srcset="//bizweb.dktcdn.net/thumb/grande/100/484/752/products/anya-mousepad-short-copyright-1707405987103.jpg?v=1707409571893">
-
-                                                        <img class=" img-fluid" style="--image-scale: 1; "
-                                                            data-img="https://bizweb.dktcdn.net/100/484/752/products/anya-mousepad-short-copyright-1707405987103.jpg?v=1707409571893"
-                                                            src="//bizweb.dktcdn.net/thumb/1024x1024/100/484/752/products/anya-mousepad-short-copyright-1707405987103.jpg?v=1707409571893"
-                                                            alt="[Order] Mousepad - Spy x Family (Anya Edition)"
-                                                            width="600" height="600">
-                                                    </picture>
-                                                </a>
-                                            </div>
+                                            
                                         </div>
                                     </div>
-
-                                    <button type="button" data-role="none" class="slick-next slick-arrow"
-                                        aria-label="Next" role="button" style="display: block;"
-                                        aria-disabled="false">Next</button>
                                 </div>
 
                             </div>
                         </div>
                         <div class="col-xs-12 col-lg-6 details-pro bg-white py-3 mt-3 mt-lg-0 px-3">
                             <div class="d-flex justify-content-between">
-                                <h1 class="title-product">[Order] Mousepad - Spy x Family (Anya Edition)</h1>
+                                <h1 class="title-product">{{ $product->name }}</h1>
                             </div>
                             <form enctype="multipart/form-data" id="add-to-cart-form" action="/cart/add" method="post"
                                 class="form_background  margin-bottom-0">
@@ -153,9 +128,9 @@
                                     <span class="first_status mr-2">
                                         Thương hiệu:
                                         <span class="status_name">
-                                            <a href="/collections/all?q=vendor.filter_key:(%22MONOKEI%22)&amp;page=1&amp;view=grid"
-                                                target="_blank" class="text-primary" title="MONOKEI">
-                                                MONOKEI
+                                            <a href="#"
+                                                target="_blank" class="text-primary" title="{{ $product->manufacturer }}">
+                                                {{ $product->manufacturer }}
                                             </a>
                                         </span>
                                     </span>
@@ -164,19 +139,20 @@
 
                                 <div class="price-box">
 
-                                    <span class="special-price"><span class="price product-price">540.000₫</span>
-                                    </span> <!-- Giá Khuyến mại -->
-                                    <span class="old-price">
-                                        <del class=" product-price-old sale">620.000₫</del>
-                                    </span> <!-- Giá gốc -->
+                                    <span class="special-price">
+                                        <span class="price product-price">{{number_format($product->price,0,',','.')}}₫</span>
+                                    </span>
+                                    <!-- Giá Khuyến mại -->
+                                    <!-- <span class="old-price">
+                                        <del class=" product-price-old sale">{{number_format($product->price,0,',','.')}}₫</del>
+                                    </span> Giá gốc -->
 
-                                    <div class="label_product">
-
+                                    <!-- <div class="label_product">
                                         -13%
-                                    </div>
-                                    <div class="save-price">
+                                    </div> -->
+                                    <!-- <div class="save-price">
                                         (Tiết kiệm: <span>80.000₫</span>)
-                                    </div>
+                                    </div> -->
 
                                 </div>
 
@@ -185,16 +161,23 @@
                                         Lưu ý
                                     </h3>
                                     <div>
-
                                         <ul>
-                                            <li><b>Đây là sản phẩm order, thời gian trả hàng dự kiến: Cuối quý
-                                                    2/2024</b></li>
+                                            <li><span style="color:#c0392b;"><strong>Để có sản phẩm hoàn chỉnh
+                                                        bạn vui lòng chọn toàn bộ tuỳ chọn, các đơn hàng không mua
+                                                        đầy đủ kit sẽ bị huỷ.</strong></span></li>
+                                            <li><span style="color:#c0392b;"><strong>Do sản phẩm có nhiều
+                                                        màu sắc tuỳ chọn bạn vui lòng tham khảo phối màu <a
+                                                            href="https://www.qwertykeys.com/collections/live-sales/products/neo80"
+                                                            target="_blank">tại đây</a></strong></span></li>
+                                            <li><strong><span style="color:#c0392b;">Tiêu chuẩn sản phẩm vui
+                                                        lòng tham khảo</span> <a
+                                                        href="https://qwertykeys.notion.site/Acceptable-Quality-Standard-90e3f81eea8140b3bb8f1f32114007be"
+                                                        target="_blank">tại đây</a></strong></li>
                                         </ul>
                                     </div>
                                 </div>
 
                                 <div class="swatch-div">
-
                                 </div>
 
                                 <div class="form-product">
@@ -209,7 +192,17 @@
                                             <div class="soluong soluong_type_1  ">
                                                 <div class="custom input_number_product custom-btn-number ">
                                                     <button class="btn btn_num num_1 button button_qty"
-                                                        onclick="var result = document.getElementsByClassName('pd-qtym')[0];var stick_result = document.getElementsByClassName('pd-qtym')[1]; var qtypro = result.value; if(!isNaN( qtypro ) && qtypro > 1){result.value--;stick_result.value--;}else{return false;}"
+                                                        onclick="var result = document.getElementsByClassName('pd-qtym')[0];
+                                                                    var stick_result = document.getElementsByClassName('pd-qtym')[1]; 
+                                                                    var qtypro = result.value; 
+                                                                    if(!isNaN( qtypro ) && qtypro > 1)
+                                                                    {
+                                                                        result.value--;stick_result.value--;
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        return false;
+                                                                    }"
                                                         type="button">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
                                                             style="width: 11.2px;">
@@ -220,9 +213,20 @@
                                                     <input type="text" id="qtym" name="quantity" value="1" maxlength="3"
                                                         class="form-control prd_quantity pd-qtym"
                                                         onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;"
-                                                        onchange="var stick_result = document.getElementsByClassName('pd-qtym')[1];if(this.value == 0){this.value=1;}else{stick_result.value=this.value}">
+                                                        onchange="var stick_result = document.getElementsByClassName('pd-qtym')[1];
+                                                                    if(this.value == 0){
+                                                                        this.value=1;
+                                                                    }
+                                                                    else{
+                                                                        stick_result.value=this.value
+                                                                        }">
                                                     <button class="btn btn_num num_2 button button_qty"
-                                                        onclick="var result = document.getElementsByClassName('pd-qtym')[0];var stick_result = document.getElementsByClassName('pd-qtym')[1]; var qtypro = result.value; if( !isNaN( qtypro )) result.value++;stick_result.value++;return false;"
+                                                        onclick="var result = document.getElementsByClassName('pd-qtym')[0];
+                                                                    var stick_result = document.getElementsByClassName('pd-qtym')[1]; 
+                                                                    var qtypro = result.value; 
+                                                                    if( !isNaN( qtypro )) result.value++;
+                                                                    stick_result.value++;
+                                                                    return false;"
                                                         type="button">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
                                                             style="width: 11.2px;">
@@ -257,11 +261,6 @@
                                     </div>
                                 </div>
                             </form>
-
-                            <div class="sapo-appcombo-module-detail"></div>
-
-                            <div class="sapo-buyxgety-module-detail-v2"></div>
-
                         </div>
                     </div>
                 </div>
@@ -286,7 +285,6 @@
                 <div id="product_tabs-1" class="tab-content content_extab current accordion-item">
                     <div class="accordion-button">
                         Thông tin sản phẩm
-
                         <i class="float-right">
                             <svg class="icon">
                                 <use xlink:href="#icon-arrow"></use>
@@ -295,42 +293,18 @@
                     </div>
                     <div class=" mr-sm-0 ml-sm-0 align-items-start accordion-content">
                         <div class="mb-3 mb-sm-0  product-content js-content-wrapper card border-0">
-
                             <div id="ega-uti-editable-content" data-platform="sapo" data-id="34508041"
                                 class="  rte js-product-getcontent product_getcontent pos-relative"
                                 style="--content-height: 693px">
                                 <div id="content" class="content js-content">
-                                    <p><strong>Thông tin về sản phẩm:</strong></p>
-                                    <ul>
-                                        <li>Kích thước: 260 x 208 x 4mm (Nhỏ)</li>
-                                        <li>Chất liệu: vải cao cấp, cao su</li>
-                                        <li>Hoàn thiện chống nước</li>
-                                        <li>Thời gian trả hàng dự kiến: Cuối quý 2/2024</li>
-                                    </ul>
-                                    <p><strong>Lưu ý về cách vệ sinh và bảo quản:</strong></p>
-                                    <ul>
-                                        <li>Chỉ nên giặt tay</li>
-                                        <li>Nhiệt độ nước khi giặt tối đa 30°C.</li>
-                                        <li>Không tẩy hoặc ngâm.</li>
-                                        <li>Không ủi hoặc giặt khô.</li>
-                                        <li>Không chà xát hoặc vắt.</li>
-                                        <li>Không sấy khô.</li>
-                                        <li>Phơi khô trong bóng râm.</li>
-                                    </ul>
+                                    {{ $product->description }}
 
                                 </div>
-                            </div>
-                            <div class="js-seemore ega-pro__seemore text-center pos-relative mt-3"
-                                style="display: none;">
-                                <a href="javascript:void(0)" title="Xem thêm" class="btn btn-main btn-pill mx-auto">Xem
-                                    thêm</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </section>
 @endsection

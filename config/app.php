@@ -163,7 +163,8 @@ return [
         
         // App\Providers\BroadcastServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
-        Intervention\Image\ImageServiceProvider::class
+        Intervention\Image\ImageServiceProvider::class,
+        ComposerServiceProvider::class
 
     ],
     'aliases' => Facade::defaultAliases()->merge([

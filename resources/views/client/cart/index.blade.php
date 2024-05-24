@@ -129,23 +129,23 @@
                                 <div class="item-product-cart-mobile">
                                     <a href="/gb-protagonist-case">
                                     </a><a class="product-images1  pos-relative embed-responsive embed-responsive-1by1"
-                                        href="" title="[GB] Protagonist Case">
+                                        href="" title="80Retros Game 1989 keyboard kit">
                                         <img class="img-fluid"
                                             src="https://bizweb.dktcdn.net/thumb/compact/100/484/752/products/caseblack1711377794255.jpg"
-                                            alt="[GB] Protagonist Case">
+                                            alt="80Retros Game 1989 keyboard kit">
                                     </a>
 
                                 </div>
                                 <div class="product-cart-infor">
                                     <div class="title-product-cart-mobile">
                                         <h3 class="product-name"> <a class="text2line link" href="/gb-protagonist-case"
-                                                title="[GB] Protagonist Case">
-                                                [GB] Protagonist Case</a> </h3>
+                                                title="80Retros Game 1989 keyboard kit">
+                                                80Retros Game 1989 keyboard kit</a> </h3>
                                         <span class="variant-title">Black</span>
                                     </div>
 
                                     <div class="cart-price">
-                                        <span class="product-price price">2.500.000₫</span>
+                                        <span class="product-price price">5.399.000₫</span>
                                     </div>
                                     <div class="select-item-qty-mobile">
                                         <div class="txt_center">
@@ -194,23 +194,23 @@
                                 <div class="item-product-cart-mobile">
                                     <a href="/bridge75-keyboard">
                                     </a><a class="product-images1  pos-relative embed-responsive embed-responsive-1by1"
-                                        href="" title="[Pre-order] Bridge75 Bàn phím cơ nhôm gaming 3 mode">
+                                        href="" title="[In stock] QK65V2 Badge">
                                         <img class="img-fluid"
                                             src="https://bizweb.dktcdn.net/thumb/compact/100/484/752/products/bridge75-silver-no-rgb-1714960883959.jpg"
-                                            alt="[Pre-order] Bridge75 Bàn phím cơ nhôm gaming 3 mode">
+                                            alt="[In stock] QK65V2 Badge">
                                     </a>
 
                                 </div>
                                 <div class="product-cart-infor">
                                     <div class="title-product-cart-mobile">
                                         <h3 class="product-name"> <a class="text2line link" href="/bridge75-keyboard"
-                                                title="[Pre-order] Bridge75 Bàn phím cơ nhôm gaming 3 mode">
-                                                [Pre-order] Bridge75 Bàn phím cơ nhôm gaming 3 mode</a> </h3>
-                                        <span class="variant-title">Bridge75 / Silver (Anode)</span>
+                                                title="[In stock] QK65V2 Badge">
+                                                [In stock] QK65V2 Badge</a> </h3>
+                                        <span class="variant-title">QK65v2 Badge / Silver (Anode)</span>
                                     </div>
 
                                     <div class="cart-price">
-                                        <span class="product-price price">1.650.000₫</span>
+                                        <span class="product-price price">250.000₫</span>
                                     </div>
                                     <div class="select-item-qty-mobile">
                                         <div class="txt_center">
@@ -252,7 +252,7 @@
 
                             <div class="title-cart d-none d-sm-flex ">
                                 <h3 class="text-xs-left">TỔNG CỘNG</h3>
-                                <span class="text-xs-right  totals_price_mobile">4.150.000₫</span>
+                                <span class="text-xs-right  totals_price_mobile">5.649.000₫</span>
                             </div>
 
 
