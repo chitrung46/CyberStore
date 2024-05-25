@@ -170,7 +170,7 @@
                 <span class="text-danger"> {{ $message }} </span>
                 @enderror
             </div>
-            <button type="submit">Login</button>
+            <button type="submit">Submit</button>
         </form>
     </div>
 </body>

@@ -1655,11 +1655,11 @@
 
                 <div
                     class="title_module_main heading-bar e-tabs  d-flex align-items-center flex-wrap heading-style1 justify-content-around">
-                    <h2 class="heading-bar__title">Instock - Hàng có sẵn</h2>
+                    <h2 class="heading-bar__title">Group by - Hàng đặt về</h2>
 
                     <ul class="tabs tabs-title list-unstyled  m-0 mt-2 tabs-group d-flex align-items-center">
 
-                        <li class="ega-small tab-link link ml-4 current" data-tab="product_top_1-tab-1">
+                        <!-- <li class="ega-small tab-link link ml-4 current" data-tab="product_top_1-tab-1">
                             Bàn phím cơ
                         </li>
 
@@ -1669,7 +1669,7 @@
 
                         <li class="ega-small tab-link link ml-4  " data-tab="product_top_1-tab-3">
                             Sản phẩm mới
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 <div class="e-tabs">

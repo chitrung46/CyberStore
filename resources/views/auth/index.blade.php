@@ -45,7 +45,7 @@
 <body>
     <div class="email-container">
         <div class="header">
-            <h1>Đặt Lại Mật Khẩu Cho huyyyyyyyyyy</h1>
+            <h1>Đặt Lại Mật Khẩu </h1>
         </div>
         <div class="content">
             <p>Xin chào,</p>
@@ -66,7 +66,7 @@
         </div>
         <div class="footer">
             <p>Trân trọng,</p>
-            <p>© 2024 Shoe Store - All rights reserved.</p>
+            <p>© 2024  CyberStore - All rights reserved.</p>
         </div>
     </div>
 

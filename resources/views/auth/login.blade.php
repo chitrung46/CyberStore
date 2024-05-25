@@ -191,7 +191,7 @@
         </div>
     </form>
     <div class="signup-link">
-        Don't have an account yet? <a href="">Sign Up</a>
+        Don't have an account yet? <a href="{{route('dangky')}}">Sign Up</a>
     </div>
 </div>
 </body>

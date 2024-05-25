@@ -59,7 +59,6 @@ class RoleController extends Controller
         $permissions= Permission::all()->groupBy('group');
         return view('admin.roles.edit',compact('role','permissions'));
     }
-
     /**
      * Update the specified resource in storage.
      */
@@ -68,8 +67,8 @@ class RoleController extends Controller
         $role= Role::findOrFail($id);
         $dataUpdate= $request->all();
         $role->update($dataUpdate);
-        $role->permissions()->sync($dataUpdate['permission_ids']);
-        return to_route('roles.edit')->with(['message'=>'Update success!','type'=>'success']);
+        $role->permissions()->sync($dataUpdate['permission_ids']?? []);
+        return to_route('roles.index')->with(['message'=>'Update success!','type'=>'success']);
 
     }
 

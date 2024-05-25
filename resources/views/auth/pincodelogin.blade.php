@@ -177,7 +177,7 @@
             </div> -->
             <div>
                 <input type="password" id="pincode" name="pincode" placeholder="Pincode" class="form-control" required>
-                @error('password')
+                @error('pincode')
                 <span class="text-danger">{{ $message }}</span>
                 @enderror
             </div>

@@ -44,7 +44,7 @@ class QuenMatKhauController extends Controller
             return redirect()->back()->withErrors(['new_password' => 'Mật khẩu không trùng khớp']);
         }
         $email=session('email');
-        $user = $this->user->findOrFail($email);
+        $user = User::where('email', $email)->first();
         $dataUpdate['password'] = Hash::make($request->new_password);
         $user->update($dataUpdate);
         session()->forget($email);
@@ -63,10 +63,10 @@ class QuenMatKhauController extends Controller
 
                 return redirect()->route('change_password.request');
             } else {
-                return view('auth.login');
+                return redirect()->route('pincodelogin.request')->withErrors(['pincode' => 'Mã pin đã hết hạn']);
             }
         } else {
-            return view('auth.login');
+            return redirect()->route('pincodelogin.request')->withErrors(['pincode' => 'Mã pin không chính xác']);
         }
     }
 
